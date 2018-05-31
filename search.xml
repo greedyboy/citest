@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2Fblog%2F2018%2F0531-hello-world.html</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[testss]]></title>
+    <url>%2Fblog%2F2018%2F0531-testtttt.html</url>
+    <content type="text"><![CDATA[this is just a file for test ci.thanku.]]></content>
+      <categories>
+        <category>tttt</category>
+      </categories>
+      <tags>
+        <tag>tttt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[那明明就是爱]]></title>
+    <url>%2Fblog%2F2018%2F0526-the-old-love.html</url>
+    <content type="text"><![CDATA[我就是一个念旧的人，无法去逃离自己的内心，又一次回到了那个地方，曾经怀揣梦想，而如今，愧对曾经，也不敢亲往，而今却为它事，又一次来到这个地方。旧日时光悄然而去，情愫依旧，爱依然。奈何，我却奈何。散乱情愫，表为凌乱。 风抚叶扬，凌波涤荡，禽鸟畅鸣，蝶舞花香。百感交集，无法用言语把我的情感穿起来，因为我的思绪完全凌乱了，旧爱让我无法自持。 因为一片绿，感念一个家，弥久弥恋。鸟儿愿意飞进来的教室，我想也是令人神往吧 窗明几净，整洁有序，敬畏之心，油然而生无论你是否在追求细节，但是我从细节里感受到了你的真心 完全没有记住热水零落在何处，但却体会到温情索绕身边。看到的不是提示，而是作为家长的一份情怀 当上课铃声演化成一段音乐的时候，上课也变成了一种享受，念念不忘，必有回响。 半栋楼，18个教室，每个教室52个灯管，每一个都能亮，我不是在炫耀我的数数能力有多强，我只是在思考：一个什么样的后勤服务团队才可以做到这样的一个保障。 我们可以容忍某个细节做的不好，但是无法忍受一个细节也没有做好 相偎之时，不懂爱，陌路渐行，方觉是爱，唯憾爱已久远。]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[打倒拖延症]]></title>
+    <url>%2Fblog%2F2018%2F0523-now-go-go-index.html</url>
+    <content type="text"><![CDATA[有人说，这是一种懒癌的表现。对于我自己，有严重的拖延症，导致很多事情临近终结才开始进行，于是效果平平，事与愿违。一直想克服，可是效果一直不是很好，将要到达自我毁灭的地步，基要于这点，要改变，一定要改变，从以下入手吧。 克服拖延症 做细项目规划 做好时间管理 摒弃无意义的事情 不能评自己的喜欢和讨厌做事情 不能有私心杂念 不能依靠明天 时刻牢记，就是现在]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[利用js匹配img标签中的src的值]]></title>
+    <url>%2Fblog%2F2018%2F0522-img-src-regex-index.html</url>
+    <content type="text"><![CDATA[太牛的方法了，震撼。 利用js匹配img标签中的 src的值方法1 机智大牛12345678910var frag = document.createElement(&apos;div&apos;);frag.innerHTML = &apos;&lt;div&gt;\ &lt;img src=&quot;http://www.baidu.com/pic/a.jpg&quot; alt=&quot;&quot; /&gt;\ &lt;p&gt;this is a pic&lt;/p&gt;\ &lt;img src=&quot;http://www.baidu.com/pic/b.jpg&quot; /&gt;\ &lt;p&gt;this is pic b&lt;/p&gt;\&lt;/div&gt;&apos;;var result = [].map.call(frag.querySelectorAll(&apos;img&apos;), function(img)&#123; return img.src &#125;);console.log(result); 方法212345678910111213141516另外，match 的话 g 模式不支持输出匹配结果的，你只能使用 while + exec 才行。var str = &apos;&lt;div&gt;\ &lt;img src=&quot;http://www.baidu.com/pic/a.jpg&quot; alt=&quot;&quot; /&gt;\ &lt;p&gt;this is a pic&lt;/p&gt;\ &lt;img src=&quot;http://www.baidu.com/pic/b.jpg&quot; /&gt;\ &lt;p&gt;this is pic b&lt;/p&gt;\&lt;/div&gt;&apos;;var patt = /&lt;img[^&gt;]+src=[&apos;&quot;]([^&apos;&quot;]+)[&apos;&quot;]+/g;var result = [], temp;while( (temp= patt.exec(str)) != null ) &#123; result.push(temp[1]);&#125;console.log(result); 方法3 实现很难1234567891011121314151617181920212223&lt;script type=&quot;text/javascript&quot;&gt;var str = &quot;this is test string &lt;img src=\&quot;http:yourweb.com/test.jpg\&quot;width=&apos;50&apos; &gt;123 and the end &lt;img src=\&quot;所有地址也能匹配.jpg\&quot; /&gt; &lt;img src=\&quot;/uploads/attached/image/20120426/20120426225658_92565.png\&quot; alt=\&quot;\&quot; /&gt;&quot;//匹配图片（g表示匹配所有结果i表示区分大小写）var imgReg = /&lt;img.*?(?:&gt;|\/&gt;)/gi;//匹配src属性 var srcReg = /src=[\&apos;\&quot;]?([^\&apos;\&quot;]*)[\&apos;\&quot;]?/i;var arr = str.match(imgReg);alert(&apos;所有已成功匹配图片的数组：&apos;+arr);for (var i = 0; i &lt; arr.length; i++) &#123; var src = arr[i].match(srcReg); //获取图片地址 if(src[1])&#123; alert(&apos;已匹配的图片地址&apos;+(i+1)+&apos;：&apos;+src[1]); &#125; //当然你也可以替换src属性 if (src[0]) &#123; var t = src[0].replace(/src/i, &quot;href&quot;); &#125;&#125;&lt;/script&gt; js根据xpath获取网页元素方法1123456789101112//获取节点function _x(STR_XPATH) &#123; var xresult = document.evaluate(STR_XPATH, document, null, XPathResult.ANY_TYPE, null); var xnodes = []; var xres; while (xres == xresult.iterateNext()) &#123; xnodes.push(xres); &#125; return xnodes;&#125; 方法21234567891011121314function _x3(STR_XPATH) &#123; var oResult = document.evaluate(STR_XPATH, document, null, XPathResult.ANY_TYPE, null); var aNodes = []; if (oResult != null) &#123; var oElement = oResult.iterateNext(); while (oElement) &#123; aNodes.push(oElement); oElement = oResult.iterateNext(); &#125; &#125; return aNodes;&#125;// 如果只查找单个元素，可以简写成这样//nodes=document.evaluate(&quot;//div[1]&quot;, document).iterateNext(); 文献参考 https://segmentfault.com/q/1010000004178052 http://www.jb51.net/article/54526.htm]]></content>
+      <categories>
+        <category>网络日志</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+        <tag>正则</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[m咳嗽用药备注]]></title>
+    <url>%2Fblog%2F2018%2F0522-cought-index.html</url>
+    <content type="text"><![CDATA[从2018年3月份以来，将近三个月时间里，持续的咳嗽。4月份的时候去中心医院检查了一下肺部，拍了ct，诊断肺部没有什么特殊情况，应该是支气管发炎症状，医生给开了一些药，然后持续治疗，有一定好转，仅为自己健康几率，如有和我相同症状的朋友，切勿对照我的情况给自己随便开药，还是要去医院诊断之后再按照医生要求治疗。 重点强调 本记录仅为笔者自己身体健康记录，如有相同境遇，还请前往医院，尊医嘱治疗。切勿随意用药。 症状 干咳嗽 基本没有痰 无头痛，发热症状 第一次治疗 持续时间，2个月左右 拍肺部ct,无明显特殊症状 开药：强力枇杷露()，肺力咳胶囊 第一次治疗效果 治疗持续了有2个星期左右 好转之后断断续续停药 导致每天不定时间歇一点咳嗽 天冷有点加剧 所以进行第二次治疗 第二次用药 强力枇杷露(胡庆余堂)，头孢克肟分散片(金鸿药业股份有限公司) 疗效及后需注意问题 又有好转，要坚持用药 坚持喝水，不喝水可能是早晨本问题持续的根源 再加上用嗓子比较厉害，注意保护 曾怀疑有一些咽炎的问题，目前看来，关联不明显。 药品说明链接 强力枇杷露 哈尔滨市康隆药业有限责任公司 胡庆余堂国药号 肺力咳胶囊 贵州健兴药业有限公司 头孢克肟分散片 金鸿药业股份有限公司]]></content>
+      <categories>
+        <category>健康</category>
+      </categories>
+      <tags>
+        <tag>咳嗽</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[限制想象力的因素]]></title>
+    <url>%2Fblog%2F2018%2F0522-index.html</url>
+    <content type="text"><![CDATA[我们在做一件事情，或者在开发一个项目，或者在搞一项科研，或者在自high一段很高深的不可描述，怕就怕想象力被封掉。或者你的想象力是已经是别人踩在脚底的坑。暂且就分析几个因素吧 贫穷 主要是以知识贫乏为代表，没有任何知识或技术内涵为根本，那么就没有办法去完成你的构思，这个事实限制你想象力的不是没有想象力，而是变成了纯粹的想。而且不切实际，随之而带来的就是第二大因素。 无力 无力行动，无力深入，无力继续，无力学习，这些就可以隐藏很多你所无法开发的自身的潜能，限制了对自己的认识，无法去想象你自身的强大，随之而陷入无休止的沉沦。 狭隘 狭隘的视角，让你看不到别人的高度，当努力攀爬时你会发现，你终究会发现，你所企及的高度，可能别人已经从哪个高度延伸到了更进一步的境界。 懒惰 这是一种病，其实说没有时间是一种推诿懒惰的表现，有人说过，没时间做事，其实就意味着你根本没有把这件事当做一件事来做，显然，很多时候，是这样的。 拖延 根本原因来自于漠视，恐惧，无秩，凌乱。可能最根本的原因是没有把脑子内存去理清，做其实没有那么难。 背驰 我把知行不一叫做背驰，听了大宇茶馆的话说明朝，稍微了解了王阳明的执行合一，我所以为，难为的是合。合，方得大道。]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[javascript跨域数据获取jsonp或iframe]]></title>
+    <url>%2Fblog%2F2018%2F0521-index.html</url>
+    <content type="text"><![CDATA[javascript数据访问进行跨域数据获取，已知的方法及存在的局限性。 jsonp跨域 需要在使用ajax的jsonp访问模式 获取形式为异步获取 需要在服务器端进行格式设置，只能是jsonp的数据格式 通信代码 12345678910111213141516171819//只能运用异步中,成功代码了。 $.ajax(&#123; async:false, url:phpsrc, //跨域到http://www.xiaoqiang2.com，另，http://xiaoqiang.com也算跨域 type:&apos;GET&apos;, //jsonp 类型下只能使用GET,不能用POST,使用post提交会造成有些浏览器获取不到返回 例如firebug dataType:&apos;jsonp&apos;, //指定为jsonp类型 data:&#123;&quot;user&quot;:user,&quot;pwd&quot;:pwd,&quot;src&quot;:src,&quot;ver&quot;:ver&#125;,//数据参数 jsonp:&apos;callback&apos;,//服务器端获取回调函数名的key，对应后台有$_GET[&apos;callback&apos;]=&apos;getName&apos;;callback是默认值 jsonpCallback:&apos;JRgetMessage&apos;, //回调函数名 success:function(result)&#123; //成功执行处理，对应后台返回的getName(data)方法。 ress=JSON.stringify(result); alert(ress); &#125;, error:function(msg)&#123; alert(&apos;ServerErr:&apos;+msg) &#125; &#125;); &#125; 可以根据其返回code进行网页通断的检测 12345678910111213141516171819function UrlOK(url)&#123; // url=&quot;http://www.google.com&quot;; $.ajax(&#123; type: &apos;get&apos;, cache: false, url: url, dataType: &quot;jsonp&quot;, //跨域采用jsonp方式 processData: false, timeout:5000, //超时时间，毫秒 complete: function (data) &#123; if (data.status==200) &#123; alert(&apos;ok&apos;); &#125; else &#123; alert(&quot;无效链接&quot;); &#125; &#125; &#125;);&#125; 利用iframe跨域 利用windows.name的方式来实现。 大致原理是在域A中页面A1中动态创建iframe 然后在A1中的iframe中加载域B中的页面B1 之后A1中的iframe中再加载A域中任意页面 继续在A1中读取windows.name。可得B域数据 关键是要求域B中要有相关代码实现windows.name赋值，也就是说明无法进行任意页面的读取，也只能是同时两个网站具有控制权的时候才可以。 代码网上自行搜索吧，以下是半成品12345678910111213141516171819202122232425262728293031323334353637383940&lt;script&gt;function domainData(iframe, url, fn) &#123; var isFirst = true; //iframe.style.display = &apos;none&apos;; var loadfn = function()&#123; if(isFirst)&#123; //null.html 是同域下的中转代理页面。内容可为空。 iframe.contentWindow.location = &apos;t_ifram2.html&apos;; isFirst = false; &#125; else &#123; fn(iframe.contentWindow.name); //使用完毕销毁iframe，保证安全，释放内存 iframe.contentWindow.document.write(&apos;&apos;); iframe.contentWindow.close(); document.body.removeChild(iframe); iframe.src = &apos;&apos;; iframe = null; &#125; &#125;; iframe.src = url; //alert(url); //给iframe设置onload事件 if(iframe.attachEvent)&#123; iframe.attachEvent(&apos;onload&apos;, loadfn); &#125; else &#123; iframe.addEventListener(&apos;load&apos;, loadfn, false); //iframe.onload = loadfn; &#125; document.body.appendChild(iframe); &#125; var ifm = document.getElementById(&quot;IFeditValue&quot;); setInterval(function()&#123; var time = (new Date()).getTime(); domainData(ifm, &apos;http://www.w3school.com.cn/jsref/met_select_remove.asp&apos;, function(data)&#123; alert(data); &#125;); &#125;, 1000); &lt;/script&gt; 失败尝试 利用提取iframe的dom读取源代码，失败，因为跨域不能读取iframe 希望向iframe的网址插入script，失败，因为暂没找到动态创建的方法 参考文献 https://blog.csdn.net/freshlover/article/details/40827207 http://www.runoob.com/json/json-jsonp.html https://blog.csdn.net/u011897301/article/details/52679486]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
+        <tag>jsonp</tag>
+        <tag>跨域</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[魔法书签]]></title>
+    <url>%2Fblog%2F2018%2F0517-mfsq-index.html</url>
+    <content type="text"><![CDATA[有关魔法书签的说明和帮助。 魔法书签安装 位置https://aqtech.gitee.io/appset/mfsq/pophtml.html 魔法书签安装方式：拖动下面链接到书签栏。 PS:书签栏如不能正常显示，请同时按下”ctrl+shift+b”进行显示功能列表 获取网页地址 打开百度site 致谢 http://tools.jb51.net/code/jscompress]]></content>
+      <categories>
+        <category>魔法书签</category>
+      </categories>
+      <tags>
+        <tag>魔法书签</tag>
+        <tag>mfsq</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[记录有关书签中的几个Javascript函数]]></title>
+    <url>%2Fblog%2F2018%2F0517-javascript-function-index.html</url>
+    <content type="text"><![CDATA[制作魔法书签过程中废弃的几个函数。可能用到其他地方，暂且作为备份。 自建get,post函数 特点不需要加载javascript. 123456789101112131415161718192021222324252627282930313233343536373839//var Resget=doFormRequest(url,&quot;get&quot;,&quot;&#123;&apos;user&apos;:&apos;value2&apos;, &apos;pwd&apos;:&apos;value&apos;&#125;&quot;)//alert(Resget);// 自建get,post函数 /* * @url: url link * @action: &quot;get&quot;, &quot;post&quot; * @json: &#123;&apos;key1&apos;:&apos;value2&apos;, &apos;key2&apos;:&apos;value2&apos;&#125; */ function doFormRequest(url, action, json) &#123; var form = document.createElement(&quot;form&quot;); form.action = url; form.method = action; // append input attribute and valus for (var key in json) &#123; if (json.hasOwnProperty(key)) &#123; var val = json[key]; input = document.createElement(&quot;input&quot;); input.type = &quot;hidden&quot;; input.name = key; input.value = val; // append key-value to form form.appendChild(input) &#125; &#125; // send post request document.body.appendChild(form); form.submit(); var res=form; // remove form from document document.body.removeChild(form); return res; &#125; 得到传递的参数 只能得到user=pwd，形式的。局限性1234567891011121314151617181920212223//获取书签传递过来的参数，用户和密码//var UserPwd=GetUserPwd();//var user=UserPwd[0];//var pwd=UserPwd[1];//get user and pwd from the src.js?user=pwdfunction GetUserPwd()&#123; var js = document.getElementsByTagName(&quot;script&quot;); for (var i = 0; i &lt; js.length; i++) &#123; if (js[i].src.indexOf(&quot;myt.js&quot;) &gt;= 0) &#123; var arraytemp = new Array(); arraytemp = js[i].src.split(&apos;?&apos;); arraytemp = arraytemp[1].split(&apos;=&apos;); // alert(arraytemp[0] + &quot;=&quot; + arraytemp[1]); var user=arraytemp[0]; var pwd=arraytemp[1]; //alert(user + pwd); return [user,pwd]; //return &#123;user:arraytemp[0] pwd:arraytemp[1]&#125;; break; &#125; &#125; &#125; 根据是否需要加载jquery1234567891011121314151617181920212223242526272829 //var jqueryjs=&apos;https://cdn.bootcss.com/jquery/3.3.1/jquery.js&apos;; //如果已经加载了jqury则不再重新加载 //NeedLoadJs(jqueryjs); // Juge Load Jqury function NeedLoadJs(url)&#123; if(typeof(jQuery)==&quot;undefined&quot;)&#123; alert(&quot;jQuery is not imported&quot;); // document.write(&quot;&lt;script type=&apos;text/javascript&apos; src=&apos;https://cdn.bootcss.com/jquery/3.3.1/jquery.js&apos;&gt;&lt;/script&gt;&quot;); //var newscript = document.createElement(&apos;script&apos;); //newscript.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;); //newscript.setAttribute(&apos;src&apos;,&apos;https://cdn.bootcss.com/jquery/3.3.1/jquery.js&apos;); //var head = document.getElementsByTagName(&apos;head&apos;)[0]; //head.appendChild(newscript); LoadJs(url); &#125;else&#123; //alert(&quot;jQuery is imported&quot;); &#125; &#125;//Load js function LoadJs(url)&#123; var newscript = document.createElement(&apos;script&apos;); newscript.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;); newscript.setAttribute(&apos;src&apos;,url); var head = document.getElementsByTagName(&apos;head&apos;)[0]; head.appendChild(newscript); &#125; javascript获取网址打开网址12//alert(window.location.href);//window.open(&quot;tencent://www.jb51.net&quot;); javascript获取同域下iframe中网页源代码123456789101112131415161718192021222324&lt;script type=&quot;text/javascript&quot;&gt;onerror=handleErrvar txt=&quot;&quot;function handleErr(msg,url,l)&#123;txt=&quot;There was an error on this page.\n\n&quot;txt+=&quot;Error: &quot; + msg + &quot;\n&quot;txt+=&quot;URL: &quot; + url + &quot;\n&quot;txt+=&quot;Line: &quot; + l + &quot;\n\n&quot;txt+=&quot;Click OK to continue.\n\n&quot;alert(txt)return true&#125; function getIframeContent(frameId)&#123; var frameObj = document.getElementById(frameId); alert (&quot;x1&quot;); var frameContent = frameObj.contentWindow.document.urlset.innerHTML; alert(&quot;frame content : &quot;+frameContent); &#125; 远程代码读取 需要在目标网站设置头部1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt; &lt;title&gt;远程网页源代码读取&lt;/title&gt; &lt;style type=&quot;text/css&quot;&gt; /* 页面字体样式 */ body, td, input, textarea &#123; font-family:Arial; font-size:12px; &#125; &lt;/style&gt; &lt;script type=&quot;text/javascript&quot;&gt; //用于创建XMLHttpRequest对象 function createXmlHttp() &#123; //根据window.XMLHttpRequest对象是否存在使用不同的创建方式 if (window.XMLHttpRequest) &#123; xmlHttp = new XMLHttpRequest(); //FireFox、Opera等浏览器支持的创建方式 &#125; else &#123; xmlHttp = new ActiveXObject(&quot;Microsoft.XMLHTTP&quot;);//IE浏览器支持的创建方式 &#125; &#125; //直接通过XMLHttpRequest对象获取远程网页源代码 function getSource() &#123; var url = document.getElementById(&quot;url&quot;).value; //获取目标地址信息 //地址为空时提示用户输入 if (url == &quot;&quot;) &#123; alert(&quot;请输入网页地址。&quot;); return; &#125; document.getElementById(&quot;source&quot;).value = &quot;正在加载……&quot;; //提示正在加载 createXmlHttp(); //创建XMLHttpRequest对象 xmlHttp.onreadystatechange = writeSource; //设置回调函数 xmlHttp.open(&quot;GET&quot;, url, true); xmlHttp.send(null); &#125; //www.mp4ku.com将远程网页源代码写入页面文字区域 function writeSource() &#123; if (xmlHttp.readyState == 4) &#123; document.getElementById(&quot;source&quot;).value = xmlHttp.responseText; &#125; &#125; &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;远程网页源代码读取&lt;/h1&gt; &lt;div&gt; 地址：&lt;input type=&quot;text&quot; id=&quot;url&quot;&gt; &lt;input type=&quot;button&quot; onclick=&quot;getSource()&quot; value=&quot;获取源码&quot;&gt; &lt;/div&gt; &lt;textarea rows=&quot;10&quot; cols=&quot;80&quot; id=&quot;source&quot;&gt;&lt;/textarea&gt; &lt;/body&gt; &lt;/html&gt; php获取源代码 成功 12345678910$ch = curl_init($url);curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);curl_setopt($ch,CURLOPT_TIMEOUT,5);curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE); $html = curl_exec($ch); if($html !== false)&#123; echo $html; &#125; 对SSL证书挑剔(成功率低) 123456789101112131415161718192021222324252627282930313233343536373839404142434445&lt;?php//$content = file_get_contents(&apos;https://wqian.net/baidusitemap.xml&apos;);$url = (&apos;https://wqian.net/baidusitemap.xml&apos;); function getHTTPS($url) &#123; $ch = curl_init(); curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE); curl_setopt($ch, CURLOPT_HEADER, false); curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); curl_setopt($ch, CURLOPT_SSLVERSION, 1); curl_setopt($ch, CURLOPT_URL, $url); curl_setopt($ch, CURLOPT_REFERER, $url); curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5); curl_setopt($ch, CURLOPT_POST, 0); curl_setopt($ch, CURLOPT_TIMEOUT, 5); $result = curl_exec($ch); var_dump(curl_error($ch)); //查看报错信息 curl_close($ch); return &quot;reslt&lt;br&gt;&quot;. $result;&#125;$data=getHTTPS(&quot;https://wqian.net/baidusitemap.xml&quot;);echo $data; //echo $content;//preg_match_all(&apos;/&lt;loc&gt;(.*?)&lt;\/loc&gt;/&apos;, $content, $out, PREG_PATTERN_ORDER);//var_dump($out); ?&gt; 循环检测条件满足后停止1234567//定时检测加载完毕后调用 var InterId=setInterval(function()&#123; // alert(&quot;每秒钟都会执行&quot;); //按需停止 clearInterval(InterId); &#125;,20); 得到地址中的文件名称/ss/xetn/jxs.js可得到jxs1234567//得到地址中文件名称 function getUrlFileName(url) &#123; var str = url; str = str.substring(str.lastIndexOf(&quot;/&quot;) + 1); str = str.substring(0, str.lastIndexOf(&quot;.&quot;)); return str; &#125; 根据xpath获取dom元素12345678910111213function _x(STR_XPATH) &#123; var xresult = document.evaluate(STR_XPATH, document, null, XPathResult.ANY_TYPE, null); var xnodes = []; var xres; while (xres = xresult.iterateNext()) &#123; xnodes.push(xres); &#125; return xnodes;&#125;;var xs=_x(&apos;//*[@id=&quot;root&quot;]/div/div[2]/div[1]/div/div/div/div[1]/span&apos;);alert(xs[0].innerHTML); 参考文献 http://www.cnblogs.com/fishtreeyu/archive/2011/02/27/1966178.html]]></content>
+      <categories>
+        <category>魔法书签</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
+        <tag>mfsq</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[迷失]]></title>
+    <url>%2Fblog%2F2018%2F0516-index-lost.html</url>
+    <content type="text"><![CDATA[似乎自己已经迷失。要找回自己。 似乎自己已经迷失了方向似乎已经忘记了自己的身份有必要思考一下自己的使命我来自哪里？我要的什么？我的目的是什么？我还是不是自己？提勉知而不行，谓之空行而不知，谓之莽正所谓知行合一，方可天人合一]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[阿里云虚拟主机配置https访问及阿里云虚拟主机CDN设置]]></title>
+    <url>%2Fblog%2F2018%2F0516-aliyun-https.html</url>
+    <content type="text"><![CDATA[配置阿里云虚拟主机http访问，包括ssl证书申请。阿里https申请证书是免费的，但是配置CDN是收费的，并且除了配置他的CDN方式进行https登录外，没有其他方法，如果想吃免费午餐的同学，请略过吧，作者也是进入了坑之后，才来补上这个说明的（PS:2018.5.22）。 阿里云免费ssl证书申请 登录阿里云后台管理&lt;&gt; 左侧菜单，管理控制台-安全（云盾）-CA证书服务 根据自己的域名申请，购买0元免费版本 补全信息 等待申请通过结束 配置CDN 登录阿里云后台管理&lt;&gt; 左侧菜单，管理控制台-云计算基础服务-CDN 菜单域名管理-添加域名 图片小文件-ip-主机ip-80端口-http到https 这个是要收费的，按流量收费，阿里虚拟主机cdn是按照流量收费的 配置域名解析 CANME到指定位置 等待解析成功访问参考文献-https://blog.csdn.net/chwshuang/article/details/52443274]]></content>
+      <categories>
+        <category>网络日志</category>
+      </categories>
+      <tags>
+        <tag>阿里云虚拟主机</tag>
+        <tag>https</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[利用javascript的jsonp推送静态站点的网址到php服务器进行百度网址推送]]></title>
+    <url>%2Fblog%2F2018%2F0515-javascript-jsonp-php-baidu.html</url>
+    <content type="text"><![CDATA[实现将静态网站的网址采集后推送到php服务器，进行百度站长网址推送。 功能导航文件 bdp.html123456789101112131415161718192021222324252627&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;UTF-8&quot;/&gt;&lt;title&gt;duo&lt;/title&gt;&lt;script&gt; function Dobdp()&#123; var getc=document.getElementById(&quot;getc&quot;).value; var getn=document.getElementById(&quot;getn&quot;).value; var tj=document.getElementById(&quot;tj&quot;).value; //alert(getn); window.open(&apos;https://wqian.net/jsgetxml2.html?c=&apos;+getc+&apos;&amp;n=&apos;+ getn+&apos;&amp;tj=&apos;+ tj +&apos;&apos;,&apos;iframe_a&apos;); &#125;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;模式：&lt;input id=getc value=xct width=&quot;200&quot;&gt; 范围：&lt;input id=getn value=-1 width=&quot;200&quot;&gt; 是否提交：&lt;input id=tj value=0 width=&quot;200&quot;&gt;&lt;p&gt;&lt;button onclick=&quot;Dobdp()&quot;&gt;点击即可进行查看&lt;/button&gt;&lt;/p&gt;&lt;iframe src=&quot;https://wqian.net&quot; name=&quot;iframe_a&quot; width=100% height=&quot;500&quot;&gt;&lt;/iframe&gt;&lt;/body&gt;&lt;/html&gt; 静态网站内部文件 jsgetxmls代码12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394---layout: false---&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;UTF-8&quot;/&gt;&lt;script src=&quot;https://cdn.bootcss.com/jquery/1.11.1/jquery.js&quot;&gt;&lt;/script&gt;&lt;script&gt;function getdate(url)&#123; htmlobj=$.ajax(&#123;url:url,async:false&#125;); return htmlobj.responseText;&#125;// 自建get,post函数 /* * @url: url link * @action: &quot;get&quot;, &quot;post&quot; * @json: &#123;&apos;key1&apos;:&apos;value2&apos;, &apos;key2&apos;:&apos;value2&apos;&#125; */ function doFormRequest(url, action, json) &#123; var form = document.createElement(&quot;form&quot;); form.action = url; form.method = action; // append input attribute and valus for (var key in json) &#123; if (json.hasOwnProperty(key)) &#123; var val = json[key]; input = document.createElement(&quot;input&quot;); input.type = &quot;hidden&quot;; input.name = key; input.value = val; // append key-value to form form.appendChild(input) &#125; &#125; // send post request document.body.appendChild(form); form.submit(); var res=form; // remove form from document document.body.removeChild(form); return res; &#125; //get user and pwd from the src.js?user=pwd function getQueryString(name) &#123; var reg = new RegExp(&quot;(^|&amp;)&quot; + name + &quot;=([^&amp;]*)(&amp;|$)&quot;, &quot;i&quot;); //alert(window.location.search.substr(1)); var r = window.location.search.substr(1).match(reg); if (r != null) return unescape(r[2]); return null; &#125; &lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;textarea id=xml&gt;&lt;/textarea&gt;&lt;textarea id=cat&gt;&lt;/textarea&gt;&lt;textarea id=tag&gt;&lt;/textarea&gt;&lt;script&gt;var datxml=getdate(&apos;baidusitemap.xml&apos;);var datcat=getdate(&apos;../categories/index.html&apos;);var dattag=getdate(&apos;../tags/index.html&apos;);document.getElementById(&quot;xml&quot;).value=datxml;document.getElementById(&quot;cat&quot;).value=datcat;document.getElementById(&quot;tag&quot;).value=dattag;var getn=getQueryString(&apos;n&apos;);var getc=getQueryString(&apos;c&apos;);var tj=getQueryString(&apos;tj&apos;);var posturl=&apos;http://u26.site/dbp2.php?c=&apos;+ getc + &apos;&amp;n=&apos; + getn + &apos;&amp;tj=&apos; + tj +&apos;&amp;x=&apos;+ Math.random();json=&#123;&apos;datxml&apos;:datxml,&apos;datcat&apos;:datcat,&apos;dattag&apos;:dattag&#125;;var res=doFormRequest(posturl, &apos;post&apos;, json)&lt;/script&gt;&lt;/body&gt;&lt;/html&gt; php服务器端文件 dbp2.php123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;UTF-8&quot;/&gt;&lt;title&gt;php&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;?php$getc= $_GET[&quot;c&quot;];$getn= 10*intval($_GET[&quot;n&quot;]);$tj= intval($_GET[&quot;tj&quot;]);$datxml=&quot;&quot;;$datcat=&quot;&quot;;$dattag=&quot;&quot;;if(strpos($getc,&apos;x&apos;) !==false)&#123; $datxml= $_POST[&quot;datxml&quot;];&#125;if(strpos($getc,&apos;c&apos;) !==false)&#123; $datcat= $_POST[&quot;datcat&quot;];&#125;if(strpos($getc,&apos;t&apos;) !==false)&#123; $dattag= $_POST[&quot;dattag&quot;];&#125;if ($datxml==&quot;&quot; &amp;&amp; $datcat==&quot;&quot; &amp;&amp; $dattag==&quot;&quot;)&#123; $datxml= $_POST[&quot;datxml&quot;]; $datcat= $_POST[&quot;datcat&quot;]; $dattag= $_POST[&quot;dattag&quot;];&#125;$reg1=&apos;/&lt;loc&gt;(.*?)&lt;\/loc&gt;/&apos;;preg_match_all($reg1,$datxml,$mat1); //print_r($mat1[1]);//print_r(&quot;&lt;textarea&gt;&quot; . $datxml . &quot;&lt;/textarea&gt;&quot;);//print_r(&quot;&lt;textarea&gt;&quot; . $datcat . &quot;&lt;/textarea&gt;&quot;);//print_r(&quot;&lt;textarea&gt;&quot; . $dattag . &quot;&lt;/textarea&gt;&quot;);$reg2=&apos;/href\s*=\s*(?:&quot;([^&quot;]*)&quot;|\&apos;([^\&apos;]*)\&apos;|([^&quot;\&apos;&gt;\s]+))/is&apos;;preg_match_all($reg2,$datcat . $dattag,$mat2); for($i=0;$i&lt;count($mat2[1]);$i++)//逐个输出超链接地址&#123; $mat2[1][$i]=&quot;https://wqian.net&quot; . $mat2[1][$i] . &quot;index.html&quot;;&#125;//print_r($mat2[1]);$mat=array_merge($mat1[1],$mat2[1]);$matt=array();$j=0;//如果为0则取全部$getnT=0;if ($getn&gt;=0)&#123; for($i=$getn;$i&lt;count($mat);$i++)//逐个输出超链接地址 &#123; $matt[$j]=$mat[$i]; $j++; $getnT=$i; if($j&gt;9)&#123; break; &#125; &#125;&#125;else&#123; $matt=$mat; $getnT=count($mat);&#125;print(&apos;模式：&apos; . $getc . &apos; 范围：&apos;. count($mat) . &apos;:(&apos; . $getn .&apos;-&apos; . $getnT . &apos;)&lt;br&gt;&apos;);print_r(&quot;&lt;textarea style=&apos;width:1000px;height:300px&apos;&gt;&quot;);print_r($matt);print_r(&quot;&lt;/textarea&gt;&quot;);//echo &quot;&lt;script&gt;alert(&quot;. $tj .&quot;);&lt;/script&gt;&quot;;//echo &quot;&lt;script&gt;alert(&quot;. count($matt) .&quot;);&lt;/script&gt;&quot;;if ($tj&gt;0 &amp;&amp; count($matt)&lt;11 &amp;&amp; count($mat)&gt;0)&#123;echo(&quot;&lt;br&gt;百度熊掌提交结果：&lt;br&gt;&quot;);echo(bdXZpost($matt));echo(&quot;&lt;br&gt;百度站长提交结果：&lt;br&gt;&quot;);echo(bdZZpost($matt));&#125;else&#123; echo(&quot;&lt;p&gt;没有提交&lt;p&gt;&quot;);&#125;//熊掌提交function bdXZpost($urls) &#123;$api = &apos;http://data.zz.baidu.com/urls?appid=1598180106327679&amp;token=jy3FBOUkbY8fLr14&amp;type=batch&apos;;$ch = curl_init();$options = array( CURLOPT_URL =&gt; $api, CURLOPT_POST =&gt; true, CURLOPT_RETURNTRANSFER =&gt; true, CURLOPT_POSTFIELDS =&gt; implode(&quot;\n&quot;, $urls), CURLOPT_HTTPHEADER =&gt; array(&apos;Content-Type: text/plain&apos;),);curl_setopt_array($ch, $options);$result = curl_exec($ch);return $result;&#125;//站长提交function bdZZpost($urls) &#123;$api = &apos;http://data.zz.baidu.com/urls?site=https://wqian.net&amp;token=s0qosKUimcSz3p38&apos;;$ch = curl_init();$options = array( CURLOPT_URL =&gt; $api, CURLOPT_POST =&gt; true, CURLOPT_RETURNTRANSFER =&gt; true, CURLOPT_POSTFIELDS =&gt; implode(&quot;\n&quot;, $urls), CURLOPT_HTTPHEADER =&gt; array(&apos;Content-Type: text/plain&apos;),);curl_setopt_array($ch, $options);$result = curl_exec($ch);return $result;&#125;?&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
+        <tag>baidumap</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[更新生成sitemap和百度sitemap]]></title>
+    <url>%2Fblog%2F2018%2F0514-index.html</url>
+    <content type="text"><![CDATA[创建生成网站地图,生成百度专用的地图。 安装插件12npm install hexo-generator-sitemap --savenpm install hexo-generator-baidu-sitemap --save 配置_config.yml12345# 自动生成sitemapsitemap: path: sitemap.xmlbaidusitemap: path: baidusitemap.xml 生成预览12hexo ghexo s http://localhost:4000/sitemap.xml http://localhost:4000/baidusitemap.xml 创建robots.txt 在 source/uploads/中创建robots.txt12User-agent: * Allow: / 参考 https://www.npmjs.com/package/hexo-generator-sitemap https://ziyuan.baidu.com/college/courseinfo?id=267&amp;page=12#h2_article_title29]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>sitemap</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[利用可以在iframe中嵌入网页进行重定向]]></title>
+    <url>%2Fblog%2F2018%2F0513-iframe-redirect-webpage.html</url>
+    <content type="text"><![CDATA[无论怎样，我遇到了，某个模板只允许嵌入ifram框架，但是我又不怎么喜欢这样的模板，想进行重定向，方法让我找到了，可能方法不止一种，虽然我这种方法不是最完备的，但是，我确实是可以实现的。为遇到此种情况的朋友提供一点提示吧。 大致原理 在许可的范围内创建iframe标签 ifram引入网页文件dm_drt.php?dm=x 在dm_drt.php中引入相关的函数，数组，运算等函数文件。 在dm_drt.php中构建重定向代码，可以根据dm进行运算并重定向。 iframe标签创建 代码构建标准格式，例码如下12&lt;iframe src =&quot;http://u26.cn/dm_drt.php?dm=xz2sc.cc&quot; frameborder=&quot;0&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; frameborder=&quot;0&quot; scrolling=&quot;auto&quot; id=&quot;ifm&quot; name=&quot;ifm&quot; width=&quot;100%&quot;&gt; &lt;/iframe&gt; 重定向文件创建 重定向文件dm_drt.php代码1234567891011121314151617181920212223242526272829303132333435363738394041424344454647&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;&lt;html&gt;&lt;head&gt;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&lt;title&gt;Yes You Do&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;?php require(&quot;./dm_dmlist.php&quot;); $redi=0; $dm = isset($_GET[&apos;dm&apos;])? htmlspecialchars($_GET[&apos;dm&apos;]) : &apos;&apos;; //echo($dm.&apos;jx&lt;br&gt;&apos;); //echo($myDm[$dm].&apos;&lt;br&gt;&apos;); if (array_key_exists($dm,$myDm))&#123; //echo (&apos;yes&apos;.&apos;&lt;br&gt;&apos;); //echo($dm.&apos;&lt;br&gt;&apos;); //echo($myDm[$dm].&apos;&lt;br&gt;&apos;); $tURL=$myDm[$dm]; &#125;else&#123; //echo(&apos;sorry&apos;); $tURL=$myDm[&quot;Sorry&quot;]; //echo($tURL); &#125; ?&gt; &lt;!--重定向--&gt; &lt;div&gt;&lt;a href=&quot;&lt;?php echo($tURL) ?&gt;&quot; target=&quot;_top&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;?php if ($redi==1) &#123; ?&gt;&lt;script src=&quot;https://cdn.bootcss.com/jquery/3.2.1/jquery.js&quot;&gt;&lt;/script&gt;&lt;script&gt;jQuery(function($) &#123; $(&quot;a&quot;)[0].click();&#125;);&lt;/script&gt;&lt;?php &#125;?&gt;&lt;?php require(&quot;./dm_foot.php&quot;); ?&gt;&lt;/body&gt;&lt;/html&gt; 相关文件-重定向路径运算 重定向运算代码dm_dmlist.php12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394&lt;?php$myDm[&quot;host&quot;]=&quot;http://u26.cn/&quot;;$myDm[&quot;Sorry&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=Sorry&quot;;$myDm[&quot;cumt.net.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=cumt.net.cn&quot;;$myDm[&quot;sxkw.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=sxkw.cn&quot;;$myDm[&quot;utibet.com.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=utibet.com.cn&quot;;$myDm[&quot;tijmu.com.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=tijmu.com.cn&quot;;$myDm[&quot;sicau.com.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=sicau.com.cn&quot;;$myDm[&quot;hrbeu.com.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=hrbeu.com.cn&quot;;$myDm[&quot;tjutcm.com.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=tjutcm.com.cn&quot;;$myDm[&quot;shutcm.com.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=shutcm.com.cn&quot;;$myDm[&quot;ljzo.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=ljzo.cn&quot;;$myDm[&quot;fwme.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=fwme.cn&quot;;$myDm[&quot;songduoduo.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=songduoduo.cn&quot;;$myDm[&quot;nuandd.com&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=nuandd.com&quot;;$myDm[&quot;piandd.com&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=piandd.com&quot;;$myDm[&quot;tuandd.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=tuandd.cn&quot;;$myDm[&quot;nanduoduo.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=nanduoduo.cn&quot;;$myDm[&quot;shuanduoduo.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=shuanduoduo.cn&quot;;$myDm[&quot;cuduoduo.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=cuduoduo.cn&quot;;$myDm[&quot;gunduoduo.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=gunduoduo.cn&quot;;$myDm[&quot;nvduoduo.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=nvduoduo.cn&quot;;$myDm[&quot;hljyr.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=hljyr.cn&quot;;$myDm[&quot;hljdh.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=hljdh.cn&quot;;$myDm[&quot;hljyk.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=hljyk.cn&quot;;$myDm[&quot;oo4.com.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=oo4.com.cn&quot;;$myDm[&quot;gg0.com.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=gg0.com.cn&quot;;$myDm[&quot;0tt.com.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=0tt.com.cn&quot;;$myDm[&quot;0uu.com.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=0uu.com.cn&quot;;$myDm[&quot;0ii.com.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=0ii.com.cn&quot;;$myDm[&quot;g84.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=g84.cn&quot;;$myDm[&quot;b47.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=b47.cn&quot;;$myDm[&quot;h46.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=h46.cn&quot;;$myDm[&quot;b74.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=b74.cn&quot;;$myDm[&quot;fxche.com&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=fxche.com&quot;;$myDm[&quot;gking.net&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=gking.net&quot;;$myDm[&quot;0m2.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=0m2.cn&quot;;//$myDm[&quot;u26.site&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=u26.site&quot;;//$myDm[&quot;u26.top&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=u26.top&quot;;//$myDm[&quot;jarey.wang&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=jarey.wang&quot;;//$myDm[&quot;jarbo.wang&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=jarbo.wang&quot;;$myDm[&quot;gzhtcm.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=gzhtcm.cc&quot;;$myDm[&quot;shutcm.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=shutcm.cc&quot;;$myDm[&quot;njutcm.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=njutcm.cc&quot;;$myDm[&quot;njupt.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=njupt.cc&quot;;$myDm[&quot;shcmusic.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=shcmusic.cc&quot;;$myDm[&quot;cdutcm.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=cdutcm.cc&quot;;$myDm[&quot;tjutcm.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=tjutcm.cc&quot;;$myDm[&quot;cppsu.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=cppsu.cc&quot;;$myDm[&quot;gucas.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=gucas.cc&quot;;$myDm[&quot;nwsuaf.xyz&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=nwsuaf.xyz&quot;;$myDm[&quot;nankai.info&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=nankai.info&quot;;$myDm[&quot;nudt.info&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=nudt.info&quot;;$myDm[&quot;nwsuaf.info&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=nwsuaf.info&quot;;$myDm[&quot;6tt.org&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=6tt.org&quot;;$myDm[&quot;istic.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=istic.cc&quot;;$myDm[&quot;tijmu.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=tijmu.cc&quot;;$myDm[&quot;shufe.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=shufe.cc&quot;;$myDm[&quot;shsmu.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=shsmu.cc&quot;;$myDm[&quot;utibet.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=utibet.cc&quot;;$myDm[&quot;njust.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=njust.cc&quot;;$myDm[&quot;cdstm.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=cdstm.cc&quot;;$myDm[&quot;cugb.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=cugb.cc&quot;;$myDm[&quot;swjtu.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=swjtu.cc&quot;;$myDm[&quot;nwsuaf.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=nwsuaf.cc&quot;;$myDm[&quot;ab2sc.xyz&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=ab2sc.xyz&quot;;$myDm[&quot;gh2sc.com&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=gh2sc.com&quot;;$myDm[&quot;ab2sc.com&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=ab2sc.com&quot;;$myDm[&quot;gh2sc.xyz&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=gh2sc.xyz&quot;;$myDm[&quot;da2sc.com&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=da2sc.com&quot;;$myDm[&quot;da2sc.xyz&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=da2sc.xyz&quot;;$myDm[&quot;tj2sc.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=tj2sc.cc&quot;;$myDm[&quot;sh2sc.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=sh2sc.cc&quot;;$myDm[&quot;xa2sc.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=xa2sc.cc&quot;;$myDm[&quot;xz2sc.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=xz2sc.cc&quot;;$myDm[&quot;tgot.net&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=tgot.net&quot;;$myDm[&quot;wqian.net&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=wqian.net&quot;;$myDm[&quot;emtv.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=emtv.cc&quot;;$myDm[&quot;jmtv.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=jmtv.cc&quot;;$myDm[&quot;7kk.org&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=7kk.org&quot;;$myDm[&quot;hking.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=hking.cc&quot;;$myDm[&quot;bking.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=bking.cc&quot;;$myDm[&quot;pking.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=pking.cc&quot;;$myDm[&quot;l06.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=l06.cc&quot;;$myDm[&quot;l07.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=l07.cc&quot;;$myDm[&quot;l05.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=l05.cc&quot;;//$myDm[&quot;u26.cn&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=u26.cn&quot;;$myDm[&quot;l05.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=l05.cc&quot;;$myDm[&quot;l05.cc&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=l05.cc&quot;;$myDm[&quot;b4.gs&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=b4.gs&quot;;$myDm[&quot;u8.gs&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=u8.gs&quot;;$myDm[&quot;u26.win&quot;]=$myDm[&quot;host&quot;].&quot;dm_ds.php?dm=u26.win&quot;;?&gt; 相关文件-显示页面例子 显示页面例子dm_ds.php?dm=x123456789101112131415161718192021222324252627282930313233&lt;?php $dm = isset($_GET[&apos;dm&apos;])? htmlspecialchars($_GET[&apos;dm&apos;]) : &apos;&apos;;?&gt;&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;title&gt;&lt;?php echo($dm.&apos;域名正在出售|The domain is for sale.&apos;) ?&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;?php require(&quot;dm_dmlist.php&quot;);?&gt; &lt;?php //echo ($dm==&quot;Sorry&quot; or array_key_exists($dm,$myDm)==false).&apos;Yes&apos;; ?&gt;&lt;?php if($dm==&quot;Sorry&quot; or array_key_exists($dm,$myDm)==false)&#123; ?&gt; &lt;h1 align=&quot;center&quot;&gt;亲爱的&lt;/h1&gt;&lt;h2 align=&quot;center&quot;&gt;一切都太突然，这让我如何去爱！&lt;/h2&gt; &lt;?php &#125;else&#123; ?&gt;&lt;h1 align=&quot;center&quot;&gt;&lt;?php echo($dm)?&gt;&lt;/h1&gt;&lt;div style=&quot;width: 100%;display: inline&quot;&gt;&lt;div style=&quot;width: 49%; text-align: right; float: left&quot;&gt;&lt;h2&gt;域名待字闺中&lt;/h2&gt;&lt;/div&gt;&lt;div style=&quot;float: left;width: 2%; text-align: center;&quot;&gt;&lt;h2&gt;|&lt;/h2&gt;&lt;/div&gt;&lt;div style=&quot;width: 49%; text-align: left;float: right&quot;&gt;&lt;h2&gt;The domain is waiting for you&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;width: 100%;display: inline&quot;&gt;&lt;div style=&quot;width: 49%; text-align: right; float: left&quot;&gt;&lt;h3&gt;你来&lt;/h3&gt;&lt;/div&gt;&lt;div style=&quot;float: left;width: 2%; text-align: center;&quot;&gt;&lt;h3&gt;|&lt;/h3&gt;&lt;/div&gt;&lt;div style=&quot;width: 49%; text-align: left;float: right&quot;&gt;&lt;h3&gt;You come&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;width: 100%;display: inline&quot;&gt;&lt;div style=&quot;width: 49%; text-align: right; float: left&quot;&gt;&lt;h3&gt;即你懂我&lt;/h3&gt;&lt;/div&gt;&lt;div style=&quot;float: left;width: 2%; text-align: center;&quot;&gt;&lt;h3&gt;|&lt;/h3&gt;&lt;/div&gt;&lt;div style=&quot;width: 49%; text-align: left;float: right&quot;&gt;&lt;h3&gt;You must understand my heart&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;width: 100%;display: inline&quot;&gt;&lt;div style=&quot;width: 49%; text-align: right; float: left&quot;&gt;&lt;h3&gt;请带走我&lt;/h3&gt;&lt;/div&gt;&lt;div style=&quot;float: left;width: 2%; text-align: center;&quot;&gt;&lt;h3&gt;|&lt;/h3&gt;&lt;/div&gt;&lt;div style=&quot;width: 49%; text-align: left;float: right&quot;&gt;&lt;h3&gt;Please take me away&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;width: 100%;display: inline&quot;&gt;&lt;div style=&quot;width: 49%; text-align: right; float: left&quot;&gt;&lt;h3&gt;让我不再孤寂漂泊&lt;/h3&gt;&lt;/div&gt;&lt;div style=&quot;float: left;width: 2%; text-align: center;&quot;&gt;&lt;h3&gt;|&lt;/h3&gt;&lt;/div&gt;&lt;div style=&quot;width: 49%; text-align: left;float: right&quot;&gt;&lt;h3&gt;It will be my pleasure&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;h4 align=&quot;center&quot; &gt;......&lt;/h4&gt;&lt;h4 align=&quot;center&quot; &gt;Email:254828511@QQ.com&lt;/h4&gt;&lt;?php &#125; ?&gt;&lt;?php require(&quot;./dm_foot.php&quot;); ?&gt;&lt;/body&gt;&lt;/html&gt; 相关文件-通用底部页面 显示页面例子dm_foot.php1&lt;p align=&quot;center&quot;&gt;&lt;script type=&quot;text/javascript&quot;&gt;var cnzz_protocol = ((&quot;https:&quot; == document.location.protocol) ? &quot; https://&quot; : &quot; http://&quot;);document.write(unescape(&quot;%3Cspan id=&apos;cnzz_stat_icon_148541&apos;%3E%3C/span%3E%3Cscript src=&apos;&quot; + cnzz_protocol + &quot;s23.cnzz.com/stat.php%3Fid%3D148541%26show%3Dpic&apos; type=&apos;text/javascript&apos;%3E%3C/script%3E&quot;));&lt;/script&gt; &lt;/p&gt; 参考文献 各大搜索引擎]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>iframe</tag>
+        <tag>重定向</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[php与javascript通信]]></title>
+    <url>%2Fblog%2F2018%2F0513-php-javascript-communication.html</url>
+    <content type="text"><![CDATA[本文实现php与javascript简单通信。 方法一 不需要调用jqury 使用产生script的方式 服务器端： 123456789&lt;?phpheader(&apos;Content-type: application/json&apos;);//获取回调函数名$jsoncallback = htmlspecialchars($_REQUEST [&apos;jsoncallback&apos;]);//json数据$json_data = &apos;[&quot;customername1&quot;,&quot;customername2&quot;]&apos;;//输出jsonp格式的数据echo $jsoncallback . &quot;(&quot; . $json_data . &quot;)&quot;;?&gt; 客户端: 1234567891011121314151617181920212223&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;title&gt;JSONP 实例&lt;/title&gt;&lt;/head&gt;&lt;body&gt; &lt;div id=&quot;divCustomers&quot;&gt;&lt;/div&gt; &lt;script type=&quot;text/javascript&quot;&gt;function callbackFunction(result, methodName) &#123; var html = &apos;&lt;ul&gt;&apos;; for(var i = 0; i &lt; result.length; i++) &#123; html += &apos;&lt;li&gt;&apos; + result[i] + &apos;&lt;/li&gt;&apos;; &#125; html += &apos;&lt;/ul&gt;&apos;; document.getElementById(&apos;divCustomers&apos;).innerHTML = html; &#125;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;https://bd72008b-fa6a-4092-b369-2437dec66486.coding.io/jsonp.php?jsoncallback=callbackFunction&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt; 方法二 需要调用jqury,跨域，不能进行同步处理 服务器端 1234567&lt;?php $data = array( &quot;name&quot;=&gt;$_GET[&apos;name&apos;], &quot;age&quot;=&gt;25, ); echo $_GET[&apos;callback&apos;].&quot;(&quot;.json_encode($data).&quot;)&quot;; //相当于：echo &apos;getName(&#123;&quot;name&quot;:&quot;小妹子&quot;,&quot;age&quot;:25&#125;)&apos;;// 必须加前缀哦,是从客户端传过来的方法名 ?&gt; 客户端 1234567891011121314151617181920212223242526272829303132&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;title&gt;JSONP 实例&lt;/title&gt;&lt;script src=&quot;http://cdn.static.runoob.com/libs/jquery/1.8.3/jquery.js&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;div id=&quot;divCustomers&quot;&gt;&lt;/div&gt;&lt;script type=&quot;text/javascript&quot;&gt;$.ajax(&#123; url:&apos;https://bd72008b-fa6a-4092-b369-2437dec66486.coding.io/jsonp.php&apos;, //跨域到http://www.xiaoqiang2.com，另，http://xiaoqiang.com也算跨域 type:&apos;GET&apos;, //jsonp 类型下只能使用GET,不能用POST,使用post提交会造成有些浏览器获取不到返回 例如firebug dataType:&apos;jsonp&apos;, //指定为jsonp类型 data:&#123;&quot;name&quot;:&quot;小美人&quot;&#125;,//数据参数 jsonp:&apos;callback&apos;,//服务器端获取回调函数名的key，对应后台有$_GET[&apos;callback&apos;]=&apos;getName&apos;;callback是默认值 jsonpCallback:&apos;getName&apos;, //回调函数名 success:function(result)&#123; //成功执行处理，对应后台返回的getName(data)方法。 $(&quot;#divCustomers&quot;).html(&apos;你妹子： &apos;+result.name+&apos;的年龄：&apos;+result.age+&apos;&apos;); //myData是一个div自己加就好了 &#125;, error:function(msg)&#123; //执行错误 &#125; &#125;); &lt;/script&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
+        <tag>php</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[利用javascript书签制作有意思的东西]]></title>
+    <url>%2Fblog%2F2018%2F0511-javascript-bookmark-funything.html</url>
+    <content type="text"><![CDATA[今天我们利用JavaScript来制作一个有意思的书签，关键是可以用它实现简单交互。 本地书签 在浏览器创建书签，名称随便起 代码简单说明 创建一个script标签a 定义a的各个属性 注意js代码路径，根据自己需要进行修改 定义发生错误时候的脚本 定义错误中的提示代码，中间用到三元运算符 期间获取浏览器属性b，以及根据属性判断输出错误形式 代码中有点击隐藏，和定时隐藏 路径如下代码123456789101112131415161718192021222324252627282930javascript: (function() &#123; try &#123; var a = document.createElement(&apos;SCRIPT&apos;); a.type = &apos;text/javascript&apos;, a.src = &apos;https://gitee.com/aqtech/appset/raw/master/myt.js&apos;, a.charset = &apos;utf-8&apos;, a.onerror = function() &#123; function d(a) &#123; return a.indexOf(&apos;360ee&apos;) &gt; -1 || a.indexOf(&apos;360se&apos;) &gt; -1 || a.indexOf(&apos;se&apos;) &gt; -1 || a.indexOf(&apos;aoyou&apos;) &gt; -1 || a.indexOf(&apos;theworld&apos;) &gt; -1 || a.indexOf(&apos;worldchrome&apos;) &gt; -1 || a.indexOf(&apos;greenbrowser&apos;) &gt; -1 || a.indexOf(&apos;qqbrowser&apos;) &gt; -1 || a.indexOf(&apos;baidu&apos;) &gt; -1 &#125; var a = document.createElement(&apos;div&apos;), b = navigator.userAgent.toLowerCase(), c = b.match(/chrome\/([\d.]+)/)[1]; a.style.cssText = &apos;position: fixed;top: 10px;right: 30px;padding: 5px;border-radius: 5px;box-shadow: rgb(92, 184, 229) 0px 0px 2px; -webkit-box-shadow: rgb(92, 184, 229) 0px 0px 2px;background-color: rgba(92, 184, 229, 0.498039) !important;z-index: 999999;&apos;, a.innerHTML = c &amp;&amp; !d(b) ? &apos;&lt;div style=&quot;padding: 20px;border: 1px solid rgb(92, 184, 229);background: white;border-radius: 5px;width: 330px;&quot;&gt;一不小心出现点小状况，请速度前去 &lt;a style=&quot;color:#1d7fe2&quot; href=&quot;https://tgot.net/about/&quot; target=&quot;_blank&quot;&gt;寻找帮助&lt;/a&gt; &lt;/div&gt;&apos;: &apos;&lt;div style=&quot;padding: 20px;border: 1px solid rgb(92, 184, 229);background: white;border-radius: 5px;&quot;&gt;该扩展暂不支持该类型网站&lt;/div&gt;&apos;, document.body.appendChild(a), a.onclick = function() &#123; a.style.display = &apos;none&apos; &#125;, setTimeout(function() &#123; a.click() &#125;, 8e4) &#125;, document.getElementsByTagName(&apos;head&apos;)[0].appendChild(a) &#125; catch(b) &#123; alert(b) &#125;&#125;)(); js远程代码 存放位置和上面定义位置一样 存放代码123456try &#123; alert(window.location.href);&#125;catch(err) &#123; alert(err.mssage);&#125; 本地书签版本V2 添加交互验证功能1234567891011121314151617181920212223242526272829javascript: (function() &#123; try &#123; var a = document.createElement(&apos;SCRIPT&apos;); a.type = &apos;text/javascript&apos;, a.src = &apos;https://gitee.com/aqtech/appset/raw/master/myt.js?user0=pwd0&apos;, a.charset = &apos;utf-8&apos;, a.onerror = function() &#123; function d(a) &#123; return a.indexOf(&apos;360ee&apos;) &gt; -1 || a.indexOf(&apos;360se&apos;) &gt; -1 || a.indexOf(&apos;se&apos;) &gt; -1 || a.indexOf(&apos;aoyou&apos;) &gt; -1 || a.indexOf(&apos;theworld&apos;) &gt; -1 || a.indexOf(&apos;worldchrome&apos;) &gt; -1 || a.indexOf(&apos;greenbrowser&apos;) &gt; -1 || a.indexOf(&apos;qqbrowser&apos;) &gt; -1 || a.indexOf(&apos;baidu&apos;) &gt; -1 &#125; var a = document.createElement(&apos;div&apos;), b = navigator.userAgent.toLowerCase(), c = b.match(/chrome\/([\d.]+)/)[1]; a.style.cssText = &apos;position: fixed;top: 10px;right: 30px;padding: 5px;border-radius: 5px;box-shadow: rgb(92, 184, 229) 0px 0px 2px; -webkit-box-shadow: rgb(92, 184, 229) 0px 0px 2px;background-color: rgba(92, 184, 229, 0.498039) !important;z-index: 999999;&apos;, a.innerHTML = c &amp;&amp; !d(b) ? &apos;&lt;div style=&quot;padding: 20px;border: 1px solid rgb(92, 184, 229);background: white;border-radius: 5px;width: 330px;&quot;&gt;一不小心出现点小状况，请速度前去 &lt;a style=&quot;color:#1d7fe2&quot; href=&quot;https://tgot.net/about/&quot; target=&quot;_blank&quot;&gt;%E5%AF%BB%E6%89%BE%E5%B8%AE%E5%8A%A9&lt;/a&gt; &lt;/div&gt;&apos;: &apos;&lt;div style=&quot;padding: 20px;border: 1px solid rgb(92, 184, 229);background: white;border-radius: 5px;&quot;&gt;%E8%AF%A5%E6%89%A9%E5%B1%95%E6%9A%82%E4%B8%8D%E6%94%AF%E6%8C%81%E8%AF%A5%E7%B1%BB%E5%9E%8B%E7%BD%91%E7%AB%99&lt;/div&gt;&apos;, document.body.appendChild(a), a.onclick = function() &#123; a.style.display = &apos;none&apos; &#125;, setTimeout(function() &#123; a.click() &#125;, 8e4) &#125;, document.getElementsByTagName(&apos;head&apos;)[0].appendChild(a) &#125; catch(b) &#123; alert(b) &#125;&#125;)(); js远程代码版本V2 实现交互后与PHP服务器通信验证 有跨域问题，将js作为公共cdn123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137try &#123; //如果已经加载了jqury则不再重新加载 NeedLoadJqery(); //获取书签传递过来的参数，用户和密码 var UserPwd=GetUserPwd(); var user=UserPwd[0]; var pwd=UserPwd[1]; var phpsrc=&apos;https://bd72008b-fa6a-4092-b369-2437dec66486.coding.io/jsonp.php&apos;; //本地测试使用 /* var user=&apos;greedy&apos;//UserPwd[0]; var pwd=&apos;greedy&apos;//UserPwd[1]; */ var src=window.location.href; // var url=&apos;https://bd72008b-fa6a-4092-b369-2437dec66486.coding.io/jsget.php&apos; //只能运用异步中成功代码了。 $.ajax(&#123; async:false, url:phpsrc, //跨域到http://www.xiaoqiang2.com，另，http://xiaoqiang.com也算跨域 type:&apos;GET&apos;, //jsonp 类型下只能使用GET,不能用POST,使用post提交会造成有些浏览器获取不到返回 例如firebug dataType:&apos;jsonp&apos;, //指定为jsonp类型 data:&#123;&quot;user&quot;:user,&quot;pwd&quot;:pwd,&quot;src&quot;:src&#125;,//数据参数 jsonp:&apos;callback&apos;,//服务器端获取回调函数名的key，对应后台有$_GET[&apos;callback&apos;]=&apos;getName&apos;;callback是默认值 jsonpCallback:&apos;JRgetMessage&apos;, //回调函数名 success:function(result)&#123; //成功执行处理，对应后台返回的getName(data)方法。 // $(&quot;#divCustomers&quot;).html(&apos;你妹子： &apos;+result.name+&apos;的年龄：&apos;+result.age+&apos;&apos;); // alert(&apos;p1&apos;+result.name+result.age); //alert(&quot;message0:&quot;+window.Jqres); ress=JSON.stringify(result); alert(ress); //ress=result; // alert(&apos;p12&apos;+res); //myData是一个div自己加就好了 &#125;, error:function(msg)&#123; alert(msg); &#125; &#125;); //var Resget=doFormRequest(url,&quot;get&quot;,&quot;&#123;&apos;user&apos;:&apos;value2&apos;, &apos;pwd&apos;:&apos;value&apos;&#125;&quot;) //alert(Resget); //alert(window.location.href); //window.open(&quot;tencent://www.jb51.net&quot;); //回调函数 function JRgetMessage0(jsonp)&#123; // alert(&quot;message1:&quot;+window.Jqres); // window.Jqres=JSON.stringify(jsonp); // alert(&quot;message:&quot;+window.Jqres); // return res; &#125;// 自建get,post函数 /* * @url: url link * @action: &quot;get&quot;, &quot;post&quot; * @json: &#123;&apos;key1&apos;:&apos;value2&apos;, &apos;key2&apos;:&apos;value2&apos;&#125; */ function doFormRequest(url, action, json) &#123; var form = document.createElement(&quot;form&quot;); form.action = url; form.method = action; // append input attribute and valus for (var key in json) &#123; if (json.hasOwnProperty(key)) &#123; var val = json[key]; input = document.createElement(&quot;input&quot;); input.type = &quot;hidden&quot;; input.name = key; input.value = val; // append key-value to form form.appendChild(input) &#125; &#125; // send post request document.body.appendChild(form); form.submit(); var res=form; // remove form from document document.body.removeChild(form); return res; &#125; //get user and pwd from the src.js?user=pwd function GetUserPwd()&#123; var js = document.getElementsByTagName(&quot;script&quot;); for (var i = 0; i &lt; js.length; i++) &#123; if (js[i].src.indexOf(&quot;myt.js&quot;) &gt;= 0) &#123; var arraytemp = new Array(); arraytemp = js[i].src.split(&apos;?&apos;); arraytemp = arraytemp[1].split(&apos;=&apos;); // alert(arraytemp[0] + &quot;=&quot; + arraytemp[1]); var user=arraytemp[0]; var pwd=arraytemp[1]; //alert(user + pwd); return [user,pwd] //return &#123;user:arraytemp[0] pwd:arraytemp[1]&#125;; break; &#125; &#125; &#125; // Juge Load Jqury function NeedLoadJqery()&#123; if(typeof(jQuery)==&quot;undefined&quot;)&#123; // alert(&quot;jQuery is not imported&quot;); // document.write(&quot;&lt;script type=&apos;text/javascript&apos; src=&apos;https://cdn.bootcss.com/jquery/3.3.1/jquery.js&apos;&gt;&lt;/script&gt;&quot;); var newscript = document.createElement(&apos;script&apos;); newscript.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;); newscript.setAttribute(&apos;src&apos;,&apos;https://cdn.bootcss.com/jquery/3.3.1/jquery.js&apos;); var head = document.getElementsByTagName(&apos;head&apos;)[0]; head.appendChild(newscript); &#125;else&#123; //alert(&quot;jQuery is imported&quot;); &#125; &#125;&#125;catch(err) &#123; alert(err);&#125; PHP服务器端代码V2 进行数据库验证12345678910111213141516171819202122&lt;?php $user=$_GET[&quot;user&quot;];$pwd=$_GET[&quot;pwd&quot;];$src=$_GET[&quot;src&quot;];$msg=&quot;&quot;;if ($user==$pwd)&#123; $msg=&quot;true&quot;;&#125;else&#123; $msg=&quot;false&quot;;&#125; $data = array( &quot;msg&quot;=&gt;$msg, &quot;user&quot;=&gt;$_GET[&apos;user&apos;], &quot;pwd&quot;=&gt;$_GET[&apos;pwd&apos;], &quot;src&quot;=&gt;$_GET[&apos;src&apos;], ); echo $_GET[&apos;callback&apos;].&quot;(&quot;.json_encode($data).&quot;)&quot;; //相当于：echo &apos;getName(&#123;&quot;name&quot;:&quot;小妹子&quot;,&quot;age&quot;:25&#125;)&apos;;// 必须加前缀哦,是从客户端传过来的方法名 ?&gt; 参考 知识http://www.runoob.com/jsref/jsref-try-catch.html 知识http://www.w3school.com.cn/js/js_onerror.asp 有道云笔记http://note.youdao.com/web-clipper-chrome.html 脚本压缩http://tools.jb51.net/code/jscompress urlcode转换http://tool.chinaz.com/tools/urlencode.aspx https://blog.csdn.net/hdfqq188816190/article/details/68928732]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
+        <tag>bookmark</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[登录远程桌面及文件复制]]></title>
+    <url>%2Fblog%2F2018%2F0508-remote-desktop-file-copy.html</url>
+    <content type="text"><![CDATA[有这样一种需求，我们打开远程的计算机，并且在远程计算机和本地机器之间进行文件传递。方法可能有很多，比如使用相关软件，QQ远程协助，花生壳等等，而我有自己原始的方法，可能存在问题，但是他的确能实现。与朋友共享。 远程计算机设置 获取计算机ip地址 右键计算机 选中远程设置，系统属性，允许远程计算机连接到本地 如果没有密码，并且还需要远程登录，那么就需要如下设置 控制面板 管理工具 本地安全策略 使用空白密码的本地账户只允许进行控制台登录设置为禁止 本地计算机设置 windows 附件 远程桌面连接 输入ip地址 本地资源 本地设备和资源中详细信息 驱动器，选中需要交流的硬盘 连接登录即可 文献参考 文献1 文献2]]></content>
+      <categories>
+        <category>软件列表</category>
+      </categories>
+      <tags>
+        <tag>远程登录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[包容知足和感恩]]></title>
+    <url>%2Fblog%2F2018%2F0507-index.html</url>
+    <content type="text"><![CDATA[生命之中会有许许多多过客在你我彼此之间留宿，与人相处，多一点包容，多一点知足，多一点感恩的心，彼此之间可能才能更好的相处。]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo博客中添加图片音乐和视频]]></title>
+    <url>%2Fblog%2F2018%2F0426-hexo-insert-picture-music-video.html</url>
+    <content type="text"><![CDATA[应用中涉及到往hexo博客中添加图片，音乐和视频。本文简单做个总结，希望对小白同学有所帮助。 添加图片 上传图片到\blog\source\&lt;新建文件夹&gt; 文章中添加如下代码1![图片说明](/&lt;新建文件夹&gt;/picture.JPG) 添加音乐 代码如下，利用ifram添加 123&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;http://music.163.com/outchain/player?type=2&amp;id=25706282&amp;auto=0&amp;height=66&quot;&gt; &lt;/iframe&gt; 例如以下音乐 添加视频 同样利用iframe添加，代码如下 12345&lt;iframe height=498 width=510 src=&quot;http://player.youku.com/embed/XNjcyMDU4Njg0&quot; frameborder=0 allowfullscreen&gt; &lt;/iframe&gt; 应用实例 总结 希望你能喜欢 爱你，能找到这里]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[站点图标制作过程]]></title>
+    <url>%2Fblog%2F2018%2F0426-site-ico-convert.html</url>
+    <content type="text"><![CDATA[添加了站点图标，本文记录制作过程。内容涉及svg格式图片网络下载，svg格式图片在线编辑，photoshop修改png图片，png图片在线转换为ico图标。为有相同遭遇的小伙伴提供指引。 选取基础图片 本文使用的是开源的svg格式的四叶草作为基础图片。 图标来源https://materialdesignicons.com/搜索clover 导出svg格式源文件如下：12345&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;!DOCTYPE svg PUBLIC &quot;-//W3C//DTD SVG 1.1//EN&quot; &quot;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; version=&quot;1.1&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot;&gt; &lt;path fill=&quot;#000000&quot; d=&quot;M12,11.18C15.3,8.18 17,6.64 17,4.69C17,3.19 15.75,2 14.25,2C13.39,2 12.57,2.36 12,3C11.43,2.36 10.61,2 9.69,2C8.19,2 7,3.25 7,4.75C7,6.64 8.7,8.18 12,11.18M11.18,12C8.18,8.7 6.64,7 4.69,7C3.19,7 2,8.25 2,9.75C2,10.61 2.36,11.43 3,12C2.36,12.57 2,13.39 2,14.31C2,15.81 3.25,17 4.75,17C6.64,17 8.18,15.3 11.18,12M12.83,12C15.82,15.3 17.36,17 19.31,17C20.81,17 22,15.75 22,14.25C22,13.39 21.64,12.57 21,12C21.64,11.43 22,10.61 22,9.69C22,8.19 20.75,7 19.25,7C17.36,7 15.82,8.7 12.83,12M12,12.82C8.7,15.82 7,17.36 7,19.31C7,20.81 8.25,22 9.75,22C10.61,22 11.43,21.64 12,21C12.57,21.64 13.39,22 14.31,22C15.81,22 17,20.75 17,19.25C17,17.36 15.3,15.82 12,12.82Z&quot; /&gt;&lt;/svg&gt; 下载生成fav.svg svg在线编辑 利用网上工具进行svg编辑 在线工具网站https://c.runoob.com/more/svgeditor/ 导入刚才生成的fav.svg 进行编辑，我只是添加了文字WQ，字体选择Euphoria Script，因为我认为比较漂亮 我试着导出png格式，但是失败，只是存储了svg格式的，文件源代码为： 123456789101112131415161718&lt;svg width=&quot;400&quot; height=&quot;400&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt; &lt;!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ --&gt; &lt;g&gt; &lt;title&gt;background&lt;/title&gt; &lt;rect fill=&quot;#ffffff&quot; id=&quot;canvas_background&quot; height=&quot;402&quot; width=&quot;402&quot; y=&quot;-1&quot; x=&quot;-1&quot;/&gt; &lt;g display=&quot;none&quot; overflow=&quot;visible&quot; y=&quot;0&quot; x=&quot;0&quot; height=&quot;100%&quot; width=&quot;100%&quot; id=&quot;canvasGrid&quot;&gt; &lt;rect fill=&quot;url(#gridpattern)&quot; stroke-width=&quot;0&quot; y=&quot;0&quot; x=&quot;0&quot; height=&quot;100%&quot; width=&quot;100%&quot;/&gt; &lt;/g&gt; &lt;/g&gt; &lt;g&gt; &lt;title&gt;Layer 1&lt;/title&gt; &lt;g stroke=&quot;null&quot; id=&quot;svg_5&quot;&gt; &lt;path stroke=&quot;null&quot; id=&quot;svg_4&quot; d=&quot;m200.141955,184.875345c65.386845,-58.992581 99.070978,-89.275439 99.070978,-127.620617c0,-29.49629 -24.767744,-52.896681 -54.489038,-52.896681c-17.040208,0 -33.287848,7.07911 -44.58194,19.664194c-11.294091,-12.585084 -27.541732,-19.664194 -45.770792,-19.664194c-29.721293,0 -53.300186,24.580242 -53.300186,54.076533c0,37.165326 33.684132,67.448184 99.070978,126.440765m-16.24764,16.124639c-59.442587,-64.891839 -89.956448,-98.320968 -128.594129,-98.320968c-29.721293,0 -53.300186,24.580242 -53.300186,54.076533c0,16.911207 7.13311,33.035845 19.814196,44.244436c-12.681085,11.20859 -19.814196,27.333229 -19.814196,45.424287c0,29.49629 24.767744,52.896681 54.489038,52.896681c37.44883,0 67.962691,-33.429129 127.405277,-98.320968m32.693423,0c59.244445,64.891839 89.758306,98.320968 128.395987,98.320968c29.721293,0 53.300186,-24.580242 53.300186,-54.076533c0,-16.911207 -7.13311,-33.035845 -19.814196,-44.244436c12.681085,-11.20859 19.814196,-27.333229 19.814196,-45.424287c0,-29.49629 -24.767744,-52.896681 -54.489038,-52.896681c-37.44883,0 -67.962691,33.429129 -127.207135,98.320968m-16.445782,16.124639c-65.386845,58.992581 -99.070978,89.275439 -99.070978,127.620617c0,29.49629 24.767744,52.896681 54.489038,52.896681c17.040208,0 33.287848,-7.07911 44.58194,-19.664194c11.294091,12.585084 27.541732,19.664194 45.770792,19.664194c29.721293,0 53.300186,-24.580242 53.300186,-54.076533c0,-37.165326 -33.684132,-67.448184 -99.070978,-126.440765z&quot;/&gt; &lt;/g&gt; &lt;text stroke=&quot;#000000&quot; transform=&quot;matrix(2.941027879714966,0,0,2.9348838329315186,-850.8677682094276,-121.38372795656323) &quot; xml:space=&quot;preserve&quot; text-anchor=&quot;start&quot; font-family=&quot;Euphoria Script&quot; font-size=&quot;47&quot; id=&quot;svg_6&quot; y=&quot;121.63946&quot; x=&quot;298.168409&quot; stroke-width=&quot;0&quot; fill=&quot;#ffffff&quot;&gt;W&lt;/text&gt; &lt;text stroke=&quot;#000000&quot; transform=&quot;matrix(2.941027879714966,0,0,2.9348838329315186,-850.8677682094276,-121.38372795656323) &quot; xml:space=&quot;preserve&quot; text-anchor=&quot;start&quot; font-family=&quot;Euphoria Script&quot; font-size=&quot;47&quot; id=&quot;svg_7&quot; y=&quot;118.913628&quot; x=&quot;386.232858&quot; stroke-width=&quot;0&quot; fill=&quot;#ffffff&quot;&gt;Q&lt;/text&gt; &lt;/g&gt;&lt;/svg&gt; 由于本地没有Euphoria Script需要自行搜索安装到本地之后再安装，预览svg文件才能正常显示 字体备份ckx3 图片编辑及生成 使用截图软件将打开的svg文件截图生成png，由于我选择的字体比较特殊，所以自行转换 使用Photoshop进行，参考了微软和谷歌图标的颜色取值对四叶草颜色进行修饰 更改后导出png格式的图片 利用网上工具转换成ico格式 生成的文件存入相关目录 存入模板的themes\next\source\images文件夹 在next.yml中进行相关设置，即可应用。 成品欣赏 总结 利用了网络资源和开源项目，在此致谢。]]></content>
+      <categories>
+        <category>软件列表</category>
+      </categories>
+      <tags>
+        <tag>ico</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[图标资源网站]]></title>
+    <url>%2Fblog%2F2018%2F0426-ico-converter-address.html</url>
+    <content type="text"><![CDATA[本页面主要搜集网络上常用的图片，包括ico,svg,png等好的格式的网址，或者在线转换等方面的资源，会长期更新。 在线svg图标及转换 https://cn.office-converter.com/ 不只是图片格式，各种文件格式也能转换 我认为优秀集合 https://materialdesignicons.com/ 特别多的图片 https://icomoon.io/ 可以导出svg格式，以及png格式 可以转换本地svg格式 https://c.runoob.com/more/svgeditor/有一款字体非常漂亮，生成之后最好导出png,因为其他网站可能没有这种字体 http://www.bitbug.net/ 使用了一下还是可以转换的 图标下载站点 https://findicons.com/ https://www.iconfinder.com/ 比较多，各种格式https://www.easyicon.net/ 在线制作http://www.zhangxinxu.com/sp/svg/ http://www.zhangxinxu.com/sp/svg/功能多，但是我导出文件有问题 图片转svghttps://www.bejson.com/convert/image_to_svg/ 转换工具https://convertio.co/zh/vector-converter/]]></content>
+      <categories>
+        <category>软件列表</category>
+      </categories>
+      <tags>
+        <tag>ico</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[我不是一个程序员]]></title>
+    <url>%2Fblog%2F2018%2F0425-index.html</url>
+    <content type="text"><![CDATA[诚然，我不是一个程序员，我却像一个好奇的小孩子一样，对于任何新鲜的事物都要尝试一下，渐渐将时间消磨在了一些偏离主线的事物上面，最终对于主要目标却没有任何的益处。对于这样的状态是可怕，也是亟待改变的。 网上看到有工具癖一说，大致是把时间都消磨在了工具上面，而没有专注于目标本身。感觉跟自己的情况很贴合。其实自己可能所缺少的就是专注。 好了，是时候思考一下和改变了。首先明确一下自己的角色，尽管开发过几个网页，尽管自己会一点编程，开发过几个小东西，但是要知道，编程并不是我的业务专长，我并不是一个程序员，也不可能成为一个入流的程序员，我要做的就只是要让我了解的这点编程知识，服务于我的专长，或者是未来的专长。 我不是一个程序员,我也不可能成为一个程序员,唯有持之以恒的努力，才能散发出无尽的能量。 做好专注，做好规划，做好执行。 \leftarrow\;It\;will\;be\;fine.\;\rightarrow\\ E=mc^2\\ \Uparrow\\ 致敬爱因斯坦]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[形形色色的网络世界]]></title>
+    <url>%2Fblog%2F2018%2F0425-people-coming-from-world-in-the-net.html</url>
+    <content type="text"><![CDATA[近来常常翻阅其他人的博客，看着文字，看着每个对于自己的剖析，看着这个世界上跳跃着的每一个元素，不禁长问？你和我的位置又在哪里？ 有看到，早早辍学，却迷恋于网络，闲暇之余，在网上发布着自己每日的学习心得，抒发着奋斗要强的气息。 有看到，开间农舍客栈，茶余饭后，拿本英语来学，捣鼓点代码来写，生活奋斗的迹象，散发于博客。 有看到，小小高中生，去用键盘敲击了一个个科技小作品，一边书写着abcd奋战在高考边缘，一边又和众多网友分享者自己项目经验，学习心得和书单，的确，长长的书单。 有看到，漂洋过海去国外，年纪小小却经验老到，思虑缜密，目标清晰，日程安排满满当当，实时分享着自己的成就与感悟。 有看到，穿梭于国与国之间的旅客，他们在用图片散发着工作的辛苦，与所得的快乐。 有看到，高深的研究学者在撰写着他们心中最美丽的方程。 有奋斗，有位置，有目标，有计划，有心得。。。。。 网络的世界，没有界限，只要你想，只要你努力，没有人可以阻挡你。这里没有种族的门槛，这里没有国别的歧视，这里没有文凭的限制，只要你愿意进来，他就会接纳你，只要你有能力，只要你有一技之长，你都可以成为被人羡慕的对象，因为这里，是你的才华吸引着他人。 反之，这里会让碌碌无为的人沉迷，沉迷于他人的成功，沉迷于他人的奋斗，沉迷于自我想象和无所作为的困苦，脱离了这些，才可以升华。 所谓临渊羡鱼，不如结网而渔。 这就是我所要迷迷糊糊表达的，临渊羡鱼，不如结网而渔。 如果文章对你有一丁点的触动，赏一分钱鼓励一下作者吧]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[MarkDown语法及相关资源]]></title>
+    <url>%2Fblog%2F2018%2F0425-markdown-grammer-source.html</url>
+    <content type="text"><![CDATA[MarkDown作为一种轻型的标记语言，越来越广泛的应用于各种文字的传播，尤其是在广大的码农中间，应用相当广泛，并且随着写作平台引入Markdow书写规范，使其在文学圈等方面也逐渐绽放光彩。这种让人抛弃格式而专注于写作的模式，也让我越来越入迷。甚至想着只要和文字代码相关的工作，都要用MarkDown来书写。Markdown由于其至简的风格而广受传播，但也是因为其至简，使得其在渲染的时候出现一些无法实现个性设置的矛盾，因此有些平台推出了扩增Markdown语法的功能，又由于各个厂商之间没有更进一步的达成共识，使得Markdown在某些高级语法方面存在一些不兼容。但是对于我而言，我偏向于尽可能的少使用多于原生态的语法规则，因为这样可以保证文字的兼容性。更何况，很多新增的语法，使得Markdown偏离其至简的原则。当然，对于这种问题，是仁者见仁 ，智者见智的问题。不求苟同。此篇文章将作为作者一个学习Markdown语法的一个笔记，以及搜集相关资源的存档，会不定期更新。大致包涵：Markdown语法，Windows平台Markdown编辑软件，Markdown在线编辑器，html转Markdown工具。 Markdown语法Windows平台Markdown编辑软件 Sublime text3配合相关插件实现 Markdown在线编辑器 http://mahua.jser.me/ html转Markdown工具参考文献 如果文章对你有一丁点的触动，赏一分钱鼓励一下作者吧]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo博客中使用latex数学公式]]></title>
+    <url>%2Fblog%2F2018%2F0424-index.html</url>
+    <content type="text"><![CDATA[博客中使用数学公式，来书写相关的科技论文以及平常学习记录。有必要进行相关的学习，本文将不定期更新来展开学习。内容包括latex中公式的语法学习，将循序渐进的展开。 博客中展示公式设置 插件安装 12npm un hexo-renderer-marked --savenpm i hexo-renderer-kramed --save # 或者 hexo-renderer-pandoc 在博客主题配置_config.yml中保证是默认设置就可以了，可以查看下是否如下配置： 1234engine: mathjax mathjax: # Use 2.7.1 as default, jsdelivr as default CDN, works everywhere even in China cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML 在文章中如果想展现公式，请在文章头部添加mathjax: true latex语法公式学习The Gamma function satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.123$$\Gamma(z) = \int_0^\infty t^&#123;z-1&#125;e^&#123;-t&#125;dt\,.$$ \begin{equation} e=mc^2 \end{equation}\label{eq1}123$$\begin&#123;equation&#125;e=mc^2\end&#123;equation&#125;\label&#123;eq1&#125;$$ \begin{equation} \begin{aligned} a &= b + c \\ &= d + e + f + g \\ &= h + i \end{aligned} \end{equation}\label{eq2}1234567$$\begin&#123;equation&#125;\begin&#123;aligned&#125;a &amp;= b + c \\ &amp;= d + e + f + g \\ &amp;= h + i\end&#123;aligned&#125;\end&#123;equation&#125;\label&#123;eq2&#125;$$ \begin{align} a &= b + c \label{eq3} \\ x &= yz \label{eq4}\\ l &= m - n \label{eq5} \end{align}12345$$\begin&#123;align&#125;a &amp;= b + c \label&#123;eq3&#125; \\x &amp;= yz \label&#123;eq4&#125;\\l &amp;= m - n \label&#123;eq5&#125;\end&#123;align&#125;$$ \begin{align} -4 + 5x &= 2+y \nonumber \\ w+2 &= -1+w \\ ab &= cb \end{align}12345$$\begin&#123;align&#125;-4 + 5x &amp;= 2+y \nonumber \\ w+2 &amp;= -1+w \\ ab &amp;= cb\end&#123;align&#125;$$ x+1\over\sqrt{1-x^2} \tag{i}\label{eq_tag}1$$x+1\over\sqrt&#123;1-x^2&#125; \tag&#123;i&#125;\label&#123;eq_tag&#125;$$ 学习参考文献 https://www.cnblogs.com/linxd/p/4955530.html https://blog.csdn.net/ethmery/article/details/50670297 Markdow在线书写 https://github.com/jdhao/hexo-theme-next/blob/df1063c46b48c7bb1cc563abc358e544933415a0/docs/MATH.md 如果文章对你有一丁点的触动，赏一分钱鼓励一下作者吧]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>latex</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[VB.net中Aarry和Aaarylist及list类型相互转换]]></title>
+    <url>%2Fblog%2F2018%2F0419-vb-net-array-list.html</url>
+    <content type="text"><![CDATA[使用VB.net时遇到Aarry和Aaarylist及list类型的相互转换问题。Arraylist为集合的子类，数组和集合都可以用来表示容纳了相同数据的一个容器,数组的大小是固定的,集合的大小就是可变的可以任意增删改查。本文简单描述三种类型的区别，并提供相互转换的方法，为一些分不清的同学提供一些参考。 Aarry数组说明 数组Aarry定义与变量定义差不多。可以用 dim 来定义 1234dim a（100） as integerdim b(10) as stringdim c as string()dim d() as integer =&#123;1, 2, 3,4&#125; 数组分为一维数组、二维数组等。详情查阅参考文献 ArrayList说明 ArrayList 是一个数组列表，它位于 System.Collections名称空间下。是集和类型。 与 List相似。 使用简单例子，源自网络参考。+12345678910111213141516171819202122232425262728293031323334353637Dim t As New ArrayList() t.Add(&quot;Northsnow&quot;) Dim d As New Collection d.Add(&quot;snow&quot;) d.Add(&quot;water&quot;) t.AddRange(d) For Each aa As String In t MsgBox(aa.ToString()) Next &apos;会依次输出： &apos;Northsnow &apos;snow &apos;water ArrayList的构造器可以接受一个集和，例子如下： Dim d As New Collection d.add(&quot;Northsnow&quot;) d.Add(&quot;snow&quot;) d.Add(&quot;water&quot;) Dim t As New ArrayList(d) Dim sb As New System.Text.StringBuilder() If t.Count &gt; 0 Then sb.Append(&quot;ArrayList中共有成员 &quot;) sb.Append(t.Count.ToString) sb.Append(&quot; 个&quot;) For Each aa As String In t sb.AppendLine() sb.Append(aa) Next End If MsgBox(sb.ToString) &apos;最后输出结果为： &apos;ArrayList中共有 成员 3 个 &apos;Northsnow &apos;塞北的雪 &apos;51CTO list list 属于VB.net中的泛型，具体可以参考相关文献 相互转换12345678910111213141516171819202122&apos;array-arraylist Dim MyIntArray() as integer=&#123;1,2,3&#125;Dim arrList As ArrayList = ArrayList.Adapter(MyIntArray)&apos;array-list Dim strArr as string()Dim listS As New List(Of System.String)(strArr)’arraylist-arrayDim listx As New ArrayList()Dim arrString() As String = DirectCast(listx.ToArray(GetType(String)), String())’ array-listDim str() As System.String=&#123;&quot;str&quot;, &quot;string&quot;, &quot;abc&quot;&#125;Dim listS As New List(Of System.String)(str)’ list- arrayDim listS As New List(Of System.String)()listS.Add(&quot;str&quot;)listS.Add(&quot;hello&quot;)Dim str() As System.String=listS.ToArray() 如果文章对你有一丁点的触动，赏一分钱鼓励一下作者吧]]></content>
+      <categories>
+        <category>vb.net</category>
+      </categories>
+      <tags>
+        <tag>vb.net</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[解决Sublime打开txt文本文件乱码问题]]></title>
+    <url>%2Fblog%2F2018%2F0419-index.html</url>
+    <content type="text"><![CDATA[由于windows系统的txt记事本的默认保存编码格式是GBK，而Sublime text不支持GB2312和GBK编码，因此需要进行转换。本文在sublime text 3的基础上进行测试应用，希望对于有共同遭遇的朋友提供一些指导。 解决步骤 安装sublime text3。本博客相关安装教程。 打开安装完毕的sublime text3 同时按住ctrl + shift + P，弹出的输入框 输入框中输入install package然后按回车 等待出现一个会话框，在会话框里面输入ConvertToUTF8，然后按回车 查看菜单，我相信，你已完成。 如果文章对你有一丁点的触动，赏一分钱鼓励一下作者吧]]></content>
+      <categories>
+        <category>软件列表</category>
+      </categories>
+      <tags>
+        <tag>sublime</tag>
+        <tag>txt乱码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Coding Webide搭建hexo博客next主题]]></title>
+    <url>%2Fblog%2F2018%2F0417-coding-webide-hexo-next.html</url>
+    <content type="text"><![CDATA[发现coding出品了一款Coding WebIDE的工具，据说：Coding WebIDE 是 Coding 自主研发的在线集成开发环境 (IDE)。用户可以通过 WebIDE 创建项目的工作空间, 进行在线开发, 调试等操作。作者针对此进行了尝试应用，并成功搭建了基于next主题的hexo博客。记录过程如下，以供有相同需要的朋友参考。本文利用WebIDE解决了通过网络发布静态博客的问题。其他功能还很多，可以自行尝试。 提示 本教程需要有一定的操作基础，最好在本地搭建过hexo和next的过程。 可以参考，本站中文章：Hexo本地搭建过程使用NexT模板 准备工作 申请coding账户，https://coding.net/ 登录账户，创建一个项目，比如为blog，得到git地址 设置page，得到静态网站刘览地址http://xxxxxx 打开Coding WebIDE 新建工作空间 设置空间hexo环境 打开Coding WebIDE 进入工作空间 点击右侧运行环境 选择ide-tty-hexo，点击使用 稍等片刻可以使用 安装hexo及插件 过程和本地基本没有区别，可以详细参考本站相关文章。Hexo本地搭建过程使用NexT模板 在工作空间左侧点击终端 底部出现命令窗口 输入代码安装hexo到目录hexo并初始化。(注意目录为空的问题。如果更改目录请使用cd 目录) 12npm install hexohexo init 安装插件 123npm install hexo-deployer-git --savenpm install hexo-generator-searchdb --savenpm install hexo-generator-feed 设置根目录_config.yml配置git，以及相关网站及目录问题。不知道的可以搜索相关教程。 注意配置deploy,类型为git，地址为第一步中创建的ssh地址。 配置webide的密匙到相应源码托管平台 运行代码产生密匙，并打开密匙文件，用户名和邮箱自行修改12345git config --global user.name &quot;***&quot;git config --global user.email &quot;**@163.com&quot;ssh-keygen -t rsa -C &quot;**@163.com&quot;cat ~/.ssh/id_rsa.pub 安装next主题 cd到博客目录cd hexo 运行代码安装主程序和扩展 cd到博客主目录 1git clone https://github.com/theme-next/hexo-theme-next themes/next cd到主题theme/next目录下 123git clone https://github.com/theme-next/theme-next-pace source/lib/pacegit clone https://github.com/theme-next/theme-next-needmoreshare2 source/lib/needsharebuttongit clone https://github.com/theme-next/theme-next-reading-progress source/lib/reading_progress 将next目录下的_config.yml复制一份到source\_data目录下，并重新命名next.yml 根据自己需要修改next.yml进行主题配置 产生博客，生成博客 运行命令产生about,和tags页面，以及第一篇博客。 1234cd hexohexo new page &quot;about&quot;hexo new page &quot;tags&quot;hexo new &quot;This is my first blog&quot; 修改source\_post目录下刚创建的文件就是刚创建的博客。 运用WebIDE生成静态博客并上传到相应托管平台的pages服务 运行生成及上传代码 1234cd hexohexo cleanhexo ghexo d 查看http://xxxxxx，应该就能看的你刚创建的博客了。 可能出现的问题 命令行出现问题，看看是不是应该运行在当前目录下 注意配置hexo配置和网站配置的正确性，是网站根目录还是根目录下文件夹 出现问题会有提示，注意根据提示进行解决。 如果文章对你有一丁点的触动，捐一分钱也是对作者的鼓励]]></content>
+      <categories>
+        <category>软件列表</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>coding</tag>
+        <tag>webide</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[在相同平台下多账户进行git管理操作问题]]></title>
+    <url>%2Fblog%2F2018%2F0417-git-private-key-user.html</url>
+    <content type="text"><![CDATA[遇到问题：网上有多个平台提供源码托管服务，比如国外的github,gitlab,以及国内的gitee,coding等公司，如果每个平台注册一个账号，使git项目管理，只要把ssh产生的公匙分别配置到各个托管平台提供的设置ssh公匙上就可以了。但是有的时候可能出于比如躲避女友删除等很多原因，需要在一个平台上注册多个账户，那么怎么处理这种问题呢？下面我给出了自己的解决方法，可能不具有普适性，仅供参考。 术语解释 平台：指源码托管平台，比如网站github,gitlab,gitee,coding等 账户：某个平台下注册的账户，比如用户名为user,可以在github注册，也可以在gitee注册，也有可能不相同。 相同平台多账户：在单个平台下注册的多个账户，比如在github上注册了user1,user2,user3等账户 本文重点解决问题是：在相同平台下多账户进行git管理操作问题。 使用git或其他git客户端生成密匙 我使用的是git extension客户端生成多个密匙。首先打开git extension 点击tool下面的，putty,generate or import key 弹出对话框，点击generate并在上部空白晃动鼠标，等待结束 点击下部save private key，选择保存路径及文件名，记得后缀为.ppk 将私匙配置到网站 将上步中，生成的字符串全选，复制到粘贴板 打开源码托管网站，用账号A登录，设置到相应ssh设置地方 设置多个账户 按照第一步中从新生成一个密匙，并保存到路径，同时命名文件名，依然要记得后缀为.ppk 用账号B登录源码托管网站，把第二次生成的密匙设置到ssh设置地方 这样就解决了问题。 应用环节 我运用git extension客户端进行git项目管理，进行pull或push操作。 多个平台用一个密匙没有问题，如果一个平台多个账户就要选择相应账户对应的密匙。 可能出现的问题 一定要记得存放路径，并且后缀为.ppk 客户端产生的密匙如果想导入到git base进行使用，可以查看本站文章。git客户端和putty客户端共用一个私匙问题 如果生成密匙的时候没有将密匙设置到相应账户，可以打开putty然后加载密匙，之后再将相应密匙设置到平台账户。 如果文章对你有一丁点的触动，请捐一分钱鼓励作者继续创作吧]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>putty</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Connect to coding sql database]]></title>
+    <url>%2Fblog%2F2018%2F0416-index0.html</url>
+    <content type="text"><![CDATA[Just a backup for coding connect to mysql datebase for myself. index.php 12345678910111213141516171819202122232425262728293031323334&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;body&gt;&lt;?php$mysqli = new mysqli($_ENV[&apos;MYSQL_HOST&apos;] . &quot;:&quot; . $_ENV[&apos;MYSQL_PORT&apos;],$_ENV[&apos;MYSQL_USERNAME&apos;],$_ENV[&apos;MYSQL_PASSWORD&apos;],$_ENV[&apos;MYSQL_DBNAME&apos;]);if (mysqli_connect_errno()) &#123; printf(&quot;Connect failed: %s\n&quot;, mysqli_connect_error()); exit();&#125;/* prepare statement */if ($stmt = $mysqli-&gt;prepare(&quot;select id,title from dbtest&quot;)) &#123; $stmt-&gt;execute(); /* bind variables to prepared statement */ $stmt-&gt;bind_result($col1, $col2); /* fetch values */ while ($stmt-&gt;fetch()) &#123; printf(&quot;%s %s\n&quot;, $col1, $col2); &#125; /* close statement */ $stmt-&gt;close();&#125;/* close connection */$mysqli-&gt;close();?&gt; &lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>coding</tag>
+        <tag>code</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[XMind 8 pro update 7软件安装手记]]></title>
+    <url>%2Fblog%2F2018%2F0416-Xmindpro-update7-xmindcrack.html</url>
+    <content type="text"><![CDATA[XMind 8 pro update 7软件的功能作用在此不再赘述，用到的自然知道，想了解具体软件的功能，建议去官方网站或搜索查看。本文只是记录了软件安装过程，以及中间可能遇到的问题，以期下次自己安装时候有迹可循。也为有相同遭遇的朋友提供一些指导。本文插件使用方法来源于网络，仅供测试某些功能，请规范应用。 下载XMind 8 pro update 7源文件 官方下载地址：http://www.xmind.net/download/win/ 网盘预留地址：备用地址：67zu 下载Xmind插件 下载地址：hgb3 安装Xmind 一路下一步就可以了，如果有需要可以更改安装地址。 插件安装过程 将插件放到xmind安装目录下面，我这里是：E:\Program Files (x86)\XMind 找到安装目录中的xmind.ini，安装路径E:\Program Files (x86)\XMind，xmind.ini文件 在XMind.ini最后追加代码，（依实际安装路径进行修改） 1-javaagent:E:\Program Files (x86)\XMind\XMindCrack.jar 配置Xmind联网 方法一：修改hosts 找到hosts文件，C:\Windows\System32\drivers\etc\ 在hosts里面追加代码 12#设置XMind网络127.0.0.1 www.xmind.net 修改完毕 方法二：设置防火墙 打开windows系统控制面板的Windows防火墙 点击左侧中点击高级设置 点击下部出站设置 点击右侧新建规则 选择程序，点击下一步 选择此程序路径，输入E:\Program Files (x86)\XMind.exe（安装实际进行），点击下一步。 填写名称和备注，无关紧要。 保存，确定 设置完毕 打开xmind 8 输入任意邮箱 输入序列号 1XAka34A2rVRYJ4XBIU35UZMUEEF64CMMIYZCK2FZZUQNODEKUHGJLFMSLIQMQUCUBXRENLK6NZL37JXP4PZXQFILMQ2RG5R7G4QNDO3PSOEUBOCDRYSSXZGRARV6MGA33TN2AMUBHEL4FXMWYTTJDEINJXUAV4BAYKBDCZQWVF3LWYXSDCXY546U3NBGOI3ZPAP2SO3CSQFNB7VVIY123456789012345 打开软件进行应用测试。 中间可能遇到的问题 XMind软件版本问题，测试XMind 8 pro update 7可用，如果从官网上下载不好用，可以从网络其他地方下载。 插件也仅仅是针对本软件。一定要把插件放到指定位置，一定要确认。 hosts配置和防火墙配置可以值选择一种，不能忽略。 参考文献 https://www.52pojie.cn/forum.php?mod=viewthread&amp;tid=700444&amp;page=1#pid18961327 https://www.52pojie.cn/thread-630081-1-1.html 如果文章对你有一丁点的帮助，就点个赞吧，感谢你的认可]]></content>
+      <categories>
+        <category>软件列表</category>
+      </categories>
+      <tags>
+        <tag>xmind</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[利用Sublime Text 3实现MarkDown编写和预览入门教程]]></title>
+    <url>%2Fblog%2F2018%2F0415-sublime-text3-markdown-editing-preview.html</url>
+    <content type="text"><![CDATA[你是否如我一样，一直在寻找一款舒服的编辑器来完成Markdown文档的编辑工作？比如用于撰写博客，用于发布steemit文档等。当然，会有朋友推荐编辑器之神的Vim，或神之编辑的Emacs，两阵相争的厮杀声在互联网上更是此起彼伏。定然，血流成河的阵地上演绎着一幕幕悲喜，硝烟弥漫的战场上造就了一个个战神。我也坚信，三十年河东河西的传说定会在网络上不时实现。可能，输赢在理想主义者眼里或许可以用生命衡量，而对于实用主义来讲输赢可能还不及一碗牛肉面令人惊喜。作为一个普普通通的作者我真的没有那么多的时间成本用于学习Vim和Emacs，尤其是那么多的快捷键，作为一个只记流水账的的我来讲，真的好难记。恰有网友推荐说sublime text不错，想想，用一下也不会怀孕，所以今天就下载下来安装试了试，感觉还不错。于是也拿来推荐给朋友试用，也希望和我不论高下，适用最好的心态一样的朋友，来尝试本软件，我相信你定会有收获。本文仅仅是作为一个使用的初级介绍，为有同样需求的朋友提供一份入门参考。文中主要介绍了sublime text的下载安装，markdown editing插件安装及配置，markdown priview插件安装配置及应用，还有可有可无随时失效的注册码。本文方法仅对Windows系统适用，其他系统作者没做测试。 Sublime Text3 下载 根据你windows系统下载相软件版本。 官方网站https://www.sublimetext.com/ 注意：portable version 版本指的是绿色运行包，我建议还是下载安装版本进行安装使用。 软件下载后点击安装，一直下一步就好了。 Markdown Editing安装及配置 打开安装完毕的sublime text3 同时按住ctrl + shift + P，弹出的输入框 输入框中输入package control install然后按回车 等待出现一个会话框，在会话框里面输入markdown editing，然后按回车 等待在软件底部状态栏里面会有信息显示，稍等后就会成功。 重启软件，可以进行相关配置 配置方法：点击顶部菜单Preferences-&gt;Package Seting-&gt;Markdown Editing-&gt;你可以任性的选择设置项目了。反正我使用的默认，高阶教程，自行摸索吧，都是文本配置。 这样就实现了Markdown Editing安装和配置了。 Markdown Preview安装及配置 打开安装完毕的sublime text3 同时按住ctrl + shift + P，弹出的输入框 输入框中输入package control install然后按回车 等待出现一个会话框，在会话框里面输入markdown preview，然后按回车 等待在软件底部状态栏里面会有信息显示，稍等后就会成功。 重启软件，可以进行相关配置 配置方法：点击顶部菜单Preferences-&gt;Package Setting-&gt;Markdown Preview-&gt;Setting Default 赋值打开的文本的内容 点击顶部菜单Preferences-&gt;Package Seting-&gt;Markdown Preview-&gt;Setting Default user 粘贴刚才复制的内容 找到&quot;enable_autoreload&quot;: false,更改为&quot;enable_autoreload&quot;: false,,然后Ctrl+S 这样就实现了Markdown Preview安装和配置了。 配置一键预览 重启Sublime Text3 点击顶部菜单preference-&gt; key bindings 中输入 123[ &#123;&quot;keys&quot;: [&quot;alt+m&quot;], &quot;command&quot;: &quot;markdown_preview&quot;, &quot;args&quot;: &#123; &quot;target&quot;: &quot;browser&quot;&#125;&#125;] 然后Ctrl+S，完成配置。 重启Sublime，打开一个Md文档，并按下Alt+m键试试效果吧。 然后复制Markdown文本，粘贴到内容页面，可以发布到Steemit上了。 配置Sublime实时保存 点击顶部菜单Preferences-&gt;Settings 输入以下下代码 12345678910&#123; &quot;font_size&quot;: 14, &quot;ignored_packages&quot;: [ &quot;Markdown&quot;, &quot;Vintage&quot; ], &quot;theme&quot;: &quot;Adaptive.sublime-theme&quot;, &quot;save_on_focus_lost&quot;: true&#125; 代码中含有了字体和主题设置，重点是&quot;save_on_focus_lost&quot;: true。 配置Sublime中文菜单 打开安装完毕的sublime text3 同时按住ctrl + shift + P，弹出的输入框 输入框中输入install package然后按回车 等待出现一个会话框，在会话框里面输入Chinese Localization，然后按回车 查看菜单，我相信，你已完成。 配置Sublime文件对比 打开安装完毕的sublime text3 同时按住ctrl + shift + P，弹出的输入框 输入框中输入install package然后按回车 等待出现一个会话框，在会话框里面输入Sublimerge3，然后按回车 查看菜单，我相信，你已完成。 Sublime Text 3注册码 仅供学习，请支持购12345678910111213—– BEGIN LICENSE —– TwitterInc 200 User License EA7E-890007 1D77F72E 390CDD93 4DCBA022 FAF60790 61AA12C0 A37081C5 D0316412 4584D136 94D7F7D4 95BC8C1C 527DA828 560BB037 D1EDDD8C AE7B379F 50C9D69D B35179EF 2FE898C4 8E4277A8 555CE714 E1FB0E43 D5D52613 C3D12E98 BC49967F 7652EED2 9D2D2E61 67610860 6D338B72 5CF95C69 E36B85CC 84991F19 7575D828 470A92AB —— END LICENSE —— 文献参考 https://www.cnblogs.com/itbull/p/6182460.html https://blog.csdn.net/marksinoberg/article/details/50993456 sublime插件https://packagecontrol.io/ 如果文章对你有一丁点的触动，捐一分钱也是对作者的鼓励]]></content>
+      <categories>
+        <category>软件列表</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+        <tag>sublime Text3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[中国专利电子申请网找回用户代码及使用CPC客户端各种遭遇总结]]></title>
+    <url>%2Fblog%2F2018%2F0413-patent-user-code-cpc.html</url>
+    <content type="text"><![CDATA[为了某种需求，帮某企业独自电子申请专利，而不是使用代理。中间各种曲折过程，与相同遭遇朋友共分享，并为后来人提供避免相同噩梦的方法。中国专利电子申请网电话打不通，中国知识产权局电话打不通，用户代码丢失，注册邮箱丢失，更改企业信息，CPC客户端数字证书更新，数字证书下载等等这些问题都让我遇到了。亲身经历，记录我是怎么不完美解决的。 获取电子账户自助申请账户，失败寻思着本应该是一件极为容易的事情，打开中国电子专利申请网,找到注册，然后申请就可以了，但是我把企业的信息填进去之后，系统提示，已经存在账户。好吧，更简单了，给企业联系要账户就可以了，纳尼？企业说没有注册过啊，但是后来又说几年前好像申请过。真的让我不知所措。 网址自助找密码，失败我再问企业电子账户登录名和密码是否可还记得，他给了我几个密码去撞库，很显然，我没有得逞。之后我定睛一看，网站上有个找回密码，我就寻思着可能有办法了，按照企业的社会统一代码进行尝试找回密码，卧槽，不对.然后又用营业执照号码去尝试。（PS:你可知道，我给企业打电话要这号码，哪号码，好麻烦啊）。既然到这里了，就继续吧。然后找密码，证件凑齐我想差不多了吧，按提交按钮，卧槽槽槽，网址提醒给我要用户代码，鬼他妈知道用户代码是什么鬼，又给企业打电话咨询，不出所料，他也懵的一逼，还是我自己想办法吧。 找联系方式、有难度第一直觉，打电话问客服，然后找电话号码，找电话号码，找个毛线啊，啥也没有，最后万能的百度给了我答案，联系方式。这个时候，我已经折腾了一上午了。 打电话找客服，联系不上回家吃饭，下午继续搞。好吧，既然有客服就有点希望了吧，我就拨通电话，然后按什么1，又按3，再按1，等待还是按1。联系了一下午，都是跟自动接线员在哪里打交道。我实在是想吐槽，偌大一个中国知识产权局真的就很难有个接线员。一下午就这样过去了，我给公司打电话，让他们有时间也能联系联系。就打电话这个事情，我从百度里面进行搜索看是否有和我遭遇一样的朋友，看看他们是怎么解决的。于是我百度专利局电话打不通，当出现搜索结果的那一刻，我心甚慰，因为之前还和同办公室的同事说是不是我人品问题打不通电话呢。这下看来，的确是偌大一个中国知识产权局的问题，一大波的打不通。也可能是因为没有打不通的人喜欢吐槽吧，不管了，看是不是有什么解决办法，终于，在一个帖子上一个网友大致讲，一般早晨9点过一点点就能打通，再早再晚，你打通的几率就微乎其微。好吧，我就等到明天早晨吧。你要知道这段时间是煎熬的，因为比较着急，所以，很想知道结果，但是没办法，要等。希望明天能打通吧。 终于客服联系上了一大早跑到办公室（PS:可能有人问为什么一大早呢？因为我等的着急），等到9点开始打电话。又是一通3，一个1什么的，真的没有技术含量。两三遍过后，终于接通。一个男同志，我把我的诉求告诉他，说忘记了用户代码，怎么找回？他咨询了我企业名称和营业执照号码，我如实告知，之后他告诉我了用户代码（PS:忍不住一个小惊喜），然后用这个就可以找回密码啦，就可以后续操作了。于是我欣喜若狂，言明非常感谢之后挂了电话就去尝试了。 找回密码的邮箱又找不到了如你看到的题目结局一样，我又遇到问题了。是的，按照男客服给我提供的信息，我去找密码，网站也告诉我说，密码已经发送到注册时候的邮箱，是的，发送到注册时候的邮箱。我寻思着打开企业邮箱记下密码就行了吧，但是万万没有想到，邮箱里面啥也没有，我想是不是有时间延迟，所以我就等吧，花开花谢两次，依然还是没有消息，于是我又找了n次密码，依然还是没有任何回音。猛然一个想法，YY的邮箱肯定不对，偌大一个中国知识产权局应该不会犯这个技术错误。我给企业打电话，企业说就这一个邮箱。没办法，CAO，我又要去找邮箱了，我又要去找邮箱了。通过查阅中国专利电子申请网的网站帮助找相关信息。实在受不了了，在这里要先吐个槽，偌大一个中国知识产权局发布个通知竟然100年不变的word文件格式，即使三行字，也要让人下载一个word查看，真的恶心至极。好吧，我继续，找到了说明，要先登录，再修改邮箱。但是登录我需要密码，我找密码需要邮箱，我改邮箱需要密码。你也看到了，这是一个死循环。没办法，打电话吧，于是又拨通了专利局的客服电话，你猜对了，我没有打通。我想，有刚才打通的经验，起码说明是能打通的，我试着说服自己说客服很忙，要等待，于是我开着电话等待，不骗你，等待按1，我一直按1，大约20分钟，我还在等，我想哭，但是妈妈告诉我，遇事要坚强，所以我忍。挂了电话，咽下苦水，继续打电话，依然没有打通。但是真的，除了继续打，我实在没有办法了。一个上午又过去了，时间过得真的很快。下午我又尝试打了几次，依然没有打通。偌大一个中国知识产权局真的电话好难打。今天是周五，我放弃了，我要回家。 惊喜，电话又打通了周末我没有浪费电话费自取其辱，周一一早我9点继续打电话，打通了，客服是个女同志，告诉她我的诉求，说找回密码的邮箱丢失了，怎么办？她核对了企业信息，用户代码后，告诉我是一个以数字开头的qq邮箱，我说不是，能不能更换，他说可以，需要网上下载一个专利注册信息变更表，然后按照表格填写内容，加盖公章，再附上营业执照复印件，邮寄到知识产权局，然后等消息。尽管我认为偌大一个中国知识产权局在信息时代更改一个邮箱还采取这种低效的邮寄方式实在不可思议，但是起码提供了一个渠道。我不应该认为这是在为独自申请设置障碍，为专利代理企业提供某些契机。以下你知道了，按照她提供的方法，邮寄材料到北京，邮寄2天，审核估计需要2天，估计这周不要想有结果了。 利用bug获悉信息更改结果有空就打开企业邮箱查看，是否已经给反馈信息，但是等了几天依然没有任何消息，企业也打电话催，但是我又有什么办法呢，打电话给知识产权局，结果真的只是浪费电话费自讨没趣。于是我开始抖机灵，如果邮箱更改了的话，我找回密码，新邮箱就应该能收到密码了。所以我就按照这个办法，一次次的试着找回密码，然后返回邮箱查看有没有结果，发现没有任何结果。这么坚持了1周左右，还是没有任何消息，我实在怀疑偌大一个中国知识产权局这的这么低效率吗，网址系统真的这么垃圾吗？我不愿意思考答案，我还要去找回密码呢。突然垃圾两个字在我脑海浮现，若有所得打开垃圾邮件列表，昨天2封，今天1封未读邮件出现在面前，哈哈，果然有戏。密码来也。慢慢，现在要思考一个问题：网易邮箱把国家知识产权局的邮件列为垃圾邮件，是对事情？还是对人呢？算啦，想啥呢，这是系统bug。 如果重来我会这么做 准备公司信息，包括公司名称，营业执照号码，社会统一号码等 打电话客服，根据提示提供证件号码，获取得到用户代码 下载专利注册信息变更表，按照要求填写后邮寄到专利局 等待通知，或者按照找回密码的方式，不断尝试在邮箱内查看，尤其是垃圾邮件里面可能会有。 这样你的用户代码、登录密码就有了。密码在你更改的邮箱里。 终于账户可以登录了，其实又有新状况密码是可以登录了，但是只能使用一次，不吐槽了，记住登录时系统一定是支持：IE（8/9/10）、office2003/2007。登录之前你需要按照网站提供的使用指导安装相关软件，进行网站登录工作。 查阅使用指导并严格步骤执行。 IE版本高于10解决办法 打开页面之后 按F12，打开开发人员工具 如果正常打开略过本步骤没有反应你需要 没有反应你需要安装用于 Windows 7 的 Internet Explorer 11 累积安全更新程序 (KB3008923) 重启计算机继续 点击开发人员工具窗口中仿真按钮 选中左侧文档模式中7默认值 使用用代码和密码登录 切记要始终允许弹出窗口 更改密码因为给的密码是临时密码，只能登录一次，之后失效，需要更改。 更改密码失败尝试 使用密码登录 登录系统后顶部点击其他 点击左侧菜单栏用户管理，中主账户管理 然后看到右侧密码更改 你现在是不能修改的，因为他有可能提示你用的不是IE，没有使用证书登录等问题 现在你只要使用证书登录，但是问题就又来了，证书是什么？哪里获取？ 获取数字证书 使用密码找回功能，登录邮箱再次获取密码，然后密码登录 登录系统后顶部点击其他 点击左侧菜单栏用户管理，中用户证书，证书管理 选中列表中出现的证书，点击查看证书 如果证书存在，很好，你有机会成功 点击下载证书 正常情况下，你点击下载，他会告诉你无法下载，原因可能是没有申请下载或已经下载 如果是没有申请下载，你需要填写相关表格，邮寄到国家专利局申请数字证书，然后再下载 如果是你已经下载或不知道情况下已经存在，可以从ie里面导出证书，在使用指导里面有相关教程 如果证书不存在，对不起，你又遇到大麻烦了 你需要填写相关表格，邮寄到国家专利局申请数字证书，然后再下载 我解决的情况比较特殊，原数字证书过期，我点击了数字证书更新，然后就自动下载到浏览器了。 不管何种方法获得证书，一定要按照使用指导进行导出操作，然后备份，以备不时之需。 数字证书登录 打开国家知识产权局网站 点击右侧证书登录，如果选择证书里面有列表，则说明你有证书了。可以再输入用户名和密码登录了 在之后就可以进行一系列操作了 我更改了密码和一些企业信息 网站也可以进行专利申请的，但是我尝试了一个晚上，结果以失败告终，其实也在意料之中，因为偌大一个中国知识产权局是非常具有原则的，说支持十年前的office2007，版本高一点点我也不会支持的。说是IE7、8、9，绝对不会食言的。真的，偌大一个中国知识产权局，逻辑还真是令人琢磨不透。也怪我，谁让我的系统不在他的支持之列呢，谁让我不迁就他呢。 CPC客户端运行环境搭建 无奈，我的系统除了要支持CPC客户端，还要去兼容自己其他的软件，和个人工作应用习惯，我真的无法只选择CPC客户端而舍弃其他一些软件，比如高版本浏览器，比如高版本的office，还有要不厌其烦的一次次的重置ie客户端。 因此我选择搭建虚拟机，然后在虚拟机里面严格按照偌大一个中国知识产权局所规定的工作环境，去搭建客户端。还好，我会使用Vmware，还好我也曾花时间研究过虚拟机里面系统安装和文件操作。 终于我搭建了环境，Win7,office2007，纯干净系统，期间各种折腾，一言难尽。 CPC客户端安装 安装过程中的各种坑真的，数不胜数。只有自己亲身安装和使用才知道它有多奇葩，真的各种奇葩，天知道偌大一个中国知识产权局怎么就做出来这么一个东西出来，真的不符合偌大一个中国知识产权局的身份。从其网站留言反馈中大家对这个软件的评价就可知一二了。我再说一遍，真的不要误解是故意为个人申请设置障碍啊，我猜偌大一个中国知识产权局真的可能有他自己的难处。 正式说一下安装 先从其工具下载中下载CPC安装程序（20110218） 解压后安装主程序 然后下载CPC客户端离线升级包(2018-03-24) 解压后按照包内说明升级 打开试试，能运行的话恭喜你，你中奖了。如果不能正常运行，也要告诉自己，太正常了，其实本来就是会出问题的，不出问题才怪呢。 安装出现问题怎么办？这个坑种类太多，需要听天由命，或许百度，搜狗，必应，谷歌，雅虎可能会有网友和我一样热心跟你分享他们成功的经验。我也只能帮你到这里了。 没成功的小伙伴，我很同情你们，成功了再看下面导入证书吧。 CPC客户端专利制作和申请 关于专利撰写和填入客户端，详细方法有了我再分享给大家。以下简答说下我遇到的问题。 如果系统没有数字证书要先导入证书之后才能在客户端签名 签名时候我遇到了很多问题，解决方式是严格按照要求配置环境，比如windows系统和office，再就是认真填写专利申请文件，格式特别严格。 总结 好吧，就到这里吧，以上是我的一点点的遭遇以及解决问题的过程 希望有和我共同遭遇的朋友也能把解决问题的方法分享给大家 可能说了也没用，但是还是真心诚恳的希望偌大一个中国知识产权局能够改进升级一下CPC客户端软件，真的太难用了，对系统太挑剔了，实在不行就引入一下竞争，不说啦，都无力了。 重点来了:如果本文对你有所帮助，码字不易，分享不易，捐一分钱我也很开心]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>专利申请</tag>
+        <tag>CPC客户端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[从你修改或创建的office文档中删除个人隐私]]></title>
+    <url>%2Fblog%2F2018%2F0413-Privacy-Protection-yinsibaohu.html</url>
+    <content type="text"><![CDATA[本文声明：如果你对于隐私泄露这个事情不在乎，就不要浪费时间阅读以下文字了 大数据时代显然个人隐私保护情况已经变得步履维艰。尽管我们已经无法收回被人所获取的信息，可能也无法完全杜绝某些别有用心之人对于我们的信息渗透，但是我们可以做的是在他们得逞的道路上设置障碍，延缓他们实现阴暗目的的步伐。MS office文件大家可能或多或少的都使用过，你可知道，你每一次创建，或修改office文件，你个人信息就已经存到文件里面了，当你把文件分享给其他人的时候，你的某些个人信息也随之传给了某些人，那么就有一定泄露的危险。那么，我今天就告诉大家一下从你修改或创建的office文档中删除个人信息。 方法一：文档关闭后自动删除（可能不能完全实现藏匿）。 在打开的office文档的编辑窗口中，点击左上角的文件菜单项。 在打开的文件下拉菜单中，点击选项菜单项。 这时会打开选项窗口，点击左侧边栏的信任中心菜单项。 在右侧窗口中点击信任中心设置按钮。 这时会打开信任中心窗口，点击左侧边栏的隐私选项菜单项。 在右侧窗口中找到保存时从文件属性中删除个人信息一项，取消前面的勾选，最后点击两次确定按钮 。 方法二：发送文件给朋友之前手动删除信息 在文件上右键鼠标，打开属性菜单 点击详细信息选项卡 点击下部删除属性和个人信息链接，打开删除属性对话框 选中从此文件中删除以下属性单选框，并点击底部全选按钮 然后点击底部确定按钮，然后再确认一次，就彻底删除个人信息了。 两种方法说明 两种方法仅仅适用于windows系统 方法一每次都能删除信息，但是也给自己查阅相关信息制造了麻烦。 方法一可能删除信息不彻底，但是一劳永逸 方法二删除信息更彻底，但是对于经常发送文件给其他人的情况下每次手动比较麻烦。 PS：总结 如果文章对你有一丁点的帮助，就点个赞吧，也感谢你对我码字辛苦的认可]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>office</tag>
+        <tag>Privacy Protection</tag>
+        <tag>隐私保护</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[将hexo静态博客next主题安装rss插件功能]]></title>
+    <url>%2Fblog%2F2018%2F0410-hexo-next-rss.html</url>
+    <content type="text"><![CDATA[hexo静态博客，实现rss功能方法，本站亲测可用。 安装插件 进入本地hexo目录 打开gitbash。输入以下命令1npm install hexo-generator-feed 修改站点配置-在本地hexo根目录下的_config.yml文件中，添加以下配置。12345678910# Extensions## Plugins: http://hexo.io/plugins/#RSS订阅plugin:- hexo-generator-feed#Feed Atomfeed:type: atompath: atom.xmllimit: 20 修改主题配置，添加如下配置1rss: /atom.xml 参考文献 https://blog.csdn.net/u011303443/article/details/52333695]]></content>
+      <categories>
+        <category>博客设置</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+        <tag>rss</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[将hexo和next的配置文件独立起来]]></title>
+    <url>%2Fblog%2F2018%2F0410-hexo-next-config-set.html</url>
+    <content type="text"><![CDATA[更新hexo版本和next主题时候，又担心配置丢失。通过官方提供功能，将配置文件_config.yml独立出来，即使通过更更新版本，也不会把配置丢失，只需要把新功能相关的配置，重新复制一下进行配置就好。功能很赞。 更新步骤 确保Hexo 版本为 3.0 或更高 在你站点的hexo/source/_data目录创建一个next.yml文件（如果_data目录不存在，请创建之）。 选择 override: false 检查默认 NexT 配置中的override选项，必须设置为false。在 next.yml文件中，也要设置为 false，或者不定义此选项。 从站点的_config.yml与主题的_config.yml中复制你需要的选项到hexo/source/_data/next.yml中。 然后，在站点的hexo/_config.yml中需要定义theme: next选项（如果需要的话，source_dir: source）。 使用标准参数来启动服务器，生成或部署（hexo clean &amp;&amp; hexo g -d &amp;&amp; hexo s）。 可能存在问题 更新生成后站点出现语言错误，我的解决方法是：不仅仅是要在站点配置中设置语言，还要在新的资源文件中配置语言。其他选项正常。如果你遇到这样问题，可以依法解决。 其他暂时正常。 悲催发现，竟然hexo d不起作用，并且三方插件也好像有问题，因此决定以上不复制站点配置，只复制主题配置 后续出现hexo更新和next主题升级操作直接升级Hexo主程序 建议还是从新安装吧，https://hexo.io/zh-cn/docs/setup.html 或者 123npm install hexo -g #安装 npm update hexo -g #升级 hexo init #初始化 更多命令官方，或者朋友总结 直接升级NexT主题12$ cd your-hexo-site$ git clone https://github.com/theme-next/hexo-theme-next themes/next 后续重点配置 升级完成首先hexo server -g，查看http://localhost:4000是不是正常，如果正常则万事大吉，如果不正常则进行如下步骤 不正常故障排除 在站点_config.yml至少要进行模板theme配置，或者可能还要language配置 复制站点设置_config.yml中需要更改的项目到hexo/source/_data/next.yml文件 复制主题设置中_config.yml中新相关设置到hexo/source/_data/next.yml文件 命令hexo server -g，查看是否正常。 在不正常，就洗洗睡吧 只复制主题配置，站点配置老老实实的升级之前备份一份吧资源参考 https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/DATA-FILES.md]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+        <tag>config.yml</tag>
+        <tag>博客配置</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[博客定位V0.1]]></title>
+    <url>%2Fblog%2F2018%2F0410-blog-orientations.html</url>
+    <content type="text"><![CDATA[关于本博客的定位，是时候要思考一下了。 涉网多年，建站多次，最后基本都无疾而终，可能自己的性格以及做事的风格导致其恶果。这次又重新折腾起来的原因是大概受一些博友的影响，也相对自己行为习惯做一个正确的引导和监督。 明确定位 梳理自己解决问题的思路和方法。自己往往解决完一个问题后，疏于总结，最后再遇到同样问题的时候，又要重新开始，为避免在同一问题上做重复工作，总结还是很有必要的，期望日积月累，形成自己的技术库。 发表自己对于问题的看法。自己也要尝试着有态度，有深度。 网摘录好文。站在巨人的肩上，我可以看得更远。 沟通交流。三人行，必有我师。 拒绝发表 流水日志：建站目的之一最终还是沦落为首要抛弃对象。 有关个人、朋友隐私的信息。大数据时代，显然隐私已成为笑谈，作为一个社会人，我即便不能逃避别有用心之人的窥探，也要在他们行凶的路上提供一些障碍，尽管我可能最终不能阻止他们得逞，但是也要尽力去延缓他们的步伐。 不实言论。拒绝虚假。 不适言论。]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+        <tag>orientations</tag>
+        <tag>博客定位</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo本地搭建过程使用NexT模板]]></title>
+    <url>%2Fblog%2F2018%2F0409-Hexo-NexT-github-config.html</url>
+    <content type="text"><![CDATA[Hexo本地搭建过程使用NexT模板,记录博客建立过程，及部分配置。完成本博客的初步设置，最近修改的主题显示，也包涵在这里。 1. 安装node.js http://nodejs.cn 2.安装git (说明：LTS为长期支持版，Current为当前最新版) https://git-scm.com/ 查看版本： 命令：node -v 3.使用npm安装Hexo 打开cmd.exe cd到blog安装目录:E:\web\hexo cmd 命令 example: 12E:\cd web\hexo 使用npm安装hexo.要等待好久，决定网速 12npm install -g hexo-cli// -g是全局安装的意思。 4.初始化hexo 命令：hexo init 内部文件说明 node_modules：是依赖包 public：存放的是生成的页面 scaffolds：命令生成文章等的模板 source：用命令创建的各种文章 themes：主题 _config.yml：整个博客的配置 db.json：source解析所得到的 package.json：项目所需模块项目的配置信息 做好这些前置工作之后接下来的就是各种配配配置了。 5.注册github 创建账号在https://www.github.com 创建项目名称为{用户名}.github.io 部署pages 创建SSH 在gitbash中输入： ssh-keygen -t rsa -C “youremail@example.com” 生成ssh。然后复制id_rsa.pub文件的内容放到github中 在gitbash中验证是否添加成功： ssh -T git@github.com 6.回到hexo设置 打开博客中_config.yml进行文件配置 冒号之后都是有一个半角空格的 1234deploy: type: git repo: https://github.com/username/username.github.io.git branch: master 在博客目录上gitbase命令 123hexo cleanhexo generatehexo server 打开浏览器查看blog：http://localhost:4000 hexo命令1234567891011121314hexo new &quot;postName&quot; #新建文章hexo new page &quot;pageName&quot; #新建页面hexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）hexo deploy #将.deploy目录部署到GitHubhexo help # 查看帮助hexo version #查看Hexo的版本hexo deploy -g #生成加部署hexo server -g #生成加预览命令的简写hexo n == hexo newhexo g == hexo generatehexo s == hexo serverhexo d == hexo deploy 7.部署到github 安装支持，在博客目录cmd命令 1npm install hexo-deployer-git --save 清理缓存，生成，上传。博客目录中cmd.exe命令 123hexo cleanhexo generatehexo deploy 浏览器中输入username.github.io可以查看博客 8.绑定域名 注册域名 到github中page设置自己购买的域名 cmd中ping username.github.io得到ip 在域名解析中设置cname记录到username.github.io 在a中设置@,ip为刚才ping得到的ip 在hexo博客目录source中创建CNAME文件,内容为域名 9.更改主题-next 下载安装next主题 在博客目录下gitbase命令 1git clone https://github.com/iissnan/hexo-theme-next themes/next 打开 站点配置文件， 找到 theme 字段，并将其值更改为 next 配置文件就是根目录下的_config.yml文件 修改hexo具体配置查看 http://theme-next.iissnan.com/getting-started.html](http://theme-next.iissnan.com/getting-started.html主题修改 强势推荐 https://blog.csdn.net/qq_33699981/article/details/72716951添加rss 安装插件。进入本地hexo目录，打开git bash。输入以下命令 npm install hexo-generator-feed 在本地hexo根目录下的_config.yml文件中，添加以下配置。 12345678910# Extensions## Plugins: http://hexo.io/plugins/#RSS订阅plugin:- hexo-generator-feed#Feed Atomfeed:type: atompath: atom.xmllimit: 20 添加主题配置，在主题目录下的_config.yml目录下，添加如下配置。 rss: /atom.xml文末添加文本结束 在路径 \themes\next\layout\_macro 中新建 passage-end-tag.swig 文件,并添加以下内容： 12345&lt;div&gt; &#123;% if not is_index %&#125; &lt;div style=&quot;text-align:center;color: #ccc;font-size:14px;&quot;&gt;-------------本文结束&lt;i class=&quot;fa fa-paw&quot;&gt;&lt;/i&gt;感谢您的阅读-------------&lt;/div&gt; &#123;% endif %&#125;&lt;/div&gt; 接着打开\themes\next\layout\_macro\post.swig文件，在post-body 之后， post-footer 之前添加 12345 &#123;% if theme.passage_end_tag.enabled and not is_index %&#125;&lt;div&gt; &#123;% include &apos;passage-end-tag.swig&apos; %&#125; &lt;/div&gt; &#123;% endif %&#125; 然后打开主题配置文件（_config.yml),在末尾添加： 123# 文章末尾添加“本文结束”标记passage_end_tag: enabled: true 实现字数统计功能 https://github.com/theme-next/hexo-symbols-count-time顶部加载条 https://github.com/theme-next/theme-next-pace本地搜索 https://github.com/theme-next/hexo-generator-searchdb 10.创作博客 cmd博客根目录下 1234hexo new &quot;postName&quot; //hexo n 也可以 //你自己的博客名称，名为postName.md的文件会建在目 //录/blog/source/_posts下。 说明new格式 $ hexo new [layout] | layout | 路径 | 说明 || :-: | :-: | :-: || post | source/_posts | 默认，可以直接发布 || page | source | 在source下新建一个文件夹 || draft |source/_drafts | 新建文件将保持到_drafts中 | tags两种模式 123456tags: [tag1, tag2, tag3]或者tags: - tag1 - tag2 - tag3 markdown更多语法 之后进行文件编辑，使用markdown格式，然后进行发布 在根目录下cmd.exe12hexo g //生成静态页面hexo d //发布 11.总结自己的疑惑 创建bolog的过程非常接近与code编码的过程，的确符合程序猿的习惯 博客如果多了怎么进行管理？ 增加会了，上该如何进行？ 没有可视化的工具，创建完文件名后需要找到相应的文件位置，打开编辑器进行编辑，感觉有点麻烦。]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+        <tag>博客设置</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[git客户端和putty客户端共用一个私匙问题]]></title>
+    <url>%2Fblog%2F2018%2F0409-git-putty-pub-rsa.html</url>
+    <content type="text"><![CDATA[问题：在进行github公匙管理的时候，希望完成共用一个钥匙的问题。因为gitbase自己可以产生，我使用的putty客户端也可以产生，本文就是将两者合为一个而进行使用。共同使用putty产生的钥匙。 注：id_rsa是ssh的私钥，id_rsa.pub是对应的公钥，以上两个是OpenSSH用的格式，ppk文件中同时包含了公钥和私钥，多见于putty客户端。id_rsa和ppk文件是可以互相转的，可以打开看看，都是纯文本，差别不大 putty产生公匙 保证下载最新的putty客户端https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html 安装相应的版本下载，然后安装，如果安装有其他git客户端，主要保持原有的putty目录一致。 打开puttygen.exe 点击generate，保持鼠标晃动 可见产生相关密匙，可以将这个密匙复制，然后粘贴到各个网站托管项目设置的ssh地方，不在赘述。 然后保存save privatekey,生成*.ppk文件(保存后可以重新导入，并在客户端应用) 点击菜单栏conversions,Conversions,Export OpenSSH key，放到C:/user/用户名/.ssh文件夹下，备用。 将公匙导入gitbase 打开gitbase 以下代码，将公匙传递给git bash,并利用git bash生成器私匙 1234eval `ssh-agent -s`ssh-agentssh-addssh-keygen -f ~/.ssh/id_rsa -y &gt; ~/.ssh/id_rsa.pub 然后运行ssh git@github.com 出现You&#39;ve successfully authenticated, but GitHub does not provide shell access.表示成功完美。 历程参考，对原作者致敬 https://blog.csdn.net/AuthorK/article/details/77894801 https://stackoverflow.com/questions/42863913/key-load-public-invalid-format https://www.cnblogs.com/sunnypei/articles/5811283.html https://www.zhihu.com/question/22427215/answer/21318165]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>github</tag>
+        <tag>putty</tag>
+        <tag>id_rsa</tag>
+        <tag>id_rsa.pub</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[欠下的总要还]]></title>
+    <url>%2Fblog%2F2018%2F0408-index2.html</url>
+    <content type="text"><![CDATA[Good Good Study,Day Day UP! 一句话，欠下的总要归还的。 想法太多，行动太少，以至于会有遗憾。应该极尽可能的去加油。]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+        <tag>虐债</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[站点更新小结V18.04.10]]></title>
+    <url>%2Fblog%2F2018%2F0408-go-to-work.html</url>
+    <content type="text"><![CDATA[Good Good Study,Day Day UP! Reflection 首先要有内容，才需要建立博客，不然有点本末倒置的味道 由此耽误了很多的工作，暂时告一段落 1/40程序员，真的不着调 把自己的主业搞起来，才ok 有时间的话尝试是可以的，但是不能如此的分心啊 Done 记录hexo+next博客配置 至此暂时告别一个段落hexo+next配置内容设置如下 网站配置_config.yml设置内容1234567891011121314151617181920212223title: WQian&apos;S Blogsubtitle: Working For Daybreak...author: WQianlanguage: zh-CNtimezone: Asia/Shanghai...# URL## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;url: https://tgot.netroot: /permalink: blog/:year:month:day-:urlname.htmlpermalink_defaults:urlname: index...theme: next-reloaded...# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy: type: git repo: git@github.com:greedyboy/greedyboy.github.io.git branch: master 主题配置_config.yml设置内容123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475footer: # Specify the date when the site was setup. # If not defined, current year will be used. since: 2018.... # If not defined, will be used `author` from Hexo main config. copyright: # ------------------------------------------------------------- powered: # Hexo link (Powered by Hexo). enable: true # Version info of Hexo after Hexo link (vX.X.X). version: false theme: # Theme &amp; scheme info link (Theme - NexT.scheme). enable: true # Version info of NexT after scheme info (vX.X.X). version: false.... menu: home: / || home about: /about/ || user tags: /tags/ || tags categories: /categories/ || th archives: /archives/ || archive #schedule: /schedule/ || calendar #sitemap: /sitemap.xml || sitemap #commonweal: /404/ || heartbeat .... scheme: Pisces ... social: GitHub: https://github.com/yourname || github E-Mail: mailto:admin@tgot.net || envelope .... # Rewardreward_comment: Thanks for your work.wechatpay: /images/wechatpay.jpgalipay: /images/alipay.jpg#bitcoin: /images/bitcoin.png...post_copyright: enable: true license: &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot; rel=&quot;external nofollow&quot; target=&quot;_blank&quot;&gt;CC BY-NC-SA 4.0&lt;/a&gt;.........!!!!!重点!开启方式hexo主题next目录下$ git clone https://github.com/theme-next/theme-next-reading-progress source/lib/reading_progress然后开启reading_progress: enable: true color: &quot;#37c6c0&quot; height: 2px ......... # CNZZ countcnzz_siteid: 1273359837.......$ git clone https://github.com/theme-next/theme-next-needmoreshare2 source/lib/needsharebuttonneedmoreshare2: enable: true postbottom: enable: true options: iconStyle: box boxForm: horizontal position: bottomCenter networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook float: enable: false options: iconStyle: box boxForm: horizontal position: middleRight networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook 2018-4-9 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354# Post wordcount display settings# Dependencies: https://github.com/theme-next/hexo-symbols-count-timesymbols_count_time: separated_meta: true item_text_post: true item_text_total: false awl: 25 wpm: 200 ## Plugins: http://hexo.io/plugins/#RSS订阅plugin:- hexo-generator-feed#Feed Atomfeed:type: atompath: atom.xmllimit: 20# Table Of Contents in the Sidebartoc: enable: true # Automatically add list number to toc. number: true # Scroll percent label in b2t button. scrollpercent: true # Post wordcount display settings# Dependencies: https://github.com/theme-next/hexo-symbols-count-timesymbols_count_time: separated_meta: true item_text_post: true item_text_total: false awl: 25 wpm: 200# CNZZ countcnzz_siteid: 1273359837# Local search# Dependencies: https://github.com/theme-next/hexo-generator-searchdblocal_search: enable: true # if auto, trigger search by changing input # if manual, trigger search by pressing enter key or search button trigger: auto # show top n results per article, show all results by setting to -1 top_n_per_article: 1 # unescape html strings to the readable one unescape: false]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+        <tag>hexo</tag>
+        <tag>next-theme</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Daily Summary]]></title>
+    <url>%2Fblog%2F2018%2F0408-index.html</url>
+    <content type="text"><![CDATA[Good Good Study,Day Day UP! Done blog目录配置._config.yml 123permalink: blog/:year:month:day-:urlname.htmlpermalink_defaults:urlname: index post模板配置blog\scaffolds\post.md 1234567891011121314151617181920---title: &#123;&#123; title &#125;&#125;date: &#123;&#123; date &#125;&#125;urlname: indextags:- diarycategories:- daybreak---Good Good Study,Day Day UP!## Done- ## Reflection- ## ToDo- Reflection so easy ToDo wait for next good way]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[凑日记]]></title>
+    <url>%2Fblog%2F2018%2F0407-index2.html</url>
+    <content type="text"><![CDATA[Good Good Study,Day Day UP! Done 完善了hexomotor，有一定的想法，回头整理一下。 完善了模板，增删文件 Reflection no time to do nothing. be careful.]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>HexoMotor</tag>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo自动化工具]]></title>
+    <url>%2Fblog%2F2018%2F0407-index1.html</url>
+    <content type="text"><![CDATA[this is a daily summary 完成Visual basic 程序更新hexo博客 自动生成blog 自动创建名称 自动打开文本编辑器编辑文本 自动编译并上传到空间 文件放到blog的目录下面]]></content>
+      <tags>
+        <tag>HexoMotor</tag>
+      </tags>
+  </entry>
+</search>
