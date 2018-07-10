@@ -2,10 +2,98 @@
 <search>
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>%2Fblog%2F2018%2F0531-hello-world.html</url>
+    <url>%2Fblog%2F2018%2F0710-hello-world.html</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[初涉travis ci持续集成]]></title>
+    <url>%2Fblog%2F2018%2F0710-travis-ci-index.html</url>
+    <content type="text"><![CDATA[持续集成，对于外行来说，我还不能完全理解其概念，但是从目前我所应用的一个实例来看，的确对于效率的提升方面，很值得赞赏。本文通过简单教程，记录一下自己利用网络的集成服务实现静态博客的生成。具体来说是通过往软件托管服务器上上传文本文件，然后引发设置的集成服务，自动通过集成服务器实现自动编译，自动将转化后的静态博客内容，上传到指定的服务器。 持续集成概念大师Martin Fowler对持续集成是这样定义的:持续集成是一种软件开发实践，即团队开发成员经常集成他们的工作，通常每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试)来验证，从而尽快地发现集成错误。许多团队发现这个过程可以大大减少集成的问题，让团队能够更快的开发内聚的软件。 以上转自百度百科。持续集成 实现内容用下面图例进行表示。 涉及到的网站 代码托管服务(https://github.com) 网络集成环境(https://travis-ci.org/) 准备工作 去代码托管网站注册账号 创建项目 在本地创建hexo静态博客环境 去网络集成环境注册账号，需要关联github账号 要集成哪个项目就滑动相关滑块就可以了 集成环境配置 在相关选定的项目后面打开配置setting 找到Environment Variables 配置一个变量GH_TOKEN操作github的密匙，其来源于github github操作 github密匙来源路径：github-Settings-Developer settings-Personal access tokens 在项目下创建文件.travis.yml用于集成环境的配置 以下是我的代码。备注以下yourname是指你在github上的用户名。12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849language: node_js #设置语言node_js: stable #设置相应的版本xcache: apt: true directories: - node_modules # 缓存不经常更改的内容before_install: - export TZ=&apos;Asia/Shanghai&apos; # 更改时区install: - npm install #安装hexo及插件script: - hexo clean #清除 - hexo g #生成after_script:#- git clone https://$&#123;GH_REF&#125; .deploy_git # GH_REF是最下面配置的仓库地址 - git clone https://$&#123;CO_REF&#125; .deploy_git # GH_REF是最下面配置的仓库地址 - cd .deploy_git - git checkout master - cd ../ - mv .deploy_git/.git/ ./public/ # 这一步之前的操作是为了保留master分支的提交记录，不然每次git init的话只有1条commit - cd ./public - git config user.name &quot;yourname&quot; #修改name - git config user.email &quot;yourname@163.com&quot; #修改email - git add . - git commit -m &quot;Travis CI Auto Builder at `date +&quot;%Y-%m-%d %H:%M&quot;`&quot; # 提交记录包含时间 跟上面更改时区配合 - git push --force --quiet &quot;https://yourname:$&#123;CO_TOKEN&#125;@$&#123;CO_REF&#125;&quot; master:master #GH_TOKEN是在Travis中配置token的名称branches: only: - master #只监测source分支，source是我的分支的名称，可根据自己情况设置env: global: - GH_REF: github.com/yourname/citest.git #设置GH_REF，注意更改yourname - CO_REF: git.coding.net/yourname/yestit.git #设置GH_REF，注意更改yourname# configure notifications (email, IRC, campfire etc)# please update this section to your needs!# https://docs.travis-ci.com/user/notifications/notifications: email: - yourname@163.com on_success: change on_failure: always 应用结束，可以git一下自己的项目试试，可以进行自动部署了]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[寻找我深处的自己]]></title>
+    <url>%2Fblog%2F2018%2F0710-deepin-my-heart-of-myslef-index.html</url>
+    <content type="text"><![CDATA[寻找深处的自己，那份禁锢的自由。 我爱自由，向往深山，向往大海，向往没有喧闹的安静 喜欢音乐，喜欢看书，喜欢自由的遐想，喜欢一个人安安静静的在哪里 喜欢摄影，喜欢文艺。。。。。 既然喜欢，就去做，安排开时间，一步步来 给心灵找一份寄托，书，摄影或一个简简单单的乐器 方 安]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[运用exce进行网络作业成绩转化为等级]]></title>
+    <url>%2Fblog%2F2018%2F0709-excel-index.html</url>
+    <content type="text"><![CDATA[需要使用网络课程中作业成绩转化为等级制进行应用。编写excel中vbs脚本实现自动实现。只要设置某个路径就可以实现。 导出文件 网络课程课程主页 统计-班级作业 导出文件打开，删除前行，然后按照学号排序，重新插入两个空行 命名文件名为&quot;作业成绩.xls&quot; 放置到与转换文件同目录下 创建模块函数 创建导出作业转成等级ABC.xls 打开文件 开发工具-visual basic-插入-模块-双击模块1-输入函数12345678910111213&apos;函数实现将行号转换为A,B,AA等的形式Function ConvertToLetter(iCol As Integer) As String Dim iAlpha As Integer Dim iRemainder As Integer iAlpha = Int(iCol / 27) iRemainder = iCol - (iAlpha * 26) If iAlpha &gt; 0 Then ConvertToLetter = Chr(iAlpha + 64) End If If iRemainder &gt; 0 Then ConvertToLetter = ConvertToLetter &amp; Chr(iRemainder + 64) End IfEnd Function 创建SET 创建sheet命名SET 输入等级设置规则 A B C D 60 D 60 及 85 C 80 中 96 B 90 良 100 A 60 优 *表格解释 规则A表示： 等级划分为DCBA 当分数小与60的时候为D,小与85的时候为C,小与96的时候为B,否则大于等于96的时候为A 规则C表示： 等级划分为优良中及 分数小与60的时候为及,小与80的时候为中,小与90的时候为良,否则大于等于90的时候为优 脚本等级转换 根据G20数字大小实现相应的等级转换，excel功能实现脚本为1=IF(SET!A1&gt;G20,SET!B1,IF(SET!A2&gt;G20,SET!B2,IF(SET!A3&gt;G20,SET!B3,SET!B4))) 脚本使用表格内容为变量 想引用SET!A1中的内容，并且其中A为sheet1中C3的内容，可以如下替代 12SET!A1INDIRECT(&quot;SET!&quot;&amp; C$3 &amp;&quot;1&quot;) 进一步的，计算C3内字母的下一个字母 12345如果为A,则B为CHAR(CODE(C$3)+1)SET!B1INDIRECT(&quot;SET!&quot;&amp; CHAR(CODE(C$3)+1) &amp;&quot;1&quot;) 脚本等级转换的程序可以更改为如下1=IF(INDIRECT(&quot;SET!&quot;&amp; C$3 &amp;&quot;1&quot;)&gt;G20,INDIRECT(&quot;SET!&quot;&amp; CHAR(CODE(C$3)+1) &amp;&quot;1&quot;),IF(INDIRECT(&quot;SET!&quot;&amp; C$3 &amp;&quot;2&quot;)&gt;G20,INDIRECT(&quot;SET!&quot;&amp; CHAR(CODE(C$3)+1) &amp;&quot;2&quot;),IF(INDIRECT(&quot;SET!&quot;&amp; C$3 &amp;&quot;3&quot;)&gt;G20,INDIRECT(&quot;SET!&quot;&amp; CHAR(CODE(C$3)+1) &amp;&quot;3&quot;),INDIRECT(&quot;SET!&quot;&amp; CHAR(CODE(C$3)+1) &amp;&quot;4&quot;)))) 获取导出成绩 导出的成绩从第7列（G）开始，第8列为时间。间隔一列为一个成绩 G,I,J,L,N为成绩列 希望可以向右侧自增，向下自增 在第C列中引用G列，在D列中引用I列代码 在C中显示7，在D中显示9 122*COLUMN(C5)+1)2*COLUMN(D5)+1) 数字转换为字母 12ConvertToLetter(2*COLUMN(C5)+1)ROW(C3) 跨文件，以表格内容为变量，夸表格引用数据 文件地址在本表格B1中 成绩内容在相关作业统计的表格里面，从G开始间隔存在，放入到C3开始的表格中 1=INDIRECT(&quot;&apos;[&quot; &amp; $B$1 &amp; &quot;]作业统计&quot; &amp;&quot;&apos;!&quot; &amp; ConvertToLetter(2*COLUMN(C3)+1) &amp; ROW(C3) &amp; &quot;&quot;) 跨文件，成绩转等级代码继续更改为 更换G20为上面数据可以 Row(C3)只是为了实现在indirect内数字递增 1=IF(INDIRECT(&quot;SET!&quot;&amp; C$3 &amp;&quot;1&quot;)&gt;value(INDIRECT(&quot;&apos;[&quot; &amp; $B$1 &amp; &quot;]作业统计&quot; &amp;&quot;&apos;!&quot; &amp; ConvertToLetter(2*COLUMN(C5)+1) &amp; ROW(C3) &amp; &quot;&quot;)),INDIRECT(&quot;SET!&quot;&amp; CHAR(CODE(C$3)+1) &amp;&quot;1&quot;),IF(INDIRECT(&quot;SET!&quot;&amp; C$3 &amp;&quot;2&quot;)&gt;value(INDIRECT(&quot;&apos;[&quot; &amp; $B$1 &amp; &quot;]作业统计&quot; &amp;&quot;&apos;!&quot; &amp; ConvertToLetter(2*COLUMN(C5)+1) &amp; ROW(C3) &amp; &quot;&quot;)),INDIRECT(&quot;SET!&quot;&amp; CHAR(CODE(C$3)+1) &amp;&quot;2&quot;),IF(INDIRECT(&quot;SET!&quot;&amp; C$3 &amp;&quot;3&quot;)&gt;value(INDIRECT(&quot;&apos;[&quot; &amp; $B$1 &amp; &quot;]作业统计&quot; &amp;&quot;&apos;!&quot; &amp; ConvertToLetter(2*COLUMN(C5)+1) &amp; ROW(C3) &amp; &quot;&quot;)),INDIRECT(&quot;SET!&quot;&amp; CHAR(CODE(C$3)+1) &amp;&quot;3&quot;),INDIRECT(&quot;SET!&quot;&amp; CHAR(CODE(C$3)+1) &amp;&quot;4&quot;)))) 核心完成，将上面代码填入C3中，下下拉和右拉，成绩自增 在C2中填入等级转换设置A,C等，每个成绩都需要 学号夸文件引入 1=INDIRECT(&quot;&apos;[&quot; &amp; $B$1 &amp; &quot;]作业统计&quot; &amp;&quot;&apos;!A&quot; &amp; ROW(A3) &amp; &quot;&quot;) 姓名跨文件引入 1=INDIRECT(&quot;&apos;[&quot; &amp; $B$1 &amp; &quot;]作业统计&quot; &amp;&quot;&apos;!B&quot; &amp; ROW(A3) &amp; &quot;&quot;) 班级跨文件引入 1=INDIRECT(&quot;&apos;[&quot; &amp; $B$1 &amp; &quot;]作业统计&quot; &amp;&quot;&apos;!F&quot; &amp; ROW(A3) &amp; &quot;&quot;)]]></content>
+      <categories>
+        <category>软件列表</category>
+      </categories>
+      <tags>
+        <tag>excel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[七月来]]></title>
+    <url>%2Fblog%2F2018%2F0701-index.html</url>
+    <content type="text"><![CDATA[七月忽然到来，无安。 最近事多，涉及家庭和自我，自我控制能力还是差的令自己发指，这种状态终究要害苦自己，老岳给我抛出了一个问题，你忙归忙，忙的成效在哪里？的确，成效在哪里，每个人可以为我忙，为我牺牲，但是我自己又是怎么去对待这种牺牲的能？并不是一句对不起就能解决的，担当，要有责任，要对得起送给我的时间。 入手rcjy的房子，签订大定金的方式。最近决定是要搬家的，腾出房子进行出租，要规划，要执行，工作。把该做的事情安排好，要体现效率。制定计划，做好效率工作。 逃无可逃，不能逃，面对，坚强的面对，去解决，事情不会自己解决的，拖延到最后，还是要解决的。已经失去了好多好多，性格，性格，要改变。]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[风雨那般飘摇]]></title>
+    <url>%2Fblog%2F2018%2F0621-wind-rain-index.html</url>
+    <content type="text"><![CDATA[偶有一天，有感。 风不止撩拨我心弦雨如针刺探着我痛的底限你是哪来的这般让我如此坐立不安眼看着鸣鸟划过窗台曾几何时也如斯般逍遥自在而今囚困在这空空的仓不知怎么来又不知将怎么去深夜期待黎明白昼向往黑夜韶华过往已成灰烬朽木之春求逢无望最后只能求变]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[又是一年高考]]></title>
+    <url>%2Fblog%2F2018%2F0607-index.html</url>
+    <content type="text"><![CDATA[今日高考，成千上万的学子又将是一次龙门之跃。祝愿各位都能旗开得胜，心想事成。 那一年，我也高考 依稀记得，考试完，心里懵了，学校让我们收拾行李离校，此时正值收麦子的季节，爸妈是没有时间也没有条件来接我的，我独自抱着自己的行李，搭乘小三轮车从学校到汽车站，下了三轮车，就地在马路中间躺下，不想走，也不知道去哪里，回家，很难向家里人交代，对过了答案，感觉无助和无望，要知道，对于一个从农村出来的学生，高考占据了我人生所有的方向，高考一旦失利，就意味着路途渺茫。想傻子一样，躺在过往车辆的马路中间，心中不但没有畏惧，反倒是感觉一种莫名的柔软，有一丝丝解脱的感觉。闭上眼睛，不知道过了多久，意识到我要回家，浑浑噩噩的等待着结果的下来，在家里，我尽可能的保持沉默，父母也没有对我过多的询问，终于有一天，忍不住了，妈妈和我抱头痛哭，哭的特别伤心特别伤心，妈妈只是说，大不了重新再考。是的，大不了重新再考。心里面依然是痛哭万分。 成绩发布 那个时候，想早点知道成绩只有通过电话查询，家里面没有电话，爸爸陪我去村里面商店里面打电话查成绩，永远不能忘记哪个时候的忐忑，当我拨通电话查询的完毕的时候，我的第一感觉是肯定查错了，一定是查错了。我又查了一次，没有错，是我的成绩，高过重点线7分，突然之间，感觉梦又回来了。带着兴奋回到了家，告诉了妈妈和姐姐。感觉我是兴奋的，世界没有抛弃我。再之后就是填志愿，一开始想填写云南大学，后来妈妈感觉离家太远，就想选择离家近一点的学校，三舅对于志愿给我提示说不如选机械吧，啥时候也不会过时，是个长远的行业，于是就选择了机械，再后来就是大学了。 后记 其实，很多时候，目标的高度，并不是最后的高度。精彩存在于各个地方，他并不局限。 祝福天下学子，得偿所愿。即便名落孙山，也能继续精彩。]]></content>
+      <categories>
+        <category>过往</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[大话英语四六级]]></title>
+    <url>%2Fblog%2F2018%2F0602-index-english-four-six.html</url>
+    <content type="text"><![CDATA[一年一度的四六级考试又即将来临，殊不知，又有很多人面临着这种不喜欢，但是又不得不的考试，挂钩，成了必须。与学位证，与毕业证，与奖学金，与各种优秀评比等等挂钩，使得每个人趋之如骛，但是心里面其实是拒绝的，没办法，要实现一些目的，强制总是有效果的。今天就来说说，四六级考试，这个爱恨交织的梗。无论你是四级成绩查询，还是六级成绩查询，这一切，都显然是你已经深入其坑。就此时，听我细细与你叙说哪些往事。 大纲（讲解大纲） 四六级由来 四六级历年真题 四六级必背单词 四六级培训 我的四六级考试史 四六级成绩查询 致谢]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[打印pdf去除旁边的空白]]></title>
+    <url>%2Fblog%2F2018%2F0531-pdf-delet-blank.html</url>
+    <content type="text"><![CDATA[pdf打印的时候，源文件有的时候会有一个大大的空白，看上去非常令人不舒服，想去掉空白，怎么办呢？怎么切去pdf空白，怎么切边？怎么在打印的时候调整页边距呢？本文就是根据自己的经验对这类问题进行了解决，希望对出现此类问题的朋友有所帮助。具体解决方法如下。 注：本人使用的软件是foxit phantom2.2 打开需要打印的文档 菜单organize Crop Pages 调整边距就可以了 祝你好运]]></content>
+      <categories>
+        <category>软件列表</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
       </tags>
   </entry>
   <entry>

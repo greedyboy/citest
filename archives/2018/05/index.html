@@ -11,10 +11,8 @@
 
 
 
-  
 
-
-<html class="theme-next gemini use-motion" lang="zh-CN">
+<html class="theme-next gemini" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -61,6 +59,10 @@
 
 
 
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
 
 
 
@@ -97,12 +99,12 @@
     root: '/',
     scheme: 'Gemini',
     version: '6.3.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
-    fancybox: false,
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
     fastclick: false,
     lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -201,7 +203,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-right page-archive">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -398,8 +400,8 @@
         
         
          
-        
-        还行! 目前共计 44 篇日志。 继续努力。
+          
+        不错! 目前共计 52 篇日志。 继续努力。
       </span>
       
 
@@ -424,9 +426,9 @@
 
       <h3 class="post-title">
         
-            <a class="post-title-link" href="/blog/2018/0531-hello-world.html" itemprop="url">
+            <a class="post-title-link" href="/blog/2018/0531-pdf-delet-blank.html" itemprop="url">
               
-                <span itemprop="name">Hello World</span>
+                <span itemprop="name">打印pdf去除旁边的空白</span>
               
             </a>
         
@@ -434,7 +436,7 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2018-05-31T09:15:29+08:00"
+              datetime="2018-05-31T10:42:35+08:00"
               content="2018-05-31" >
           05-31
         </time>
@@ -836,7 +838,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">44</span>
+                    <span class="site-state-item-count">52</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -869,7 +871,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">10</span>
+                      
+                    
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -988,7 +992,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">53</span>
+                      
+                    
+                    <span class="site-state-item-count">54</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1125,6 +1131,8 @@
 
 
 
+  
+
 
 
 
@@ -1154,6 +1162,11 @@
   
   
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
   
@@ -1191,12 +1204,6 @@
 
 
   
-
-
-
-	
-
-
 
 
 
