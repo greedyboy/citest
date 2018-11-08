@@ -2,10 +2,224 @@
 <search>
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>%2Fblog%2F2018%2F0710-hello-world.html</url>
+    <url>%2Fblog%2F2018%2F1108-hello-world.html</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python百度语音识别]]></title>
+    <url>%2Fblog%2F2018%2F1107-python-sound-index.html</url>
+    <content type="text"><![CDATA[运用百度语音识别api将语音进行识别。 软件准备 安装python3.7 安装pip 安装ffmpeg 申请百度key 安装baidu-apipip install baidu-aip 步骤及功能 导入mp3文件 利用ffmpeg转换为pcm 利用百度api进行识别 将识别的文字追写到文件 代码实现 参考百度api1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283# 写操作import osimport datetimedef main(): outfile = &apos;result.txt&apos; print(&apos;输入需要转换的文件全名，默认后缀为mp3,回车默认为1.mp3&apos;) filemp3=input(&apos;=&apos;) if filemp3==&apos;&apos;: filemp3=&apos;1.mp3&apos; else: filemp3=filemp3 + &apos;.mp3&apos; print(filemp3) mp32txt(outfile,filemp3) x=input(&apos;回车结束&apos;)def mp32txt(outfile,filemp3): print(&apos;开始转化&apos;) filepcm=&apos;16ktemp.pcm&apos; mp32pcm(filemp3, filepcm) if os.path.exists(filepcm): # 如果文件存在 write_txt(outfile, filemp3, baidu_sound2txt(filepcm)) os.remove(filepcm) # 则删除 # os.unlink(my_file) print(&apos;删除临时文件&apos;) else: print(&apos;查无源文件，转换失败&apos;) print(&apos;结束转化&apos;)def mp32pcm(filemp3,filepcm): from subprocess import call # wav 文件转 16k 16bits 位深的单声道pcm文件 print(&apos;转换文件格式&apos;) call(&apos;ffmpeg -y -i &apos; + filemp3 + &apos; -acodec pcm_s16le -f s16le -ac 1 -ar 16000 &apos; + filepcm + &apos;&apos;)def baidu_sound2txt(sound): #百度识别语音 print(&apos;语音识别中&apos;) from aip import AipSpeech APP_ID = &apos;28076301&apos; API_KEY = &apos;4CjTVzlg9RPsBFFjkvzN46AEb&apos; SECRET_KEY = &apos;yrQ63kzm7jbA8IljOuMTgp4oqCIOhY9zc&apos; client = AipSpeech(APP_ID, API_KEY, SECRET_KEY) from aip import AipSpeech client = AipSpeech(APP_ID, API_KEY, SECRET_KEY) d = client.asr(get_file_content(sound), &apos;pcm&apos;, 16000, &#123;&apos;dev_pid&apos;: &apos;1536&apos;, &#125;) print(d) err_no = d[&apos;err_no&apos;] #print(err_no) if err_no==0: result = d[&apos;result&apos;][0] else: result = &apos;Err:&apos;+ str(err_no) + &apos; http://ai.baidu.com/docs#/ASR-Online-Python-SDK/top&apos; # 删除临时文件 #print(result) return resultdef get_file_content(sound): # 读取文件 with open(sound, &apos;rb&apos;) as fp: return fp.read()def write_txt(filename,sound,txt): #写入文件 print(&apos;写入文件&apos;) with open(filename, &apos;a&apos;, encoding=&apos;utf-8&apos;) as f: time1_str = datetime.datetime.strftime( datetime.datetime.now(), &apos;%Y-%m-%d %H:%M:%S&apos;) f.write(&apos;\n&apos;) f.write(&apos;\n&apos; + time1_str) f.write(&apos;\n&apos; + sound) f.write(&apos;\n&apos;+ txt)if __name__ == &apos;__main__&apos;: main() 参考资料 http://ai.baidu.com/docs#/ASR-Tool-convert/top http://ai.baidu.com/docs#/ASR-Online-Python-SDK/top]]></content>
+      <categories>
+        <category>网络日志</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>ffmpeg</tag>
+        <tag>pcm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[分割录音]]></title>
+    <url>%2Fblog%2F2018%2F1107-split-sound-index.html</url>
+    <content type="text"><![CDATA[遇到分割录音的问题，将录音文件转化为小小的分段，作为他用。主要是按照语音停顿进行分割。 准备工作 安装python 官网下载windows版本：https://www.python.org/downloads/windows/ 32位基于网络安装版本Download Windows x86 web-based installer 32位安装版本Download Windows x86 executable installer 32位文件包Download Windows x86 embeddable zip file 64位基于网络安装版本Download Windows x86-64 web-based installer 64位基于网络安装版本Download Windows x86-64 executable installer 64位基于网络安装版本Download Windows x86-64 embeddable zip file 安装过程中有可能出现安装错误，可以尝试去掉every user选项 安装过程中选择pip插件 在windows系统中添加环境变量，path中添加python目录 安装pydub库 在cmd命令中执行pip install pydub 安装ffmpeg插件 下载static版本https://ffmpeg.zeranoe.com/builds/ 解压，将bin目录添加到环境变量 在cmd里执行ffmpeg -version就可以了查看版本信息了重要代码 基础代码 12345from pydub.silence import split_on_silence# 实现拆分，只要这一句代码就够了chunks = split_on_silence(chunk,min_silence_len=700,silence_thresh=-70)# 这里silence_thresh是认定小于-70dBFS以下的为silence，发现小于-70dBFS部分超过 700毫秒，就进行拆分。这样子分割成一段一段的。 实现单段不超过60s切割 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141142143144145146147148149150151152153154155156157158159160from pydub import AudioSegmentfrom pydub.silence import split_on_silenceimport sysimport osimport timedef main(): # 载入 name = &apos;2.m4a&apos; sound = AudioSegment.from_file(name, &quot;mp4&quot;) sound.export(&quot;temp.wav&quot;, format=&quot;wav&quot;) name = &apos;temp.wav&apos; sound = AudioSegment.from_file(name, &quot;wav&quot;) # sound = sound[:3*60*1000] # 如果文件较大，先取前3分钟测试，根据测试结果，调整参数 # 设置参数 silence_thresh = -70 # 小于-70dBFS以下的为静默 min_silence_len = 700 # 静默超过700毫秒则拆分 length_limit = 60 * 1000 # 拆分后每段不得超过1分钟 abandon_chunk_len = 500 # 放弃小于500毫秒的段 joint_silence_len = 1300 # 段拼接时加入1300毫秒间隔用于断句 # 将录音文件拆分成适合百度语音识别的大小 total = prepare_for_baiduaip(name, sound, silence_thresh, min_silence_len, length_limit, abandon_chunk_len, joint_silence_len)def prepare_for_baiduaip(name, sound, silence_thresh=-70, min_silence_len=700, length_limit=60 * 1000, abandon_chunk_len=500, joint_silence_len=1300): &apos;&apos;&apos; 将录音文件拆分成适合百度语音识别的大小 百度目前免费提供1分钟长度的语音识别。 先按参数拆分录音，拆出来的每一段都小于1分钟。 然后将，时间过短的相邻段合并，合并后依旧不长于1分钟。 Args: name: 录音文件名 sound: 录音文件数据 silence_thresh: 默认-70 # 小于-70dBFS以下的为静默 min_silence_len: 默认700 # 静默超过700毫秒则拆分 length_limit: 默认60*1000 # 拆分后每段不得超过1分钟 abandon_chunk_len: 默认500 # 放弃小于500毫秒的段 joint_silence_len: 默认1300 # 段拼接时加入1300毫秒间隔用于断句 Return: total：返回拆分个数 &apos;&apos;&apos; # 按句子停顿，拆分成长度不大于1分钟录音片段 print(&apos;开始拆分(如果录音较长，请耐心等待)\n&apos;, &apos; *&apos; * 30) chunks = chunk_split_length_limit(sound, min_silence_len=min_silence_len, length_limit=length_limit, silence_thresh=silence_thresh) # silence time:700ms and silence_dBFS&lt;-70dBFS print(&apos;拆分结束，返回段数:&apos;, len(chunks), &apos;\n&apos;, &apos; *&apos; * 30) # 放弃长度小于0.5秒的录音片段 for i in list(range(len(chunks)))[::-1]: if len(chunks[i]) &lt;= abandon_chunk_len: chunks.pop(i) print(&apos;取有效分段：&apos;, len(chunks)) # 时间过短的相邻段合并，单段不超过1分钟 chunks = chunk_join_length_limit(chunks, joint_silence_len=joint_silence_len, length_limit=length_limit) print(&apos;合并后段数：&apos;, len(chunks)) # 保存前处理一下路径文件名 if not os.path.exists(&apos;./chunks&apos;): os.mkdir(&apos;./chunks&apos;) namef, namec = os.path.splitext(name) namec = namec[1:] # 保存所有分段 total = len(chunks) for i in range(total): new = chunks[i] save_name = &apos;%s_%04d.%s&apos; % (namef, i, namec) new.export(&apos;./chunks/&apos; + save_name, format=namec) print(&apos;%04d&apos; % i, len(new)) print(&apos;保存完毕&apos;) return totaldef chunk_split_length_limit(chunk, min_silence_len=700, length_limit=60 * 1000, silence_thresh=-70, level=0): &apos;&apos;&apos; 将声音文件按正常语句停顿拆分，并限定单句最长时间，返回结果为列表形式 Args: chunk: 录音文件 min_silence_len: 拆分语句时，静默满足该长度，则拆分，默认0.7秒。 length_limit：拆分后单个文件长度不超过该值，默认1分钟。 silence_thresh：小于-70dBFS以下的为静默 Return: chunk_splits：拆分后的列表 &apos;&apos;&apos; if len(chunk) &gt; length_limit: # 长度超过length_limit，拆分 print(&apos;%d 执行拆分,len=%d,dBFs=%d&apos; % (level, min_silence_len, silence_thresh)) chunk_splits = split_on_silence(chunk, min_silence_len=min_silence_len, silence_thresh=silence_thresh) # 修改静默时长，并检测是否已经触底 min_silence_len -= 100 if min_silence_len &lt;= 0: tempname = &apos;temp_%d.wav&apos; % int(time.time()) chunk.export(tempname, format=&apos;wav&apos;) print(&apos;%d 参数已经变成负数%d,依旧超长%d,片段已保存至%s&apos; % (level, min_silence_len, len(chunk), tempname)) raise Exception # 处理拆分结果 if len(chunk_splits) &lt; 2: # 拆分失败，缩短静默时间后，嵌套chunk_split_length_limit继续拆 print(&apos;%d 拆分失败,设置间隔时间为%d毫秒,嵌套调用方法继续拆分&apos; % (level, min_silence_len)) chunk_splits = chunk_split_length_limit(chunk, min_silence_len=min_silence_len, length_limit=length_limit, silence_thresh=silence_thresh, level=level + 1) else: # 拆分成功。 print(&apos;%d 拆分成功,共%d段,逐段检查拆分后长度&apos; % (level, len(chunk_splits))) arr = [] min_silence_len -= 100 for c in chunk_splits: if len(c) &lt; length_limit: # 长度没length_limit print(&apos;%d 长度符合,len=%d&apos; % (level, len(c))) arr.append(c) else: # 长度超过length_limit，缩短静默时间后，嵌套chunk_split_length_limit继续拆 print(&apos;%d 长度超过,len=%d,设置dBFs=%d,嵌套调用方法继续拆分&apos; % (level, len(c), min_silence_len)) arr += chunk_split_length_limit(c, min_silence_len=min_silence_len, length_limit=length_limit, silence_thresh=silence_thresh, level=level + 1) chunk_splits = arr else: # 长度没超过length_limit，直接返回即可 chunk_splits = [] chunk_splits.append(chunk) return chunk_splitsdef chunk_join_length_limit(chunks, joint_silence_len=1300, length_limit=60 * 1000): &apos;&apos;&apos; 将声音文件合并，并限定单句最长时间，返回结果为列表形式 Args: chunk: 录音文件 joint_silence_len: 合并时文件间隔，默认1.3秒。 length_limit：合并后单个文件长度不超过该值，默认1分钟。 Return: adjust_chunks：合并后的列表 &apos;&apos;&apos; # silence = AudioSegment.silent(duration=joint_silence_len) adjust_chunks = [] temp = AudioSegment.empty() for chunk in chunks: length = len(temp) + len(silence) + len(chunk) # 预计合并后长度 if length &lt; length_limit: # 小于1分钟，可以合并 temp += silence + chunk else: # 大于1分钟，先将之前的保存，重新开始累加 adjust_chunks.append(temp) temp = chunk else: adjust_chunks.append(temp) return adjust_chunksif __name__ == &apos;__main__&apos;: main() 问题说明 出现问题，有可能是文件本身出现错误。 录音文件注意格式，转换函数需要修改AudioSegment.from_wav。 由于转换的是m4a格式的音频，直接使用有问题，将改为wav之后加载再进行。 参考 https://blog.csdn.net/watfe/article/details/80284242 http://appleu0.sinaapp.com/?p=588]]></content>
+      <categories>
+        <category>软件列表</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>ffmpeg</tag>
+        <tag>pydub</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[致我那损坏的U盘]]></title>
+    <url>%2Fblog%2F2018%2F1102-u-index.html</url>
+    <content type="text"><![CDATA[你走了，谁来忍受我这喜欢拔插的脾气。 无声无息就这样你离我而去尽管我对你有千般不舍可现如今人是物非 再会无期曾经 你只拥有我然而你 却不是我的唯一回首过往点点滴滴插了拔了，拔了插了拔了再插，插了再拔你默默忍受 从不后悔可惜此情可待 已成追忆 好看的皮囊千千万可我唯独爱你骨骼惊奇有趣的灵魂或许万里挑一可我知道它一直就在你的心里虽然我已无法挽回你的别理但是我会将你的灵魂转移让它在这个多变的世界继续有趣]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[只管努力]]></title>
+    <url>%2Fblog%2F2018%2F1102-keep-work-hard-index.html</url>
+    <content type="text"><![CDATA[你只管努力，其他的交给天意。 有一天，网络上听到这句话，感觉很赞。 不努力，是无法得到的，努力了，才无悔。 天意难测，尽人事，听天命。 加油~！！]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[说教]]></title>
+    <url>%2Fblog%2F2018%2F1030-say-do-index.html</url>
+    <content type="text"><![CDATA[不知道从哪天开始，可能彼此不再真诚，也不知道从那天开始，感觉彼此不一样。 有可能就在某年某月某一日，一个可能不太可能的晚上，就突然碰到了你很久之前熟悉的一个人。然后就聊了起来。可能，虽然你们好久没联系，但是却知道彼此的境遇，虽然你们偶尔隔空插科打诨，但是却好久不曾一本正经的胡说八道。或者，你还在心中，认为他还是你曾经认识的哪个他，可事实上，你念旧，并不代表所有人会，你深情，并不代表所有人痴，你还沉积在旧时相处的随性，并不代表他依然沉浸其中。你无法，也不能用你的感受，去一厢情愿的认为他也是。对，就是这样子，你开始由此种种，有了错觉。当带着这种错觉，再跟他聊的时候，已经偏离了固有心理预期的轨道，他不再是你心中的那个他，他不再是你熟悉的哪个他，你认为他理解你，可是他正在用他对理解世界的方式与你相处，你正从认为他是你的唯一的情愫中跌落迷茫的时候，他正在像一颗树看待世界上所有的叶子一样告诉你，秋风来了你们都将落下，而我在明年的春天依然可以生根发芽。 每个人都有倔强的脾气，每个人都有不服输的小心心，可能现实中有很多不堪，可能生活中有很多的不如意，让你处于低谷，让你处于无法昂首挺胸的夹缝，但是并不代表，每个人都可以对你指指点点，每个人都可以对你平头论足，每个人都可以对你说教。 真正懂你的人，会指出你的痛点，然后想办法帮你克服。而不懂装懂的人，可能他无意中的轻描淡写，会让那仅存的美好回忆，趋于模糊，渐行渐远。钱有多有少，位有高有低。你有你的春花秋月，我有我的柴米油盐，虽然我可能不能周游世界，但是我可以徒步原野，或许你认为那皑皑白雪的青藏高原丰伟至极，可能我要告诉你高原反应不是每个人都可以克服的障碍，冬日暖阳里看蚂蚁上树的乐趣，是你开着布加迪威龙，永远也寻找不到的快感。我们都有自己的快乐，不分贵贱，你在为自己的生活拼搏，我也在为我的人生奋斗，倘若能彼此并肩战斗，我要感谢有你一路陪伴，倘若不能，请别说教。]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[追逐健康]]></title>
+    <url>%2Fblog%2F2018%2F1029-run-for-health-index.html</url>
+    <content type="text"><![CDATA[无意间看到李咏去世的消息，再璀璨的烟花，也终将散去，再艳丽的花朵，也躲不过秋风的剪刀。 据报道，10月25日，李咏与癌症抗争17个月后，离开我们，哈文一句“永失我爱”，配图中李咏胸前的红花，鲜艳的令人心痛。每个人，无法逃避死亡的降临，可能有人会用鸿毛或泰山来评价一个人的失去，然而，逝者离开的一刹那，或许他反思的已经超脱我们的想象。央视评价，感谢带给了我们欢乐。 期颐之年而离去，可能是一种幸福，而生命璀璨之时而离去，留下更多的是遗憾。他留给了我们很多欢乐，很多思考。春晚，非常6+1,等等，很美好的回忆。 扎眼的字符“癌症”，相信，在美国的17个月里面，他一定是动用了毕生的资源，去尽可能的挽回生命，可是，在病魔到来的那一刻起，或许一切，都变得那么不再重要，而健康，才是最为重要。 健康不是三言两语，健康是要去追逐，去呵护，去努力，去争取。 爱家人，爱自己，爱健康。]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[面对恐惧-墨菲他爸定律]]></title>
+    <url>%2Fblog%2F2018%2F1024-face-of-fear-index.html</url>
+    <content type="text"><![CDATA[之所以感到恐惧，不是因为我们束手无策，而是因为我们不敢面对。 延伸着“如果你担心某种情况发生，那么它就更有可能发生。”的这一神咒，找到了他来自于著名的墨菲定律，紧接着又看到他其他的观点： 一、任何事都没有表面看起来那么简单； 二、所有的事都会比你预计的时间长； 三、会出错的事总会出错； 四、如果你担心某种情况发生，那么它就更有可能发生。 好吧，我承认，我担心恐惧到来，恐惧真的如期而至，这并不代表我们就没有办法了，因为，我们控制不了它的到来，或者说它一旦到来，我们所要做的就是，面对。 面对之后： 1、虽然恐惧依然存在，可能不再像想象中的那么恐惧； 2、虽然处理恐惧需要很长时间，但时间可能没有像预计的那么长； 3、总有事情做的是对的； 4、如果你希望战胜恐惧，那么它就更可能战胜恐惧； 我称之为“墨菲他爸定律”。]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[逼自己一把就出来了]]></title>
+    <url>%2Fblog%2F2018%2F1009-done-at-last-index.html</url>
+    <content type="text"><![CDATA[逼了自己一把就出来了。 为什么不逼自己就出来呢？ 万事应该留有改进空间，不能拖到最后，最后一时刻完成往往是不靠谱的。过程是脆弱的，一旦有外来干扰，时间往往就不够用了。要做好提前量，才好。 切记，提前把该做的做了。]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[高调行事低调做人]]></title>
+    <url>%2Fblog%2F2018%2F1008-be-a-man-index.html</url>
+    <content type="text"><![CDATA[谁有mate 10，我的mate 9照相不清晰？ 其实我有，但是我没有拿出来，不是我不舍得用，我只是不想成为焦点，可能这就是我，生活在默默之中。 孩子会模仿父亲，想想我的老爸，为人诚恳，从不愿意麻烦别人，只要自己能干的来，从来不愿意张口去向别人请求什么，除非万不得已。而今我的性格有一些也源于父亲，不知道是基因的强大还是后天的影响。甚至我我必拖拉的性格，在老爸那里也体现颇多。 而今我也身为人父，孩子也在慢慢成长，不希望我性格的不足再影响到我的孩子，把能改变的先去改变了，无论是遗传，还是后天影响，都要注重孩子的培养。目前已经发现，孩子不太乐意在其他小朋友面前表现，无论对和错，要清除他内心的胆怯，张扬开来。 最近事多，20181003二宝留在老家，打电话说我们离开他不曾哭闹，也开始慢慢喜欢吃饭，希望他能茁壮成长吧。 关于大宝，要规划好时间，让他在家的生活丰富起来。不能一空闲就看电视，很危险。 打铁还需自身硬，你能力达到了，别人可以帮你，你能力达不到，别人相帮也帮不到。 其实我遇到的贵人很多了，只是自己，做的不够好。 不甘平庸，我也会很强大，孩子家庭，规划，执行。]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[excel查找位置和截取字符函数]]></title>
+    <url>%2Fblog%2F2018%2F1008-excel-find-index.html</url>
+    <content type="text"><![CDATA[将excel中某一个单元格内的字符截取，截取位置并不固定，是按照某个字符串出现的位置开始操作的。希望有用到的朋友一起来吧。 目的 excel单元格中字符“2018/9/27 时间：16:05—17:45”，将2018/9/27和16提取出来，主要依据“时间”出现的位置，来判定截取的位置。 使用函数 =FIND(“时”,D2,1)，用来查找位置 =LEFT(D2,J2-2)，用来截取，得到“2018/9/27” =MID(D2,J2+3,2)，用来取中间位置字符“16” 如果排序中按照所得的两个先后排序，可得按照时间排序。 结论 so easy ,that is all ,thank you.]]></content>
+      <categories>
+        <category>软件列表</category>
+      </categories>
+      <tags>
+        <tag>excel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[记录几句话]]></title>
+    <url>%2Fblog%2F2018%2F1002-index-two-word.html</url>
+    <content type="text"><![CDATA[两句网上的话，感觉特别有道理。 1、做一件事情你认为是没有时间，其实是因为它在你心里不足够重要。 2、睡觉时间都控制不了的人，怎样去控制你的人生？ 3、你无法变优秀，不是因为你不知道，而是因为你做不到。 WQ 加油，每天让主业进步一点点。]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[每一天要进步]]></title>
+    <url>%2Fblog%2F2018%2F0928-index-day-ok.html</url>
+    <content type="text"><![CDATA[每一天都要美美哒。 每一天，做自己该做的事情，不颓废，不拖拉，有计划，前进。]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[可能否]]></title>
+    <url>%2Fblog%2F2018%2F0924-maybe-die-index.html</url>
+    <content type="text"><![CDATA[可能撞了南墙也无法回头了。 自己依然把自己送上了绝路 回望过路，自作自受 机会依然自己没有把握，失去将成定局 天已经无法再眷顾了，因为对我已经够好，只是自己不知道珍惜 可能一切都来的太过容易，才导致自己没有好好努力 真的，不难，一点都不难，完全是自己咎由自取 分明已经给了机会，却依然没有好好把握珍惜。 等待着明天的审批，等待着惩罚的到来，我唯恨自己 可能撞了南墙才知道回头吧 可能到了黄河才会死心吧 而我呢？可能否？ 我已经没有脸面向上天再讨要一次机会 我对自己已经是恨透至极 机会，要好好把握和珍惜，不能因为来的太容易，就忘记自己仍然要努力 明天以后，我将成为别人眼中的笑话，这些可能将是我永久背负的伤疤 我不怨天，我只恨自己，辜负了这么多年家人的期盼 骄傲，不再那么容易 把这个中秋，当成自己过往的死忌 向前跑, 迎着冷眼和嘲笑 一切必须还要继续]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[excel引用于本列相同列文字同行的数据]]></title>
+    <url>%2Fblog%2F2018%2F0731-excel-vlookup-index.html</url>
+    <content type="text"><![CDATA[在excel中可能会遇到引用与目标相同文字所在的行的某一个数据，那么就使用vlookup吧，好用。 使用图来说明，如下想引用E对应的数字，使用代码如下： 1=VLOOKUP(J6,$F$6:$G$12,2,0) 需要注意的是VLOOKUP的参数： 第一个参数表示要查找的文字 第二个参数是表示要查找的范围，要把你需要取的列包括进去 范围的第一列为1，第二列为2，第三列为3，以此类推 false或0吧 that is all,thank me.]]></content>
+      <categories>
+        <category>软件列表</category>
+      </categories>
+      <tags>
+        <tag>excel</tag>
+        <tag>vlookup</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[抖音有毒]]></title>
+    <url>%2Fblog%2F2018%2F0730-douyin-is-drugs-index.html</url>
+    <content type="text"><![CDATA[某日，通过某博客，打开某网页，是抖音的网页版，抖音名声在外，一直认为其就是短视频，又鉴于需要安装app方可刘览，所以一直没有尝试查看其内容，而这次的打开，让我一发不可收拾。 对抖音，有了一定的认识。 乖乖个咚个咚，一旦打开，很难停下来，抖音内容涉及五花八门，内容不限于晒娃，炫富，晒工作，开挖掘机，妹子求婚，靓女撩骚，萌宠自嗨，随歌与舞，翻ppt，画漫画，切萝卜，买衣服，追星，唱歌，弹琴，照照片，街头风景，心理测试，滑板等等等等，好多好多。 而这一些，会上瘾，尤其是无聊打发时间的时候，真上瘾。 看懂其实质，其就是通过品类复杂的视频来吸引不同的人群，娱乐，仅此而已，如果说非得想从上面学习些什么的话，那就是它的经营模式吧，但是作为大多数人，还是笑笑就可以，千万不能把时间大把大把的浪费在上面，太可怕了。 当然，这只是我的看法，有些认为把自己的生活或者绝技晒到上面与大家共享，又或者喜欢关注其他人的生活或囧事，这是没有任何问题的。而以上，只是我自己的观点，我想我自己不能把时间浪费在上面，而你，随便喽。]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[连接树莓派]]></title>
+    <url>%2Fblog%2F2018%2F0724-conect-pi-index.html</url>
+    <content type="text"><![CDATA[学生毕设入手一个树莓派，运用基础的语音及图像识别功能进行相关拓展。进行连接相关基础知识备份，以备后查。 树莓派网络连接需要软件 advanced_pi_xcanner.exe 功能是用于扫描局域网内所有电脑的ip 使用方法是安装后扫描，找到树莓派的ip地址 vnc Viewer 功能是用于用于远程登录树莓派 使用方法，打开软件，输入树莓派ip地址，用户名pi,密码raspberry 然后连接登录 flashfxp 功能是文件传输 使用方法是打开软件 设置连接类型为“SFTP over SSH” 地址或url是上面得到的树莓派ip 端口22 用户名pi 密码raspberry 然后连接 网络桌面登录方法 本方法只是实现网络登录，适用于没有显示器hmid显示屏幕的情况下 给树莓派供电，打开 使用ip scanner.exe扫描得到树莓派ip 使用vnc viewer登录远程桌面 使用flashfxp进行文件传递 物理连接方法 使用hdmi线连接树莓派和显示器 使用键盘和鼠标连接到树莓派 打开树莓派供电 显示器可以进行正常使用查看 后记 更多高级功能需要进一步涉及 可玩性还是比较高的，带儿子感受了一下智能音箱的功能，除了网络延迟的比较厉害外，还是比较好的，有时间可以进一步开发更多的功能。 比较好的项目推荐http://dingdang.hahack.com/]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[pdf正反面打印]]></title>
+    <url>%2Fblog%2F2018%2F0723-print-pdf-index.html</url>
+    <content type="text"><![CDATA[pdf正反面打印小结。生活中用到，试错后进行记录，以备后查。 应用软件 foxit phantom pdf浏览器 hp laserjet1020打印机双面打印设置（先偶数倒页打印，在奇数页正打印） pdf设置打印 设置打印机printer name 设置打印范围print range 设置打印部分subset 偶数页even pages only，勾选倒叙打印Reverse pages 按下ok等待打印结束，之后等待 将打印好的纸质张取出来 然后旋转180度（先出来的一侧再让他先进去）放到盒子里面 然后重新设置打印，正常选取打印机 设置打印范围 设置奇数页打印，正序 点击ok,完毕]]></content>
+      <categories>
+        <category>软件列表</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[橱柜安装记]]></title>
+    <url>%2Fblog%2F2018%2F0720-index.html</url>
+    <content type="text"><![CDATA[拖延的后果是要付出更多的时间去解决未解决的问题，并且还有接受每天问题在侧的焦虑和苦恼。今天要说的，就是这样一件事。 上年年底，决定要安装204的橱柜，思来想去，决定利用过年时间，请大舅哥跑一趟安装一个瓷砖柜体，在老家里面本想找一个做台面的带来，但是年末靠近，工期赶不过来。于是直奔我这里，从老家带来了粘贴好的柜体腿子，并且带了大舅哥的工具，来这里安装。先是在市场里面购买了胶，不锈钢盆，水龙头等所需之物。装了大约4天左右，终于安装好了，市场上也没有定做台面的了，于是他选择赶紧回家过年。而预留的活就是让我买16个螺丝，把碗篮装上，由于附近五金店里面没有，需要去市里面购买，由于稍远，计划路过的时候再买，但是，但是就是这个“路过”，一直从年前，拖延到今天7月20日。要不是这个柜门安装不得已，还不知道要拖到什么时候呢。再就是这个柜门和台面，定了大约有3个多月了，年后放假回来就定了，但是很寸，加工厂由于环保查的严，厂房搬迁，把活给往后推迟了，再后来打了两个电话，也没怎么卖力催，总感觉现在有一个用着呢，不着急，但是万万没有想到，就是这个不着急，一直拖到昨天，才把台面给安装上，固然厂家有一定的责任，但是我责任更多。 在具体说说今天是怎么“路过”市场去买螺丝的。昨天已经规划好今天要去了，只是时间上还没有规划好，早晨起床带jarey和jarbo。姐姐最近来帮我们，做好饭，吃完饭，已经是8：50左右了，然后带着jarzh去办公室，9点说好的加班整理材料，9点开完会，大约10左右，我自己回家开车去东兴，大约10：30左右，买了20个螺丝垫片和配套螺栓，之后就赶紧回家，路过农贸市场，买了一些菜，到家大约12：00左右，就这样，一上午过去了。倘若之前几次从那里路过，就不是这种情况了，规划很重要，自己不能拖。 最近jarzh在这里做作业也是，看到他到现在连自己的作业总共有多少，每天要做多少，几天做完这样的事情自己都安排不好，我真心理着急，管理时间是一门科学，真希望他能悟到。]]></content>
+      <categories>
+        <category>daybreak</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[穿衣服的故事]]></title>
+    <url>%2Fblog%2F2018%2F0719-about-dress-index.html</url>
+    <content type="text"><![CDATA[那是一件关于jarey穿衣服的故事。 故事发生在一个清晨，那是有关jarey穿衣服的故事。早晨起床，我让jr自己穿上衣服，xf已经把衣服放到沙发上了，他坐在沙发上拿着自己的短裤看来看去，然后说：“妈妈这个短裤上有点脏”，我把原话转述给了xf，xf说“没事的，洗不掉了。”，小家伙拿着衣服看看，过了一会说：“我今天想穿带面包的衣服，这个带小螃蟹的衣服太难穿了”。 我真的想把这么多的事情延续下去，有个人说过，不是没有时间，而是你认为他不重要。若干年后，这些事情，真的值得珍藏和回忆，我所缺少的，尽可能的不要发生在我孩子身上。]]></content>
+      <categories>
+        <category>jarey</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
       </tags>
   </entry>
   <entry>

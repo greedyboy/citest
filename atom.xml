@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wqian.net/"/>
-  <updated>2018-07-10T15:45:36.234Z</updated>
+  <updated>2018-11-08T01:32:16.664Z</updated>
   <id>https://wqian.net/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://wqian.net/blog/2018/0710-hello-world.html"/>
-    <id>https://wqian.net/blog/2018/0710-hello-world.html</id>
-    <published>2018-07-10T15:45:36.234Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
+    <link href="https://wqian.net/blog/2018/1108-hello-world.html"/>
+    <id>https://wqian.net/blog/2018/1108-hello-world.html</id>
+    <published>2018-11-08T01:32:16.664Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><a id="more"></a><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
@@ -40,13 +40,13 @@
   </entry>
   
   <entry>
-    <title>初涉travis ci持续集成</title>
-    <link href="https://wqian.net/blog/2018/0710-travis-ci-index.html"/>
-    <id>https://wqian.net/blog/2018/0710-travis-ci-index.html</id>
-    <published>2018-07-10T11:29:12.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
+    <title>python百度语音识别</title>
+    <link href="https://wqian.net/blog/2018/1107-python-sound-index.html"/>
+    <id>https://wqian.net/blog/2018/1107-python-sound-index.html</id>
+    <published>2018-11-07T12:03:43.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
     
-    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>持续集成，对于外行来说，我还不能完全理解其概念，但是从目前我所应用的一个实例来看，的确对于效率的提升方面，很值得赞赏。本文通过简单教程，记录一下自己利用网络的集成服务实现静态博客的生成。具体来说是通过往软件托管服务器上上传文本文件，然后引发设置的集成服务，自动通过集成服务器实现自动编译，自动将转化后的静态博客内容，上传到指定的服务器。</p></blockquote><a id="more"></a><h3 id="持续集成概念"><a href="#持续集成概念" class="headerlink" title="持续集成概念"></a>持续集成概念</h3><p>大师Martin Fowler对持续集成是这样定义的:持续集成是一种软件开发实践，即团队开发成员经常集成他们的工作，通常每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试)来验证，从而尽快地发现集成错误。许多团队发现这个过程可以大大减少集成的问题，让团队能够更快的开发内聚的软件。</p><ul><li>以上转自百度百科。<a href="https://baike.baidu.com/item/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/6250744" target="_blank" rel="noopener">持续集成</a></li></ul><h3 id="实现内容"><a href="#实现内容" class="headerlink" title="实现内容"></a>实现内容</h3><p>用下面图例进行表示。</p><h3 id="涉及到的网站"><a href="#涉及到的网站" class="headerlink" title="涉及到的网站"></a>涉及到的网站</h3><ul><li>代码托管服务(<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a>)</li><li>网络集成环境(<a href="https://travis-ci.org/" target="_blank" rel="noopener">https://travis-ci.org/</a>)</li></ul><h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ul><li>去代码托管网站注册账号</li><li>创建项目</li><li>在本地创建hexo静态博客环境</li><li>去网络集成环境注册账号，需要关联github账号</li><li>要集成哪个项目就滑动相关滑块就可以了</li></ul><h3 id="集成环境配置"><a href="#集成环境配置" class="headerlink" title="集成环境配置"></a>集成环境配置</h3><ul><li>在相关选定的项目后面打开配置<code>setting</code></li><li>找到<code>Environment Variables</code></li><li>配置一个变量<code>GH_TOKEN</code>操作github的密匙，其来源于github</li></ul><h3 id="github操作"><a href="#github操作" class="headerlink" title="github操作"></a>github操作</h3><ul><li>github密匙来源路径：<code>github</code>-<code>Settings</code>-<code>Developer settings</code>-<code>Personal access tokens</code></li><li>在项目下创建文件<code>.travis.yml</code>用于集成环境的配置</li><li>以下是我的代码。备注以下yourname是指你在github上的用户名。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">language: node_js  #设置语言</span><br><span class="line"></span><br><span class="line">node_js: stable  #设置相应的版本x</span><br><span class="line"></span><br><span class="line">cache:</span><br><span class="line">    apt: true</span><br><span class="line">    directories:</span><br><span class="line">        - node_modules # 缓存不经常更改的内容</span><br><span class="line"></span><br><span class="line">before_install:</span><br><span class="line">    - export TZ=&apos;Asia/Shanghai&apos; # 更改时区</span><br><span class="line"></span><br><span class="line">install:</span><br><span class="line">  - npm install  #安装hexo及插件</span><br><span class="line"></span><br><span class="line">script:</span><br><span class="line">  - hexo clean  #清除</span><br><span class="line">  - hexo g  #生成</span><br><span class="line"></span><br><span class="line">after_script:</span><br><span class="line">#- git clone https://$&#123;GH_REF&#125; .deploy_git  # GH_REF是最下面配置的仓库地址</span><br><span class="line">  - git clone https://$&#123;CO_REF&#125; .deploy_git  # GH_REF是最下面配置的仓库地址</span><br><span class="line">  - cd .deploy_git</span><br><span class="line">  - git checkout master</span><br><span class="line">  - cd ../</span><br><span class="line">  - mv .deploy_git/.git/ ./public/   # 这一步之前的操作是为了保留master分支的提交记录，不然每次git init的话只有1条commit</span><br><span class="line">  - cd ./public</span><br><span class="line">  - git config user.name &quot;yourname&quot;  #修改name</span><br><span class="line">  - git config user.email &quot;yourname@163.com&quot;  #修改email</span><br><span class="line">  - git add .</span><br><span class="line">  - git commit -m &quot;Travis CI Auto Builder at `date +&quot;%Y-%m-%d %H:%M&quot;`&quot;  # 提交记录包含时间 跟上面更改时区配合</span><br><span class="line">  - git push --force --quiet &quot;https://yourname:$&#123;CO_TOKEN&#125;@$&#123;CO_REF&#125;&quot; master:master  #GH_TOKEN是在Travis中配置token的名称</span><br><span class="line"></span><br><span class="line">branches:</span><br><span class="line">  only:</span><br><span class="line">    - master  #只监测source分支，source是我的分支的名称，可根据自己情况设置</span><br><span class="line">env:</span><br><span class="line"> global:</span><br><span class="line">   - GH_REF: github.com/yourname/citest.git  #设置GH_REF，注意更改yourname</span><br><span class="line">   - CO_REF: git.coding.net/yourname/yestit.git  #设置GH_REF，注意更改yourname</span><br><span class="line"></span><br><span class="line"># configure notifications (email, IRC, campfire etc)</span><br><span class="line"># please update this section to your needs!</span><br><span class="line"># https://docs.travis-ci.com/user/notifications/</span><br><span class="line">notifications:</span><br><span class="line">  email:</span><br><span class="line">    - yourname@163.com</span><br><span class="line">  on_success: change</span><br><span class="line">  on_failure: always</span><br></pre></td></tr></table></figure></li></ul><h3 id="应用结束，可以git一下自己的项目试试，可以进行自动部署了"><a href="#应用结束，可以git一下自己的项目试试，可以进行自动部署了" class="headerlink" title="应用结束，可以git一下自己的项目试试，可以进行自动部署了"></a>应用结束，可以git一下自己的项目试试，可以进行自动部署了</h3>]]></content>
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>运用百度语音识别api将语音进行识别。</p></blockquote><a id="more"></a><h3 id="软件准备"><a href="#软件准备" class="headerlink" title="软件准备"></a>软件准备</h3><ul><li>安装python3.7</li><li>安装pip</li><li>安装ffmpeg</li><li>申请百度key</li><li>安装baidu-api<code>pip install baidu-aip</code></li></ul><h3 id="步骤及功能"><a href="#步骤及功能" class="headerlink" title="步骤及功能"></a>步骤及功能</h3><ul><li>导入mp3文件</li><li>利用ffmpeg转换为pcm</li><li>利用百度api进行识别</li><li>将识别的文字追写到文件</li></ul><h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><ul><li>参考百度api<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line"># 写操作</span><br><span class="line">import os</span><br><span class="line">import datetime</span><br><span class="line">def main():</span><br><span class="line">    outfile = &apos;result.txt&apos;</span><br><span class="line">    print(&apos;输入需要转换的文件全名，默认后缀为mp3,回车默认为1.mp3&apos;)</span><br><span class="line">    filemp3=input(&apos;=&apos;)</span><br><span class="line">    if filemp3==&apos;&apos;:</span><br><span class="line">        filemp3=&apos;1.mp3&apos;</span><br><span class="line">    else:</span><br><span class="line">        filemp3=filemp3 + &apos;.mp3&apos;</span><br><span class="line"></span><br><span class="line">    print(filemp3)</span><br><span class="line">    mp32txt(outfile,filemp3)</span><br><span class="line">    x=input(&apos;回车结束&apos;)</span><br><span class="line"></span><br><span class="line">def mp32txt(outfile,filemp3):</span><br><span class="line">    print(&apos;开始转化&apos;)</span><br><span class="line">    filepcm=&apos;16ktemp.pcm&apos;</span><br><span class="line">    mp32pcm(filemp3, filepcm)</span><br><span class="line">    if os.path.exists(filepcm):  # 如果文件存在</span><br><span class="line">        write_txt(outfile, filemp3, baidu_sound2txt(filepcm))</span><br><span class="line"></span><br><span class="line">        os.remove(filepcm)  # 则删除</span><br><span class="line">        # os.unlink(my_file)</span><br><span class="line">        print(&apos;删除临时文件&apos;)</span><br><span class="line">    else:</span><br><span class="line">        print(&apos;查无源文件，转换失败&apos;)</span><br><span class="line"></span><br><span class="line">    print(&apos;结束转化&apos;)</span><br><span class="line"></span><br><span class="line">def mp32pcm(filemp3,filepcm):</span><br><span class="line">    from subprocess import call</span><br><span class="line">    # wav 文件转 16k 16bits 位深的单声道pcm文件</span><br><span class="line">    print(&apos;转换文件格式&apos;)</span><br><span class="line">    call(&apos;ffmpeg -y  -i &apos; + filemp3 + &apos;  -acodec pcm_s16le -f s16le -ac 1 -ar 16000 &apos; + filepcm + &apos;&apos;)</span><br><span class="line"></span><br><span class="line">def baidu_sound2txt(sound):</span><br><span class="line">    #百度识别语音</span><br><span class="line">    print(&apos;语音识别中&apos;)</span><br><span class="line">    from aip import AipSpeech</span><br><span class="line">    APP_ID = &apos;28076301&apos;</span><br><span class="line">    API_KEY = &apos;4CjTVzlg9RPsBFFjkvzN46AEb&apos;</span><br><span class="line">    SECRET_KEY = &apos;yrQ63kzm7jbA8IljOuMTgp4oqCIOhY9zc&apos;</span><br><span class="line">    client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)</span><br><span class="line"></span><br><span class="line">    from aip import AipSpeech</span><br><span class="line">    client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)</span><br><span class="line"></span><br><span class="line">    d = client.asr(get_file_content(sound), &apos;pcm&apos;, 16000, &#123;&apos;dev_pid&apos;: &apos;1536&apos;, &#125;)</span><br><span class="line"></span><br><span class="line">    print(d)</span><br><span class="line">    err_no = d[&apos;err_no&apos;]</span><br><span class="line">    #print(err_no)</span><br><span class="line">    if err_no==0:</span><br><span class="line">        result = d[&apos;result&apos;][0]</span><br><span class="line">    else:</span><br><span class="line">        result = &apos;Err:&apos;+ str(err_no) + &apos;   http://ai.baidu.com/docs#/ASR-Online-Python-SDK/top&apos;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    # 删除临时文件</span><br><span class="line">    #print(result)</span><br><span class="line"></span><br><span class="line">    return result</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def get_file_content(sound):</span><br><span class="line">    # 读取文件</span><br><span class="line">    with open(sound, &apos;rb&apos;) as fp:</span><br><span class="line">        return fp.read()</span><br><span class="line"></span><br><span class="line">def write_txt(filename,sound,txt):</span><br><span class="line">    #写入文件</span><br><span class="line">    print(&apos;写入文件&apos;)</span><br><span class="line">    with open(filename, &apos;a&apos;, encoding=&apos;utf-8&apos;) as f:</span><br><span class="line">         time1_str = datetime.datetime.strftime( datetime.datetime.now(), &apos;%Y-%m-%d %H:%M:%S&apos;)</span><br><span class="line">         f.write(&apos;\n&apos;)</span><br><span class="line">         f.write(&apos;\n&apos; + time1_str)</span><br><span class="line">         f.write(&apos;\n&apos; + sound)</span><br><span class="line">         f.write(&apos;\n&apos;+ txt)</span><br><span class="line"></span><br><span class="line">if __name__ == &apos;__main__&apos;:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure></li></ul><h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul><li><a href="http://ai.baidu.com/docs#/ASR-Tool-convert/top" target="_blank" rel="noopener">http://ai.baidu.com/docs#/ASR-Tool-convert/top</a></li><li><a href="http://ai.baidu.com/docs#/ASR-Online-Python-SDK/top" target="_blank" rel="noopener">http://ai.baidu.com/docs#/ASR-Online-Python-SDK/top</a></li></ul>]]></content>
     
     <summary type="html">
     
@@ -54,7 +54,69 @@
 &lt;!--![图]() --&gt;
 &lt;!--[]() --&gt;
 &lt;blockquote&gt;
-&lt;p&gt;持续集成，对于外行来说，我还不能完全理解其概念，但是从目前我所应用的一个实例来看，的确对于效率的提升方面，很值得赞赏。本文通过简单教程，记录一下自己利用网络的集成服务实现静态博客的生成。具体来说是通过往软件托管服务器上上传文本文件，然后引发设置的集成服务，自动通过集成服务器实现自动编译，自动将转化后的静态博客内容，上传到指定的服务器。&lt;/p&gt;
+&lt;p&gt;运用百度语音识别api将语音进行识别。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="网络日志" scheme="https://wqian.net/categories/%E7%BD%91%E7%BB%9C%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="python" scheme="https://wqian.net/tags/python/"/>
+    
+      <category term="ffmpeg" scheme="https://wqian.net/tags/ffmpeg/"/>
+    
+      <category term="pcm" scheme="https://wqian.net/tags/pcm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>分割录音</title>
+    <link href="https://wqian.net/blog/2018/1107-split-sound-index.html"/>
+    <id>https://wqian.net/blog/2018/1107-split-sound-index.html</id>
+    <published>2018-11-07T09:14:13.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
+    
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>遇到分割录音的问题，将录音文件转化为小小的分段，作为他用。主要是按照语音停顿进行分割。</p></blockquote><a id="more"></a><h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ul><li>安装python<ul><li>官网下载windows版本：<a href="https://www.python.org/downloads/windows/" target="_blank" rel="noopener">https://www.python.org/downloads/windows/</a> </li><li>32位基于网络安装版本Download Windows x86 web-based installer</li><li>32位安装版本Download Windows x86 executable installer</li><li>32位文件包Download Windows x86 embeddable zip file</li><li>64位基于网络安装版本Download Windows x86-64 web-based installer</li><li>64位基于网络安装版本Download Windows x86-64 executable installer</li><li>64位基于网络安装版本Download Windows x86-64 embeddable zip file</li><li>安装过程中有可能出现安装错误，可以尝试去掉every user选项</li><li>安装过程中选择pip插件</li><li>在windows系统中添加环境变量，path中添加python目录</li></ul></li><li>安装pydub库<ul><li>在cmd命令中执行<code>pip install  pydub</code></li></ul></li><li>安装ffmpeg插件<ul><li>下载static版本<a href="https://ffmpeg.zeranoe.com/builds/" target="_blank" rel="noopener">https://ffmpeg.zeranoe.com/builds/</a></li><li>解压，将bin目录添加到环境变量</li><li>在cmd里执行<code>ffmpeg -version</code>就可以了查看版本信息了<h3 id="重要代码"><a href="#重要代码" class="headerlink" title="重要代码"></a>重要代码</h3></li></ul></li><li><p>基础代码</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">from pydub.silence import split_on_silence</span><br><span class="line"></span><br><span class="line"># 实现拆分，只要这一句代码就够了</span><br><span class="line">chunks = split_on_silence(chunk,min_silence_len=700,silence_thresh=-70)</span><br><span class="line"># 这里silence_thresh是认定小于-70dBFS以下的为silence，发现小于-70dBFS部分超过 700毫秒，就进行拆分。这样子分割成一段一段的。</span><br></pre></td></tr></table></figure></li><li><p>实现单段不超过60s切割</p></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br></pre></td><td class="code"><pre><span class="line">from pydub import AudioSegment</span><br><span class="line">from pydub.silence import split_on_silence</span><br><span class="line">import sys</span><br><span class="line">import os</span><br><span class="line">import time</span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    # 载入</span><br><span class="line">    name = &apos;2.m4a&apos;</span><br><span class="line">    sound = AudioSegment.from_file(name, &quot;mp4&quot;)</span><br><span class="line">    sound.export(&quot;temp.wav&quot;, format=&quot;wav&quot;)</span><br><span class="line">    name = &apos;temp.wav&apos;</span><br><span class="line">    sound = AudioSegment.from_file(name, &quot;wav&quot;)</span><br><span class="line">    # sound = sound[:3*60*1000] # 如果文件较大，先取前3分钟测试，根据测试结果，调整参数</span><br><span class="line"></span><br><span class="line">    # 设置参数</span><br><span class="line">    silence_thresh = -70  # 小于-70dBFS以下的为静默</span><br><span class="line">    min_silence_len = 700  # 静默超过700毫秒则拆分</span><br><span class="line">    length_limit = 60 * 1000  # 拆分后每段不得超过1分钟</span><br><span class="line">    abandon_chunk_len = 500  # 放弃小于500毫秒的段</span><br><span class="line">    joint_silence_len = 1300  # 段拼接时加入1300毫秒间隔用于断句</span><br><span class="line"></span><br><span class="line">    # 将录音文件拆分成适合百度语音识别的大小</span><br><span class="line">    total = prepare_for_baiduaip(name, sound, silence_thresh, min_silence_len, length_limit, abandon_chunk_len,</span><br><span class="line">                                 joint_silence_len)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def prepare_for_baiduaip(name, sound, silence_thresh=-70, min_silence_len=700, length_limit=60 * 1000,</span><br><span class="line">                         abandon_chunk_len=500, joint_silence_len=1300):</span><br><span class="line">    &apos;&apos;&apos;</span><br><span class="line">    将录音文件拆分成适合百度语音识别的大小</span><br><span class="line">    百度目前免费提供1分钟长度的语音识别。</span><br><span class="line">    先按参数拆分录音，拆出来的每一段都小于1分钟。</span><br><span class="line">    然后将，时间过短的相邻段合并，合并后依旧不长于1分钟。</span><br><span class="line"></span><br><span class="line">    Args:</span><br><span class="line">        name: 录音文件名</span><br><span class="line">        sound: 录音文件数据</span><br><span class="line">        silence_thresh: 默认-70      # 小于-70dBFS以下的为静默</span><br><span class="line">        min_silence_len: 默认700     # 静默超过700毫秒则拆分</span><br><span class="line">        length_limit: 默认60*1000    # 拆分后每段不得超过1分钟</span><br><span class="line">        abandon_chunk_len: 默认500   # 放弃小于500毫秒的段</span><br><span class="line">        joint_silence_len: 默认1300  # 段拼接时加入1300毫秒间隔用于断句</span><br><span class="line">    Return:</span><br><span class="line">        total：返回拆分个数</span><br><span class="line">    &apos;&apos;&apos;</span><br><span class="line"></span><br><span class="line">    # 按句子停顿，拆分成长度不大于1分钟录音片段</span><br><span class="line">    print(&apos;开始拆分(如果录音较长，请耐心等待)\n&apos;, &apos; *&apos; * 30)</span><br><span class="line">    chunks = chunk_split_length_limit(sound, min_silence_len=min_silence_len, length_limit=length_limit,</span><br><span class="line">                                      silence_thresh=silence_thresh)  # silence time:700ms and silence_dBFS&lt;-70dBFS</span><br><span class="line">    print(&apos;拆分结束，返回段数:&apos;, len(chunks), &apos;\n&apos;, &apos; *&apos; * 30)</span><br><span class="line"></span><br><span class="line">    # 放弃长度小于0.5秒的录音片段</span><br><span class="line">    for i in list(range(len(chunks)))[::-1]:</span><br><span class="line">        if len(chunks[i]) &lt;= abandon_chunk_len:</span><br><span class="line">            chunks.pop(i)</span><br><span class="line">    print(&apos;取有效分段：&apos;, len(chunks))</span><br><span class="line"></span><br><span class="line">    # 时间过短的相邻段合并，单段不超过1分钟</span><br><span class="line">    chunks = chunk_join_length_limit(chunks, joint_silence_len=joint_silence_len, length_limit=length_limit)</span><br><span class="line">    print(&apos;合并后段数：&apos;, len(chunks))</span><br><span class="line"></span><br><span class="line">    # 保存前处理一下路径文件名</span><br><span class="line">    if not os.path.exists(&apos;./chunks&apos;): os.mkdir(&apos;./chunks&apos;)</span><br><span class="line">    namef, namec = os.path.splitext(name)</span><br><span class="line">    namec = namec[1:]</span><br><span class="line"></span><br><span class="line">    # 保存所有分段</span><br><span class="line">    total = len(chunks)</span><br><span class="line">    for i in range(total):</span><br><span class="line">        new = chunks[i]</span><br><span class="line">        save_name = &apos;%s_%04d.%s&apos; % (namef, i, namec)</span><br><span class="line">        new.export(&apos;./chunks/&apos; + save_name, format=namec)</span><br><span class="line">        print(&apos;%04d&apos; % i, len(new))</span><br><span class="line">    print(&apos;保存完毕&apos;)</span><br><span class="line"></span><br><span class="line">    return total</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def chunk_split_length_limit(chunk, min_silence_len=700, length_limit=60 * 1000, silence_thresh=-70, level=0):</span><br><span class="line">    &apos;&apos;&apos;</span><br><span class="line">    将声音文件按正常语句停顿拆分，并限定单句最长时间，返回结果为列表形式</span><br><span class="line">    Args:</span><br><span class="line">        chunk: 录音文件</span><br><span class="line">        min_silence_len: 拆分语句时，静默满足该长度，则拆分，默认0.7秒。</span><br><span class="line">        length_limit：拆分后单个文件长度不超过该值，默认1分钟。</span><br><span class="line">        silence_thresh：小于-70dBFS以下的为静默</span><br><span class="line">    Return:</span><br><span class="line">        chunk_splits：拆分后的列表</span><br><span class="line">    &apos;&apos;&apos;</span><br><span class="line">    if len(chunk) &gt; length_limit:</span><br><span class="line">        # 长度超过length_limit，拆分</span><br><span class="line">        print(&apos;%d 执行拆分,len=%d,dBFs=%d&apos; % (level, min_silence_len, silence_thresh))</span><br><span class="line">        chunk_splits = split_on_silence(chunk, min_silence_len=min_silence_len, silence_thresh=silence_thresh)</span><br><span class="line">        # 修改静默时长，并检测是否已经触底</span><br><span class="line">        min_silence_len -= 100</span><br><span class="line">        if min_silence_len &lt;= 0:</span><br><span class="line"></span><br><span class="line">            tempname = &apos;temp_%d.wav&apos; % int(time.time())</span><br><span class="line">            chunk.export(tempname, format=&apos;wav&apos;)</span><br><span class="line">            print(&apos;%d 参数已经变成负数%d,依旧超长%d,片段已保存至%s&apos; % (level, min_silence_len, len(chunk), tempname))</span><br><span class="line">            raise Exception</span><br><span class="line">        # 处理拆分结果</span><br><span class="line">        if len(chunk_splits) &lt; 2:</span><br><span class="line">            # 拆分失败，缩短静默时间后，嵌套chunk_split_length_limit继续拆</span><br><span class="line">            print(&apos;%d 拆分失败,设置间隔时间为%d毫秒,嵌套调用方法继续拆分&apos; % (level, min_silence_len))</span><br><span class="line">            chunk_splits = chunk_split_length_limit(chunk, min_silence_len=min_silence_len, length_limit=length_limit,</span><br><span class="line">                                                    silence_thresh=silence_thresh, level=level + 1)</span><br><span class="line">        else:</span><br><span class="line">            # 拆分成功。</span><br><span class="line">            print(&apos;%d 拆分成功,共%d段,逐段检查拆分后长度&apos; % (level, len(chunk_splits)))</span><br><span class="line">            arr = []</span><br><span class="line">            min_silence_len -= 100</span><br><span class="line">            for c in chunk_splits:</span><br><span class="line">                if len(c) &lt; length_limit:</span><br><span class="line">                    # 长度没length_limit</span><br><span class="line">                    print(&apos;%d 长度符合,len=%d&apos; % (level, len(c)))</span><br><span class="line">                    arr.append(c)</span><br><span class="line">                else:</span><br><span class="line">                    # 长度超过length_limit，缩短静默时间后，嵌套chunk_split_length_limit继续拆</span><br><span class="line">                    print(&apos;%d 长度超过,len=%d,设置dBFs=%d,嵌套调用方法继续拆分&apos; % (level, len(c), min_silence_len))</span><br><span class="line">                    arr += chunk_split_length_limit(c, min_silence_len=min_silence_len, length_limit=length_limit,</span><br><span class="line">                                                    silence_thresh=silence_thresh, level=level + 1)</span><br><span class="line">            chunk_splits = arr</span><br><span class="line">    else:</span><br><span class="line">        # 长度没超过length_limit，直接返回即可</span><br><span class="line">        chunk_splits = []</span><br><span class="line">        chunk_splits.append(chunk)</span><br><span class="line">    return chunk_splits</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def chunk_join_length_limit(chunks, joint_silence_len=1300, length_limit=60 * 1000):</span><br><span class="line">    &apos;&apos;&apos;</span><br><span class="line">    将声音文件合并，并限定单句最长时间，返回结果为列表形式</span><br><span class="line">    Args:</span><br><span class="line">        chunk: 录音文件</span><br><span class="line">        joint_silence_len: 合并时文件间隔，默认1.3秒。</span><br><span class="line">        length_limit：合并后单个文件长度不超过该值，默认1分钟。</span><br><span class="line">    Return:</span><br><span class="line">        adjust_chunks：合并后的列表</span><br><span class="line">    &apos;&apos;&apos;</span><br><span class="line">    #</span><br><span class="line">    silence = AudioSegment.silent(duration=joint_silence_len)</span><br><span class="line">    adjust_chunks = []</span><br><span class="line">    temp = AudioSegment.empty()</span><br><span class="line">    for chunk in chunks:</span><br><span class="line">        length = len(temp) + len(silence) + len(chunk)  # 预计合并后长度</span><br><span class="line">        if length &lt; length_limit:  # 小于1分钟，可以合并</span><br><span class="line">            temp += silence + chunk</span><br><span class="line">        else:  # 大于1分钟，先将之前的保存，重新开始累加</span><br><span class="line">            adjust_chunks.append(temp)</span><br><span class="line">            temp = chunk</span><br><span class="line">    else:</span><br><span class="line">        adjust_chunks.append(temp)</span><br><span class="line">    return adjust_chunks</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &apos;__main__&apos;:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure><ul><li>问题说明<ul><li>出现问题，有可能是文件本身出现错误。</li><li>录音文件注意格式，转换函数需要修改<code>AudioSegment.from_wav</code>。</li><li>由于转换的是m4a格式的音频，直接使用有问题，将改为wav之后加载再进行。</li></ul></li></ul><h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul><li><a href="https://blog.csdn.net/watfe/article/details/80284242" target="_blank" rel="noopener">https://blog.csdn.net/watfe/article/details/80284242</a></li><li><a href="http://appleu0.sinaapp.com/?p=588" target="_blank" rel="noopener">http://appleu0.sinaapp.com/?p=588</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --&gt;
+&lt;!--![图]() --&gt;
+&lt;!--[]() --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;遇到分割录音的问题，将录音文件转化为小小的分段，作为他用。主要是按照语音停顿进行分割。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="软件列表" scheme="https://wqian.net/categories/%E8%BD%AF%E4%BB%B6%E5%88%97%E8%A1%A8/"/>
+    
+    
+      <category term="python" scheme="https://wqian.net/tags/python/"/>
+    
+      <category term="ffmpeg" scheme="https://wqian.net/tags/ffmpeg/"/>
+    
+      <category term="pydub" scheme="https://wqian.net/tags/pydub/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>致我那损坏的U盘</title>
+    <link href="https://wqian.net/blog/2018/1102-u-index.html"/>
+    <id>https://wqian.net/blog/2018/1102-u-index.html</id>
+    <published>2018-11-02T08:35:28.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
+    
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>你走了，谁来忍受我这喜欢拔插的脾气。</p></blockquote><a id="more"></a><p>无声无息<br>就这样<br>你离我而去<br>尽管我对你有千般不舍<br>可现如今<br>人是物非 再会无期<br>曾经 你只拥有我<br>然而你 却不是我的唯一<br>回首过往点点滴滴<br>插了拔了，拔了插了<br>拔了再插，插了再拔<br>你默默忍受 从不后悔<br>可惜<br>此情可待 已成追忆  </p><p>好看的皮囊千千万<br>可我唯独爱你<br>骨骼惊奇<br>有趣的灵魂或许万里挑一<br>可我知道<br>它一直就在你的心里<br>虽然<br>我已无法挽回你的别理<br>但是<br>我会将你的灵魂转移<br>让它在这个多变的世界<br>继续有趣 </p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --&gt;
+&lt;!--![图]() --&gt;
+&lt;!--[]() --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你走了，谁来忍受我这喜欢拔插的脾气。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -67,13 +129,13 @@
   </entry>
   
   <entry>
-    <title>寻找我深处的自己</title>
-    <link href="https://wqian.net/blog/2018/0710-deepin-my-heart-of-myslef-index.html"/>
-    <id>https://wqian.net/blog/2018/0710-deepin-my-heart-of-myslef-index.html</id>
-    <published>2018-07-10T05:50:14.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
+    <title>只管努力</title>
+    <link href="https://wqian.net/blog/2018/1102-keep-work-hard-index.html"/>
+    <id>https://wqian.net/blog/2018/1102-keep-work-hard-index.html</id>
+    <published>2018-11-02T07:14:00.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
     
-    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>寻找深处的自己，那份禁锢的自由。</p></blockquote><a id="more"></a><p>我爱自由，向往深山，向往大海，向往没有喧闹的安静</p><p>喜欢音乐，喜欢看书，喜欢自由的遐想，喜欢一个人安安静静的在哪里</p><p>喜欢摄影，喜欢文艺。。。。。</p><p>既然喜欢，就去做，安排开时间，一步步来</p><p>给心灵找一份寄托，书，摄影或一个简简单单的乐器</p><p>方</p><p>安</p>]]></content>
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>你只管努力，其他的交给天意。</p></blockquote><a id="more"></a><p>有一天，网络上听到这句话，感觉很赞。</p><p>不努力，是无法得到的，努力了，才无悔。</p><p>天意难测，尽人事，听天命。</p><p>加油~！！</p>]]></content>
     
     <summary type="html">
     
@@ -81,7 +143,7 @@
 &lt;!--![图]() --&gt;
 &lt;!--[]() --&gt;
 &lt;blockquote&gt;
-&lt;p&gt;寻找深处的自己，那份禁锢的自由。&lt;/p&gt;
+&lt;p&gt;你只管努力，其他的交给天意。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -94,13 +156,13 @@
   </entry>
   
   <entry>
-    <title>运用exce进行网络作业成绩转化为等级</title>
-    <link href="https://wqian.net/blog/2018/0709-excel-index.html"/>
-    <id>https://wqian.net/blog/2018/0709-excel-index.html</id>
-    <published>2018-07-09T01:28:55.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
+    <title>说教</title>
+    <link href="https://wqian.net/blog/2018/1030-say-do-index.html"/>
+    <id>https://wqian.net/blog/2018/1030-say-do-index.html</id>
+    <published>2018-10-30T00:41:24.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
     
-    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>需要使用网络课程中作业成绩转化为等级制进行应用。编写excel中vbs脚本实现自动实现。只要设置某个路径就可以实现。</p></blockquote><a id="more"></a><h3 id="导出文件"><a href="#导出文件" class="headerlink" title="导出文件"></a>导出文件</h3><ul><li>网络课程课程主页</li><li>统计-班级作业</li><li>导出文件打开，删除前行，然后按照学号排序，重新插入两个空行</li><li>命名文件名为<code>&quot;作业成绩.xls&quot;</code></li><li>放置到与转换文件同目录下</li></ul><h3 id="创建模块函数"><a href="#创建模块函数" class="headerlink" title="创建模块函数"></a>创建模块函数</h3><ul><li>创建<code>导出作业转成等级ABC.xls</code></li><li>打开文件</li><li><code>开发工具</code>-<code>visual basic</code>-<code>插入</code>-<code>模块</code>-<code>双击模块1</code>-<code>输入函数</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&apos;函数实现将行号转换为A,B,AA等的形式</span><br><span class="line">Function ConvertToLetter(iCol As Integer) As String</span><br><span class="line">   Dim iAlpha As Integer</span><br><span class="line">   Dim iRemainder As Integer</span><br><span class="line">   iAlpha = Int(iCol / 27)</span><br><span class="line">   iRemainder = iCol - (iAlpha * 26)</span><br><span class="line">   If iAlpha &gt; 0 Then</span><br><span class="line">      ConvertToLetter = Chr(iAlpha + 64)</span><br><span class="line">   End If</span><br><span class="line">   If iRemainder &gt; 0 Then</span><br><span class="line">      ConvertToLetter = ConvertToLetter &amp; Chr(iRemainder + 64)</span><br><span class="line">   End If</span><br><span class="line">End Function</span><br></pre></td></tr></table></figure></li></ul><h3 id="创建SET"><a href="#创建SET" class="headerlink" title="创建SET"></a>创建SET</h3><ul><li>创建sheet命名<code>SET</code></li><li>输入等级设置规则</li></ul><div class="table-container"><table><thead><tr><th>A</th><th>B</th><th>C</th><th>D</th></tr></thead><tbody><tr><td>60</td><td>D</td><td>60</td><td>及</td></tr><tr><td>85</td><td>C</td><td>80</td><td>中</td></tr><tr><td>96</td><td>B</td><td>90</td><td>良</td></tr><tr><td>100</td><td>A</td><td>60</td><td>优</td></tr></tbody></table></div><ul><li>*表格解释</li><li>规则<code>A</code>表示：<ul><li>等级划分为<code>DCBA</code></li><li>当分数小与60的时候为D,小与85的时候为C,小与96的时候为B,否则大于等于96的时候为A</li></ul></li><li>规则<code>C</code>表示：<ul><li>等级划分为<code>优良中及</code></li><li>分数小与60的时候为及,小与80的时候为中,小与90的时候为良,否则大于等于90的时候为优</li></ul></li></ul><h3 id="脚本等级转换"><a href="#脚本等级转换" class="headerlink" title="脚本等级转换"></a>脚本等级转换</h3><ul><li>根据G20数字大小实现相应的等级转换，excel功能实现脚本为<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=IF(SET!A1&gt;G20,SET!B1,IF(SET!A2&gt;G20,SET!B2,IF(SET!A3&gt;G20,SET!B3,SET!B4)))</span><br></pre></td></tr></table></figure></li></ul><h3 id="脚本使用表格内容为变量"><a href="#脚本使用表格内容为变量" class="headerlink" title="脚本使用表格内容为变量"></a>脚本使用表格内容为变量</h3><ul><li><p>想引用SET!A1中的内容，并且其中A为sheet1中C3的内容，可以如下替代</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SET!A1</span><br><span class="line">INDIRECT(&quot;SET!&quot;&amp; C$3 &amp;&quot;1&quot;)</span><br></pre></td></tr></table></figure></li><li><p>进一步的，计算C3内字母的下一个字母</p></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">如果为A,则B为</span><br><span class="line">CHAR(CODE(C$3)+1)</span><br><span class="line"></span><br><span class="line">SET!B1</span><br><span class="line">INDIRECT(&quot;SET!&quot;&amp; CHAR(CODE(C$3)+1) &amp;&quot;1&quot;)</span><br></pre></td></tr></table></figure><ul><li>脚本等级转换的程序可以更改为如下<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=IF(INDIRECT(&quot;SET!&quot;&amp; C$3 &amp;&quot;1&quot;)&gt;G20,INDIRECT(&quot;SET!&quot;&amp; CHAR(CODE(C$3)+1) &amp;&quot;1&quot;),IF(INDIRECT(&quot;SET!&quot;&amp; C$3 &amp;&quot;2&quot;)&gt;G20,INDIRECT(&quot;SET!&quot;&amp; CHAR(CODE(C$3)+1) &amp;&quot;2&quot;),IF(INDIRECT(&quot;SET!&quot;&amp; C$3 &amp;&quot;3&quot;)&gt;G20,INDIRECT(&quot;SET!&quot;&amp; CHAR(CODE(C$3)+1) &amp;&quot;3&quot;),INDIRECT(&quot;SET!&quot;&amp; CHAR(CODE(C$3)+1) &amp;&quot;4&quot;))))</span><br></pre></td></tr></table></figure></li></ul><h3 id="获取导出成绩"><a href="#获取导出成绩" class="headerlink" title="获取导出成绩"></a>获取导出成绩</h3><ul><li>导出的成绩从第7列（G）开始，第8列为时间。间隔一列为一个成绩</li><li>G,I,J,L,N为成绩列</li><li>希望可以向右侧自增，向下自增</li><li>在第C列中引用G列，在D列中引用I列代码</li><li><p>在C中显示7，在D中显示9</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2*COLUMN(C5)+1)</span><br><span class="line">2*COLUMN(D5)+1)</span><br></pre></td></tr></table></figure></li><li><p>数字转换为字母</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ConvertToLetter(2*COLUMN(C5)+1)</span><br><span class="line">ROW(C3)</span><br></pre></td></tr></table></figure></li><li><p>跨文件，以表格内容为变量，夸表格引用数据</p></li><li>文件地址在本表格B1中</li><li><p>成绩内容在相关<code>作业统计</code>的表格里面，从G开始间隔存在，放入到C3开始的表格中</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=INDIRECT(&quot;&apos;[&quot; &amp; $B$1 &amp; &quot;]作业统计&quot; &amp;&quot;&apos;!&quot; &amp; ConvertToLetter(2*COLUMN(C3)+1) &amp; ROW(C3) &amp; &quot;&quot;)</span><br></pre></td></tr></table></figure></li><li><p>跨文件，成绩转等级代码继续更改为</p></li><li>更换G20为上面数据可以</li><li><p>Row(C3)只是为了实现在indirect内数字递增</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=IF(INDIRECT(&quot;SET!&quot;&amp; C$3 &amp;&quot;1&quot;)&gt;value(INDIRECT(&quot;&apos;[&quot; &amp; $B$1 &amp; &quot;]作业统计&quot; &amp;&quot;&apos;!&quot; &amp; ConvertToLetter(2*COLUMN(C5)+1) &amp; ROW(C3) &amp; &quot;&quot;)),INDIRECT(&quot;SET!&quot;&amp; CHAR(CODE(C$3)+1) &amp;&quot;1&quot;),IF(INDIRECT(&quot;SET!&quot;&amp; C$3 &amp;&quot;2&quot;)&gt;value(INDIRECT(&quot;&apos;[&quot; &amp; $B$1 &amp; &quot;]作业统计&quot; &amp;&quot;&apos;!&quot; &amp; ConvertToLetter(2*COLUMN(C5)+1) &amp; ROW(C3) &amp; &quot;&quot;)),INDIRECT(&quot;SET!&quot;&amp; CHAR(CODE(C$3)+1) &amp;&quot;2&quot;),IF(INDIRECT(&quot;SET!&quot;&amp; C$3 &amp;&quot;3&quot;)&gt;value(INDIRECT(&quot;&apos;[&quot; &amp; $B$1 &amp; &quot;]作业统计&quot; &amp;&quot;&apos;!&quot; &amp; ConvertToLetter(2*COLUMN(C5)+1) &amp; ROW(C3) &amp; &quot;&quot;)),INDIRECT(&quot;SET!&quot;&amp; CHAR(CODE(C$3)+1) &amp;&quot;3&quot;),INDIRECT(&quot;SET!&quot;&amp; CHAR(CODE(C$3)+1) &amp;&quot;4&quot;))))</span><br></pre></td></tr></table></figure></li><li><p>核心完成，将上面代码填入C3中，下下拉和右拉，成绩自增</p></li><li>在C2中填入等级转换设置A,C等，每个成绩都需要</li><li><p>学号夸文件引入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=INDIRECT(&quot;&apos;[&quot; &amp; $B$1 &amp; &quot;]作业统计&quot; &amp;&quot;&apos;!A&quot; &amp; ROW(A3) &amp; &quot;&quot;)</span><br></pre></td></tr></table></figure></li><li><p>姓名跨文件引入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=INDIRECT(&quot;&apos;[&quot; &amp; $B$1 &amp; &quot;]作业统计&quot; &amp;&quot;&apos;!B&quot; &amp; ROW(A3) &amp; &quot;&quot;)</span><br></pre></td></tr></table></figure></li><li><p>班级跨文件引入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=INDIRECT(&quot;&apos;[&quot; &amp; $B$1 &amp; &quot;]作业统计&quot; &amp;&quot;&apos;!F&quot; &amp; ROW(A3) &amp; &quot;&quot;)</span><br></pre></td></tr></table></figure></li></ul><p><img src="https://wx4.sinaimg.cn/large/3f2c99ebgy1ft3fcmqgruj20f60gwgm2.jpg" alt=""></p><p><img src="https://wx2.sinaimg.cn/large/3f2c99ebgy1ft3fcm2i8lj20p80itq5b.jpg" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>不知道从哪天开始，可能彼此不再真诚，也不知道从那天开始，感觉彼此不一样。</p></blockquote><a id="more"></a><p>有可能就在某年某月某一日，一个可能不太可能的晚上，就突然碰到了你很久之前熟悉的一个人。然后就聊了起来。可能，虽然你们好久没联系，但是却知道彼此的境遇，虽然你们偶尔隔空插科打诨，但是却好久不曾一本正经的胡说八道。或者，你还在心中，认为他还是你曾经认识的哪个他，可事实上，你念旧，并不代表所有人会，你深情，并不代表所有人痴，你还沉积在旧时相处的随性，并不代表他依然沉浸其中。你无法，也不能用你的感受，去一厢情愿的认为他也是。对，就是这样子，你开始由此种种，有了错觉。当带着这种错觉，再跟他聊的时候，已经偏离了固有心理预期的轨道，他不再是你心中的那个他，他不再是你熟悉的哪个他，你认为他理解你，可是他正在用他对理解世界的方式与你相处，你正从认为他是你的唯一的情愫中跌落迷茫的时候，他正在像一颗树看待世界上所有的叶子一样告诉你，秋风来了你们都将落下，而我在明年的春天依然可以生根发芽。</p><p>每个人都有倔强的脾气，每个人都有不服输的小心心，可能现实中有很多不堪，可能生活中有很多的不如意，让你处于低谷，让你处于无法昂首挺胸的夹缝，但是并不代表，每个人都可以对你指指点点，每个人都可以对你平头论足，每个人都可以对你说教。</p><p>真正懂你的人，会指出你的痛点，然后想办法帮你克服。而不懂装懂的人，可能他无意中的轻描淡写，会让那仅存的美好回忆，趋于模糊，渐行渐远。钱有多有少，位有高有低。你有你的春花秋月，我有我的柴米油盐，虽然我可能不能周游世界，但是我可以徒步原野，或许你认为那皑皑白雪的青藏高原丰伟至极，可能我要告诉你高原反应不是每个人都可以克服的障碍，冬日暖阳里看蚂蚁上树的乐趣，是你开着布加迪威龙，永远也寻找不到的快感。我们都有自己的快乐，不分贵贱，你在为自己的生活拼搏，我也在为我的人生奋斗，倘若能彼此并肩战斗，我要感谢有你一路陪伴，倘若不能，请别说教。</p>]]></content>
     
     <summary type="html">
     
@@ -108,7 +170,158 @@
 &lt;!--![图]() --&gt;
 &lt;!--[]() --&gt;
 &lt;blockquote&gt;
-&lt;p&gt;需要使用网络课程中作业成绩转化为等级制进行应用。编写excel中vbs脚本实现自动实现。只要设置某个路径就可以实现。&lt;/p&gt;
+&lt;p&gt;不知道从哪天开始，可能彼此不再真诚，也不知道从那天开始，感觉彼此不一样。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="daybreak" scheme="https://wqian.net/categories/daybreak/"/>
+    
+    
+      <category term="diary" scheme="https://wqian.net/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>追逐健康</title>
+    <link href="https://wqian.net/blog/2018/1029-run-for-health-index.html"/>
+    <id>https://wqian.net/blog/2018/1029-run-for-health-index.html</id>
+    <published>2018-10-29T03:35:25.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
+    
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>无意间看到李咏去世的消息，再璀璨的烟花，也终将散去，再艳丽的花朵，也躲不过秋风的剪刀。</p></blockquote><a id="more"></a><p>据报道，10月25日，李咏与癌症抗争17个月后，离开我们，哈文一句“永失我爱”，配图中李咏胸前的红花，鲜艳的令人心痛。每个人，无法逃避死亡的降临，可能有人会用鸿毛或泰山来评价一个人的失去，然而，逝者离开的一刹那，或许他反思的已经超脱我们的想象。央视评价，感谢带给了我们欢乐。</p><p>期颐之年而离去，可能是一种幸福，而生命璀璨之时而离去，留下更多的是遗憾。他留给了我们很多欢乐，很多思考。春晚，非常6+1,等等，很美好的回忆。</p><p>扎眼的字符“癌症”，相信，在美国的17个月里面，他一定是动用了毕生的资源，去尽可能的挽回生命，可是，在病魔到来的那一刻起，或许一切，都变得那么不再重要，而健康，才是最为重要。</p><p>健康不是三言两语，健康是要去追逐，去呵护，去努力，去争取。</p><p>爱家人，爱自己，爱健康。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --&gt;
+&lt;!--![图]() --&gt;
+&lt;!--[]() --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;无意间看到李咏去世的消息，再璀璨的烟花，也终将散去，再艳丽的花朵，也躲不过秋风的剪刀。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="daybreak" scheme="https://wqian.net/categories/daybreak/"/>
+    
+    
+      <category term="diary" scheme="https://wqian.net/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面对恐惧-墨菲他爸定律</title>
+    <link href="https://wqian.net/blog/2018/1024-face-of-fear-index.html"/>
+    <id>https://wqian.net/blog/2018/1024-face-of-fear-index.html</id>
+    <published>2018-10-24T01:14:53.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
+    
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><p>之所以感到恐惧，不是因为我们束手无策，而是因为我们不敢面对。</p><blockquote></blockquote><p>延伸着“如果你担心某种情况发生，那么它就更有可能发生。”的这一神咒，找到了他来自于著名的墨菲定律，紧接着又看到他其他的观点：</p><ul><li>一、任何事都没有表面看起来那么简单；</li><li>二、所有的事都会比你预计的时间长；</li><li>三、会出错的事总会出错；</li><li>四、如果你担心某种情况发生，那么它就更有可能发生。</li></ul><p>好吧，我承认，我担心恐惧到来，恐惧真的如期而至，这并不代表我们就没有办法了，因为，我们控制不了它的到来，或者说它一旦到来，我们所要做的就是，面对。</p><p>面对之后：</p><ul><li>1、虽然恐惧依然存在，可能不再像想象中的那么恐惧；</li><li>2、虽然处理恐惧需要很长时间，但时间可能没有像预计的那么长；</li><li>3、总有事情做的是对的；</li><li>4、如果你希望战胜恐惧，那么它就更可能战胜恐惧；</li></ul><p>我称之为“墨菲他爸定律”。</p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --&gt;
+&lt;!--![图]() --&gt;
+&lt;!--[]() --&gt;
+&lt;p&gt;之所以感到恐惧，不是因为我们束手无策，而是因为我们不敢面对。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;延伸着“如果你担心某种情况发生，那么它就更有可能发生。”的这一神咒，找到了他来自于著名的墨菲定律，紧接着又看到他其他的观点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一、任何事都没有表面看起来那么简单；&lt;/li&gt;
+&lt;li&gt;二、所有的事都会比你预计的时间长；&lt;/li&gt;
+&lt;li&gt;三、会出错的事总会出错；&lt;/li&gt;
+&lt;li&gt;四、如果你担心某种情况发生，那么它就更有可能发生。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;好吧，我承认，我担心恐惧到来，恐惧真的如期而至，这并不代表我们就没有办法了，因为，我们控制不了它的到来，或者说它一旦到来，我们所要做的就是，面对。&lt;/p&gt;
+&lt;p&gt;面对之后：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1、虽然恐惧依然存在，可能不再像想象中的那么恐惧；&lt;/li&gt;
+&lt;li&gt;2、虽然处理恐惧需要很长时间，但时间可能没有像预计的那么长；&lt;/li&gt;
+&lt;li&gt;3、总有事情做的是对的；&lt;/li&gt;
+&lt;li&gt;4、如果你希望战胜恐惧，那么它就更可能战胜恐惧；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我称之为“墨菲他爸定律”。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="daybreak" scheme="https://wqian.net/categories/daybreak/"/>
+    
+    
+      <category term="diary" scheme="https://wqian.net/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>逼自己一把就出来了</title>
+    <link href="https://wqian.net/blog/2018/1009-done-at-last-index.html"/>
+    <id>https://wqian.net/blog/2018/1009-done-at-last-index.html</id>
+    <published>2018-10-09T04:01:14.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
+    
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>逼了自己一把就出来了。</p><p>为什么不逼自己就出来呢？</p><a id="more"></a></blockquote><p>万事应该留有改进空间，不能拖到最后，最后一时刻完成往往是不靠谱的。过程是脆弱的，一旦有外来干扰，时间往往就不够用了。要做好提前量，才好。</p><p>切记，提前把该做的做了。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --&gt;
+&lt;!--![图]() --&gt;
+&lt;!--[]() --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;逼了自己一把就出来了。&lt;/p&gt;
+&lt;p&gt;为什么不逼自己就出来呢？&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="daybreak" scheme="https://wqian.net/categories/daybreak/"/>
+    
+    
+      <category term="diary" scheme="https://wqian.net/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>高调行事低调做人</title>
+    <link href="https://wqian.net/blog/2018/1008-be-a-man-index.html"/>
+    <id>https://wqian.net/blog/2018/1008-be-a-man-index.html</id>
+    <published>2018-10-08T01:18:26.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
+    
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>谁有mate 10，我的mate 9照相不清晰？</p></blockquote><a id="more"></a><p>其实我有，但是我没有拿出来，不是我不舍得用，我只是不想成为焦点，可能这就是我，生活在默默之中。</p><p>孩子会模仿父亲，想想我的老爸，为人诚恳，从不愿意麻烦别人，只要自己能干的来，从来不愿意张口去向别人请求什么，除非万不得已。而今我的性格有一些也源于父亲，不知道是基因的强大还是后天的影响。甚至我我必拖拉的性格，在老爸那里也体现颇多。</p><p>而今我也身为人父，孩子也在慢慢成长，不希望我性格的不足再影响到我的孩子，把能改变的先去改变了，无论是遗传，还是后天影响，都要注重孩子的培养。目前已经发现，孩子不太乐意在其他小朋友面前表现，无论对和错，要清除他内心的胆怯，张扬开来。</p><p>最近事多，20181003二宝留在老家，打电话说我们离开他不曾哭闹，也开始慢慢喜欢吃饭，希望他能茁壮成长吧。</p><p>关于大宝，要规划好时间，让他在家的生活丰富起来。不能一空闲就看电视，很危险。</p><p>打铁还需自身硬，你能力达到了，别人可以帮你，你能力达不到，别人相帮也帮不到。</p><p>其实我遇到的贵人很多了，只是自己，做的不够好。</p><p>不甘平庸，我也会很强大，孩子家庭，规划，执行。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --&gt;
+&lt;!--![图]() --&gt;
+&lt;!--[]() --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;谁有mate 10，我的mate 9照相不清晰？&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="daybreak" scheme="https://wqian.net/categories/daybreak/"/>
+    
+    
+      <category term="diary" scheme="https://wqian.net/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>excel查找位置和截取字符函数</title>
+    <link href="https://wqian.net/blog/2018/1008-excel-find-index.html"/>
+    <id>https://wqian.net/blog/2018/1008-excel-find-index.html</id>
+    <published>2018-10-08T01:05:06.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
+    
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>将excel中某一个单元格内的字符截取，截取位置并不固定，是按照某个字符串出现的位置开始操作的。希望有用到的朋友一起来吧。</p></blockquote><a id="more"></a><h3 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h3><p> excel单元格中字符“2018/9/27 时间：16:05—17:45”，将2018/9/27和16提取出来，主要依据“时间”出现的位置，来判定截取的位置。</p><h3 id="使用函数"><a href="#使用函数" class="headerlink" title="使用函数"></a>使用函数</h3><ul><li>=FIND(“时”,D2,1)，用来查找位置</li><li>=LEFT(D2,J2-2)，用来截取，得到“2018/9/27”</li><li>=MID(D2,J2+3,2)，用来取中间位置字符“16”</li><li>如果排序中按照所得的两个先后排序，可得按照时间排序。</li></ul><h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><ul><li>so easy ,that is all ,thank you.</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --&gt;
+&lt;!--![图]() --&gt;
+&lt;!--[]() --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;将excel中某一个单元格内的字符截取，截取位置并不固定，是按照某个字符串出现的位置开始操作的。希望有用到的朋友一起来吧。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -121,13 +334,13 @@
   </entry>
   
   <entry>
-    <title>七月来</title>
-    <link href="https://wqian.net/blog/2018/0701-index.html"/>
-    <id>https://wqian.net/blog/2018/0701-index.html</id>
-    <published>2018-07-01T10:02:03.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
+    <title>记录几句话</title>
+    <link href="https://wqian.net/blog/2018/1002-index-two-word.html"/>
+    <id>https://wqian.net/blog/2018/1002-index-two-word.html</id>
+    <published>2018-10-01T19:02:30.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
     
-    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>七月忽然到来，无安。</p></blockquote><a id="more"></a><p>最近事多，涉及家庭和自我，自我控制能力还是差的令自己发指，这种状态终究要害苦自己，老岳给我抛出了一个问题，你忙归忙，忙的成效在哪里？的确，成效在哪里，每个人可以为我忙，为我牺牲，但是我自己又是怎么去对待这种牺牲的能？并不是一句对不起就能解决的，担当，要有责任，要对得起送给我的时间。</p><p>入手rcjy的房子，签订大定金的方式。最近决定是要搬家的，腾出房子进行出租，要规划，要执行，工作。把该做的事情安排好，要体现效率。制定计划，做好效率工作。</p><p>逃无可逃，不能逃，面对，坚强的面对，去解决，事情不会自己解决的，拖延到最后，还是要解决的。已经失去了好多好多，性格，性格，要改变。</p>]]></content>
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>两句网上的话，感觉特别有道理。</p></blockquote><p>1、做一件事情你认为是没有时间，其实是因为它在你心里不足够重要。</p><p>2、睡觉时间都控制不了的人，怎样去控制你的人生？</p><p>3、你无法变优秀，不是因为你不知道，而是因为你做不到。</p><p>WQ 加油，每天让主业进步一点点。<br><a id="more"></a></p>]]></content>
     
     <summary type="html">
     
@@ -135,7 +348,66 @@
 &lt;!--![图]() --&gt;
 &lt;!--[]() --&gt;
 &lt;blockquote&gt;
-&lt;p&gt;七月忽然到来，无安。&lt;/p&gt;
+&lt;p&gt;两句网上的话，感觉特别有道理。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;1、做一件事情你认为是没有时间，其实是因为它在你心里不足够重要。&lt;/p&gt;
+&lt;p&gt;2、睡觉时间都控制不了的人，怎样去控制你的人生？&lt;/p&gt;
+&lt;p&gt;3、你无法变优秀，不是因为你不知道，而是因为你做不到。&lt;/p&gt;
+&lt;p&gt;WQ 加油，每天让主业进步一点点。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="daybreak" scheme="https://wqian.net/categories/daybreak/"/>
+    
+    
+      <category term="diary" scheme="https://wqian.net/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每一天要进步</title>
+    <link href="https://wqian.net/blog/2018/0928-index-day-ok.html"/>
+    <id>https://wqian.net/blog/2018/0928-index-day-ok.html</id>
+    <published>2018-09-28T01:46:30.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
+    
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>每一天都要美美哒。</p></blockquote><p>每一天，做自己该做的事情，不颓废，不拖拉，有计划，前进。</p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --&gt;
+&lt;!--![图]() --&gt;
+&lt;!--[]() --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每一天都要美美哒。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;每一天，做自己该做的事情，不颓废，不拖拉，有计划，前进。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="daybreak" scheme="https://wqian.net/categories/daybreak/"/>
+    
+    
+      <category term="diary" scheme="https://wqian.net/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>可能否</title>
+    <link href="https://wqian.net/blog/2018/0924-maybe-die-index.html"/>
+    <id>https://wqian.net/blog/2018/0924-maybe-die-index.html</id>
+    <published>2018-09-24T12:38:39.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
+    
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>可能撞了南墙也无法回头了。</p></blockquote><a id="more"></a><p>自己依然把自己送上了绝路</p><p>回望过路，自作自受</p><p>机会依然自己没有把握，失去将成定局</p><p>天已经无法再眷顾了，因为对我已经够好，只是自己不知道珍惜</p><p>可能一切都来的太过容易，才导致自己没有好好努力</p><p>真的，不难，一点都不难，完全是自己咎由自取</p><p>分明已经给了机会，却依然没有好好把握珍惜。</p><p>等待着明天的审批，等待着惩罚的到来，我唯恨自己</p><p>可能撞了南墙才知道回头吧</p><p>可能到了黄河才会死心吧</p><p>而我呢？可能否？</p><p>我已经没有脸面向上天再讨要一次机会</p><p>我对自己已经是恨透至极</p><p>机会，要好好把握和珍惜，不能因为来的太容易，就忘记自己仍然要努力</p><p>明天以后，我将成为别人眼中的笑话，这些可能将是我永久背负的伤疤</p><p>我不怨天，我只恨自己，辜负了这么多年家人的期盼</p><p>骄傲，不再那么容易</p><p>把这个中秋，当成自己过往的死忌</p><p>向前跑, 迎着冷眼和嘲笑</p><p>一切必须还要继续</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --&gt;
+&lt;!--![图]() --&gt;
+&lt;!--[]() --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;可能撞了南墙也无法回头了。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -148,13 +420,13 @@
   </entry>
   
   <entry>
-    <title>风雨那般飘摇</title>
-    <link href="https://wqian.net/blog/2018/0621-wind-rain-index.html"/>
-    <id>https://wqian.net/blog/2018/0621-wind-rain-index.html</id>
-    <published>2018-06-21T00:12:52.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
+    <title>excel引用于本列相同列文字同行的数据</title>
+    <link href="https://wqian.net/blog/2018/0731-excel-vlookup-index.html"/>
+    <id>https://wqian.net/blog/2018/0731-excel-vlookup-index.html</id>
+    <published>2018-07-31T07:13:58.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
     
-    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>偶有一天，有感。</p></blockquote><a id="more"></a><p>风不止<br>撩拨我心弦<br>雨如针<br>刺探着我痛的底限<br>你是哪来的这般<br>让我如此坐立不安<br>眼看着鸣鸟划过窗台<br>曾几何时<br>也如斯般逍遥自在<br>而今<br>囚困在这空空的仓<br>不知怎么来<br>又不知将怎么去<br>深夜期待黎明<br>白昼向往黑夜<br>韶华过往已成灰烬<br>朽木之春求逢无望<br>最后只能<br>求变</p>]]></content>
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>在excel中可能会遇到引用与目标相同文字所在的行的某一个数据，那么就使用vlookup吧，好用。</p></blockquote><a id="more"></a><p><img src="https://wx3.sinaimg.cn/large/3f2c99ebgy1ftt2n1zg5dj20k40b1wev.jpg" alt=""></p><p>使用图来说明，如下想引用E对应的数字，使用代码如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=VLOOKUP(J6,$F$6:$G$12,2,0)</span><br></pre></td></tr></table></figure><p>需要注意的是VLOOKUP的参数：</p><ul><li>第一个参数表示要查找的文字</li><li>第二个参数是表示要查找的范围，要把你需要取的列包括进去</li><li>范围的第一列为1，第二列为2，第三列为3，以此类推</li><li>false或0吧</li></ul><p>that is all,thank me.</p>]]></content>
     
     <summary type="html">
     
@@ -162,7 +434,36 @@
 &lt;!--![图]() --&gt;
 &lt;!--[]() --&gt;
 &lt;blockquote&gt;
-&lt;p&gt;偶有一天，有感。&lt;/p&gt;
+&lt;p&gt;在excel中可能会遇到引用与目标相同文字所在的行的某一个数据，那么就使用vlookup吧，好用。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="软件列表" scheme="https://wqian.net/categories/%E8%BD%AF%E4%BB%B6%E5%88%97%E8%A1%A8/"/>
+    
+    
+      <category term="excel" scheme="https://wqian.net/tags/excel/"/>
+    
+      <category term="vlookup" scheme="https://wqian.net/tags/vlookup/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>抖音有毒</title>
+    <link href="https://wqian.net/blog/2018/0730-douyin-is-drugs-index.html"/>
+    <id>https://wqian.net/blog/2018/0730-douyin-is-drugs-index.html</id>
+    <published>2018-07-30T09:13:51.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
+    
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>某日，通过某博客，打开某网页，是抖音的网页版，抖音名声在外，一直认为其就是短视频，又鉴于需要安装app方可刘览，所以一直没有尝试查看其内容，而这次的打开，让我一发不可收拾。 对抖音，有了一定的认识。</p></blockquote><a id="more"></a><p>乖乖个咚个咚，一旦打开，很难停下来，抖音内容涉及五花八门，内容不限于晒娃，炫富，晒工作，开挖掘机，妹子求婚，靓女撩骚，萌宠自嗨，随歌与舞，翻ppt，画漫画，切萝卜，买衣服，追星，唱歌，弹琴，照照片，街头风景，心理测试，滑板等等等等，好多好多。</p><p>而这一些，会上瘾，尤其是无聊打发时间的时候，真上瘾。</p><p>看懂其实质，其就是通过品类复杂的视频来吸引不同的人群，娱乐，仅此而已，如果说非得想从上面学习些什么的话，那就是它的经营模式吧，但是作为大多数人，还是笑笑就可以，千万不能把时间大把大把的浪费在上面，太可怕了。</p><p>当然，这只是我的看法，有些认为把自己的生活或者绝技晒到上面与大家共享，又或者喜欢关注其他人的生活或囧事，这是没有任何问题的。而以上，只是我自己的观点，我想我自己不能把时间浪费在上面，而你，随便喽。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --&gt;
+&lt;!--![图]() --&gt;
+&lt;!--[]() --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;某日，通过某博客，打开某网页，是抖音的网页版，抖音名声在外，一直认为其就是短视频，又鉴于需要安装app方可刘览，所以一直没有尝试查看其内容，而这次的打开，让我一发不可收拾。 对抖音，有了一定的认识。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -175,13 +476,13 @@
   </entry>
   
   <entry>
-    <title>又是一年高考</title>
-    <link href="https://wqian.net/blog/2018/0607-index.html"/>
-    <id>https://wqian.net/blog/2018/0607-index.html</id>
-    <published>2018-06-07T01:20:07.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
+    <title>连接树莓派</title>
+    <link href="https://wqian.net/blog/2018/0724-conect-pi-index.html"/>
+    <id>https://wqian.net/blog/2018/0724-conect-pi-index.html</id>
+    <published>2018-07-24T07:56:36.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
     
-    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>今日高考，成千上万的学子又将是一次龙门之跃。祝愿各位都能旗开得胜，心想事成。</p></blockquote><a id="more"></a><p>那一年，我也高考</p><p>依稀记得，考试完，心里懵了，学校让我们收拾行李离校，此时正值收麦子的季节，爸妈是没有时间也没有条件来接我的，我独自抱着自己的行李，搭乘小三轮车从学校到汽车站，下了三轮车，就地在马路中间躺下，不想走，也不知道去哪里，回家，很难向家里人交代，对过了答案，感觉无助和无望，要知道，对于一个从农村出来的学生，高考占据了我人生所有的方向，高考一旦失利，就意味着路途渺茫。想傻子一样，躺在过往车辆的马路中间，心中不但没有畏惧，反倒是感觉一种莫名的柔软，有一丝丝解脱的感觉。闭上眼睛，不知道过了多久，意识到我要回家，浑浑噩噩的等待着结果的下来，在家里，我尽可能的保持沉默，父母也没有对我过多的询问，终于有一天，忍不住了，妈妈和我抱头痛哭，哭的特别伤心特别伤心，妈妈只是说，大不了重新再考。是的，大不了重新再考。心里面依然是痛哭万分。</p><p>成绩发布</p><p>那个时候，想早点知道成绩只有通过电话查询，家里面没有电话，爸爸陪我去村里面商店里面打电话查成绩，永远不能忘记哪个时候的忐忑，当我拨通电话查询的完毕的时候，我的第一感觉是肯定查错了，一定是查错了。我又查了一次，没有错，是我的成绩，高过重点线7分，突然之间，感觉梦又回来了。带着兴奋回到了家，告诉了妈妈和姐姐。感觉我是兴奋的，世界没有抛弃我。再之后就是填志愿，一开始想填写云南大学，后来妈妈感觉离家太远，就想选择离家近一点的学校，三舅对于志愿给我提示说不如选机械吧，啥时候也不会过时，是个长远的行业，于是就选择了机械，再后来就是大学了。</p><p>后记</p><p>其实，很多时候，目标的高度，并不是最后的高度。精彩存在于各个地方，他并不局限。</p><p>祝福天下学子，得偿所愿。即便名落孙山，也能继续精彩。</p>]]></content>
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>学生毕设入手一个树莓派，运用基础的语音及图像识别功能进行相关拓展。进行连接相关基础知识备份，以备后查。</p></blockquote><a id="more"></a><h3 id="树莓派网络连接需要软件"><a href="#树莓派网络连接需要软件" class="headerlink" title="树莓派网络连接需要软件"></a>树莓派网络连接需要软件</h3><ul><li>advanced_pi_xcanner.exe<ul><li>功能是用于扫描局域网内所有电脑的ip</li><li>使用方法是安装后扫描，找到树莓派的ip地址</li></ul></li><li>vnc Viewer<ul><li>功能是用于用于远程登录树莓派</li><li>使用方法，打开软件，输入树莓派ip地址，用户名pi,密码raspberry</li><li>然后连接登录</li></ul></li><li>flashfxp<ul><li>功能是文件传输</li><li>使用方法是打开软件</li><li>设置连接类型为“SFTP over SSH”</li><li>地址或url是上面得到的树莓派ip</li><li>端口22</li><li>用户名pi</li><li>密码raspberry</li><li>然后连接</li></ul></li></ul><h3 id="网络桌面登录方法"><a href="#网络桌面登录方法" class="headerlink" title="网络桌面登录方法"></a>网络桌面登录方法</h3><ul><li>本方法只是实现网络登录，适用于没有显示器hmid显示屏幕的情况下</li><li>给树莓派供电，打开</li><li>使用ip scanner.exe扫描得到树莓派ip</li><li>使用vnc viewer登录远程桌面</li><li>使用flashfxp进行文件传递</li></ul><h3 id="物理连接方法"><a href="#物理连接方法" class="headerlink" title="物理连接方法"></a>物理连接方法</h3><ul><li>使用hdmi线连接树莓派和显示器</li><li>使用键盘和鼠标连接到树莓派</li><li>打开树莓派供电</li><li>显示器可以进行正常使用查看</li></ul><h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><ul><li>更多高级功能需要进一步涉及</li><li>可玩性还是比较高的，带儿子感受了一下智能音箱的功能，除了网络延迟的比较厉害外，还是比较好的，有时间可以进一步开发更多的功能。</li><li>比较好的项目推荐<a href="http://dingdang.hahack.com/" target="_blank" rel="noopener">http://dingdang.hahack.com/</a></li></ul>]]></content>
     
     <summary type="html">
     
@@ -189,35 +490,7 @@
 &lt;!--![图]() --&gt;
 &lt;!--[]() --&gt;
 &lt;blockquote&gt;
-&lt;p&gt;今日高考，成千上万的学子又将是一次龙门之跃。祝愿各位都能旗开得胜，心想事成。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="过往" scheme="https://wqian.net/categories/%E8%BF%87%E5%BE%80/"/>
-    
-    
-      <category term="diary" scheme="https://wqian.net/tags/diary/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大话英语四六级</title>
-    <link href="https://wqian.net/blog/2018/0602-index-english-four-six.html"/>
-    <id>https://wqian.net/blog/2018/0602-index-english-four-six.html</id>
-    <published>2018-06-02T14:52:09.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
-    
-    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><p><img src="https://wx1.sinaimg.cn/large/3f2c99ebgy1frx8doucxij20mx0c30td.jpg" alt="四六级" title="恭祝必过"></p><blockquote><p>一年一度的四六级考试又即将来临，殊不知，又有很多人面临着这种不喜欢，但是又不得不的考试，挂钩，成了必须。与学位证，与毕业证，与奖学金，与各种优秀评比等等挂钩，使得每个人趋之如骛，但是心里面其实是拒绝的，没办法，要实现一些目的，强制总是有效果的。今天就来说说，四六级考试，这个爱恨交织的梗。无论你是四级成绩查询，还是六级成绩查询，这一切，都显然是你已经深入其坑。就此时，听我细细与你叙说哪些往事。</p></blockquote><a id="more"></a><h3 id="大纲（讲解大纲）"><a href="#大纲（讲解大纲）" class="headerlink" title="大纲（讲解大纲）"></a>大纲（讲解大纲）</h3><ul><li>四六级由来</li><li>四六级历年真题</li><li>四六级必背单词</li><li>四六级培训</li><li>我的四六级考试史</li><li>四六级成绩查询</li></ul><h3 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h3>]]></content>
-    
-    <summary type="html">
-    
-      &lt;!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --&gt;
-&lt;!--![图]() --&gt;
-&lt;!--[]() --&gt;
-&lt;p&gt;&lt;img src=&quot;https://wx1.sinaimg.cn/large/3f2c99ebgy1frx8doucxij20mx0c30td.jpg&quot; alt=&quot;四六级&quot; title=&quot;恭祝必过&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;一年一度的四六级考试又即将来临，殊不知，又有很多人面临着这种不喜欢，但是又不得不的考试，挂钩，成了必须。与学位证，与毕业证，与奖学金，与各种优秀评比等等挂钩，使得每个人趋之如骛，但是心里面其实是拒绝的，没办法，要实现一些目的，强制总是有效果的。今天就来说说，四六级考试，这个爱恨交织的梗。无论你是四级成绩查询，还是六级成绩查询，这一切，都显然是你已经深入其坑。就此时，听我细细与你叙说哪些往事。&lt;/p&gt;
+&lt;p&gt;学生毕设入手一个树莓派，运用基础的语音及图像识别功能进行相关拓展。进行连接相关基础知识备份，以备后查。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -230,22 +503,21 @@
   </entry>
   
   <entry>
-    <title>打印pdf去除旁边的空白</title>
-    <link href="https://wqian.net/blog/2018/0531-pdf-delet-blank.html"/>
-    <id>https://wqian.net/blog/2018/0531-pdf-delet-blank.html</id>
-    <published>2018-05-31T02:42:35.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
+    <title>pdf正反面打印</title>
+    <link href="https://wqian.net/blog/2018/0723-print-pdf-index.html"/>
+    <id>https://wqian.net/blog/2018/0723-print-pdf-index.html</id>
+    <published>2018-07-23T03:18:56.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
     
-    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><p><img src="https://wx4.sinaimg.cn/large/3f2c99ebgy1frx8jeu7kcj20hx0czjri.jpg" alt="pdf" title="PDF空白"></p><blockquote><p>pdf打印的时候，源文件有的时候会有一个大大的空白，看上去非常令人不舒服，想去掉空白，怎么办呢？怎么切去pdf空白，怎么切边？怎么在打印的时候调整页边距呢？本文就是根据自己的经验对这类问题进行了解决，希望对出现此类问题的朋友有所帮助。具体解决方法如下。</p></blockquote><a id="more"></a><p>注：本人使用的软件是foxit phantom2.2</p><ul><li>打开需要打印的文档</li><li>菜单organize</li><li>Crop Pages</li><li>调整边距就可以了</li><li>祝你好运</li></ul>]]></content>
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>pdf正反面打印小结。生活中用到，试错后进行记录，以备后查。</p></blockquote><a id="more"></a><h3 id="应用软件"><a href="#应用软件" class="headerlink" title="应用软件"></a>应用软件</h3><ul><li>foxit phantom pdf浏览器</li><li>hp laserjet1020打印机<h3 id="双面打印设置（先偶数倒页打印，在奇数页正打印）"><a href="#双面打印设置（先偶数倒页打印，在奇数页正打印）" class="headerlink" title="双面打印设置（先偶数倒页打印，在奇数页正打印）"></a>双面打印设置（先偶数倒页打印，在奇数页正打印）</h3></li><li>pdf设置打印</li><li>设置打印机printer name</li><li>设置打印范围print range</li><li>设置打印部分subset 偶数页even pages only，勾选倒叙打印Reverse pages</li></ul><p><img src="https://wx1.sinaimg.cn/large/3f2c99ebgy1ftjnts0kv5j20jy0kdabj.jpg" alt=""></p><ul><li>按下ok等待打印结束，之后等待</li><li>将打印好的纸质张取出来</li></ul><p><img src="https://wx2.sinaimg.cn/large/3f2c99ebgy1ftjnyfog8hj206p07zdfn.jpg" alt=""></p><ul><li>然后旋转180度（先出来的一侧再让他先进去）放到盒子里面</li></ul><p><img src="https://wx4.sinaimg.cn/large/3f2c99ebgy1ftjnyg3jr2j205y0770sj.jpg" alt=""></p><ul><li>然后重新设置打印，正常选取打印机</li><li>设置打印范围</li><li>设置奇数页打印，正序</li></ul><p><img src="https://wx2.sinaimg.cn/large/3f2c99ebgy1ftjntspng4j20jy0kdta7.jpg" alt=""></p><ul><li>点击ok,完毕</li></ul>]]></content>
     
     <summary type="html">
     
       &lt;!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --&gt;
 &lt;!--![图]() --&gt;
 &lt;!--[]() --&gt;
-&lt;p&gt;&lt;img src=&quot;https://wx4.sinaimg.cn/large/3f2c99ebgy1frx8jeu7kcj20hx0czjri.jpg&quot; alt=&quot;pdf&quot; title=&quot;PDF空白&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;pdf打印的时候，源文件有的时候会有一个大大的空白，看上去非常令人不舒服，想去掉空白，怎么办呢？怎么切去pdf空白，怎么切边？怎么在打印的时候调整页边距呢？本文就是根据自己的经验对这类问题进行了解决，希望对出现此类问题的朋友有所帮助。具体解决方法如下。&lt;/p&gt;
+&lt;p&gt;pdf正反面打印小结。生活中用到，试错后进行记录，以备后查。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -258,69 +530,13 @@
   </entry>
   
   <entry>
-    <title>那明明就是爱</title>
-    <link href="https://wqian.net/blog/2018/0526-the-old-love.html"/>
-    <id>https://wqian.net/blog/2018/0526-the-old-love.html</id>
-    <published>2018-05-26T13:17:23.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
+    <title>橱柜安装记</title>
+    <link href="https://wqian.net/blog/2018/0720-index.html"/>
+    <id>https://wqian.net/blog/2018/0720-index.html</id>
+    <published>2018-07-20T06:18:38.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
     
-    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签  --><!--![图]() --><!--[]() --><p><img src="https://wx2.sinaimg.cn/large/3f2c99ebgy1frp1ty81vwj21kw23ue81.jpg" alt=""></p><blockquote><p>我就是一个念旧的人，无法去逃离自己的内心，又一次回到了那个地方，曾经怀揣梦想，而如今，愧对曾经，也不敢亲往，而今却为它事，又一次来到这个地方。旧日时光悄然而去，情愫依旧，爱依然。奈何，我却奈何。散乱情愫，表为凌乱。</p></blockquote><a id="more"></a><p>风抚叶扬，凌波涤荡，禽鸟畅鸣，蝶舞花香。百感交集，无法用言语把我的情感穿起来，因为我的思绪完全凌乱了，旧爱让我无法自持。</p><p><img src="https://wx2.sinaimg.cn/large/3f2c99ebgy1frp1r4eilwj21kw16ou11.jpg" alt=""><br>因为一片绿，感念一个家，弥久弥恋。鸟儿愿意飞进来的教室，我想也是令人神往吧</p><p><img src="https://wx4.sinaimg.cn/large/3f2c99ebgy1frp1twt1v4j21kw16oqkm.jpg" alt=""><br>窗明几净，整洁有序，敬畏之心，油然而生<br><img src="https://wx1.sinaimg.cn/large/3f2c99ebgy1frp1u1lp7yj21kw23u1kx.jpg" alt=""><br><img src="https://wx3.sinaimg.cn/large/3f2c99ebgy1frp1tvkvmxj21kw16otom.jpg" alt=""><br><img src="https://wx4.sinaimg.cn/large/3f2c99ebgy1frp1tukw31j21kw16owri.jpg" alt=""><br><img src="https://wx2.sinaimg.cn/large/3f2c99ebgy1frp1ttgtw3j21kw23u1kx.jpg" alt=""><br><img src="https://wx2.sinaimg.cn/large/3f2c99ebgy1frp1ts192qj21kw16oh05.jpg" alt=""><br><img src="https://wx3.sinaimg.cn/large/3f2c99ebgy1frp1qhhhrhj21kw16ohdw.jpg" alt=""><br>无论你是否在追求细节，但是我从细节里感受到了你的真心</p><p><img src="https://wx1.sinaimg.cn/large/3f2c99ebgy1frp1tzwvbdj21kw23u1kx.jpg" alt=""><br>完全没有记住热水零落在何处，但却体会到温情索绕身边。看到的不是提示，而是作为家长的一份情怀</p><p><img src="https://wx1.sinaimg.cn/large/3f2c99ebgy1frp1uib4x3j21kw23ukgy.jpg" alt=""><br>当上课铃声演化成一段音乐的时候，上课也变成了一种享受，念念不忘，必有回响。</p><p><img src="https://wx4.sinaimg.cn/large/3f2c99ebgy1frp1u8nsa3j21kw16o7n4.jpg" alt=""><br>半栋楼，18个教室，每个教室52个灯管，每一个都能亮，我不是在炫耀我的数数能力有多强，我只是在思考：一个什么样的后勤服务团队才可以做到这样的一个保障。</p><p><img src="https://wx1.sinaimg.cn/large/3f2c99ebgy1frp1ugrg1uj21kw23ukjl.jpg" alt=""><br>我们可以容忍某个细节做的不好，但是无法忍受一个细节也没有做好</p><p><img src="https://wx4.sinaimg.cn/large/3f2c99ebgy1frp1u2zmd4j21kw23u4qg.jpg" alt=""><br>相偎之时，不懂爱，陌路渐行，方觉是爱，唯憾爱已久远。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签  --&gt;
-&lt;!--![图]() --&gt;
-&lt;!--[]() --&gt;
-&lt;p&gt;&lt;img src=&quot;https://wx2.sinaimg.cn/large/3f2c99ebgy1frp1ty81vwj21kw23ue81.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;我就是一个念旧的人，无法去逃离自己的内心，又一次回到了那个地方，曾经怀揣梦想，而如今，愧对曾经，也不敢亲往，而今却为它事，又一次来到这个地方。旧日时光悄然而去，情愫依旧，爱依然。奈何，我却奈何。散乱情愫，表为凌乱。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="随笔" scheme="https://wqian.net/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="diary" scheme="https://wqian.net/tags/diary/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>打倒拖延症</title>
-    <link href="https://wqian.net/blog/2018/0523-now-go-go-index.html"/>
-    <id>https://wqian.net/blog/2018/0523-now-go-go-index.html</id>
-    <published>2018-05-22T18:28:01.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
-    
-    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><p><img src="https://wx3.sinaimg.cn/large/3f2c99ebgy1frkogo8u1aj20qf0jitaa.jpg" alt="拖延症"></p><blockquote><p>有人说，这是一种懒癌的表现。对于我自己，有严重的拖延症，导致很多事情临近终结才开始进行，于是效果平平，事与愿违。一直想克服，可是效果一直不是很好，将要到达自我毁灭的地步，基要于这点，要改变，一定要改变，从以下入手吧。</p></blockquote><a id="more"></a><p>克服拖延症</p><ul><li>做细项目规划</li><li>做好时间管理</li><li>摒弃无意义的事情</li><li>不能评自己的喜欢和讨厌做事情</li><li>不能有私心杂念</li><li>不能依靠明天</li><li>时刻牢记，就是现在</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --&gt;
-&lt;!--![图]() --&gt;
-&lt;!--[]() --&gt;
-&lt;p&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/large/3f2c99ebgy1frkogo8u1aj20qf0jitaa.jpg&quot; alt=&quot;拖延症&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;有人说，这是一种懒癌的表现。对于我自己，有严重的拖延症，导致很多事情临近终结才开始进行，于是效果平平，事与愿违。一直想克服，可是效果一直不是很好，将要到达自我毁灭的地步，基要于这点，要改变，一定要改变，从以下入手吧。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="daybreak" scheme="https://wqian.net/categories/daybreak/"/>
-    
-    
-      <category term="diary" scheme="https://wqian.net/tags/diary/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>利用js匹配img标签中的src的值</title>
-    <link href="https://wqian.net/blog/2018/0522-img-src-regex-index.html"/>
-    <id>https://wqian.net/blog/2018/0522-img-src-regex-index.html</id>
-    <published>2018-05-22T14:13:07.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
-    
-    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>太牛的方法了，震撼。</p></blockquote><a id="more"></a><h3 id="利用js匹配img标签中的-src的值"><a href="#利用js匹配img标签中的-src的值" class="headerlink" title="利用js匹配img标签中的 src的值"></a>利用js匹配img标签中的 src的值</h3><h4 id="方法1"><a href="#方法1" class="headerlink" title="方法1"></a>方法1</h4><ul><li>机智大牛<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var frag = document.createElement(&apos;div&apos;);</span><br><span class="line">frag.innerHTML = &apos;&lt;div&gt;\</span><br><span class="line">    &lt;img src=&quot;http://www.baidu.com/pic/a.jpg&quot; alt=&quot;&quot; /&gt;\</span><br><span class="line">    &lt;p&gt;this is a pic&lt;/p&gt;\</span><br><span class="line">    &lt;img src=&quot;http://www.baidu.com/pic/b.jpg&quot; /&gt;\</span><br><span class="line">    &lt;p&gt;this is pic b&lt;/p&gt;\</span><br><span class="line">&lt;/div&gt;&apos;;</span><br><span class="line">var result = [].map.call(frag.querySelectorAll(&apos;img&apos;), function(img)&#123; return img.src &#125;);</span><br><span class="line"></span><br><span class="line">console.log(result);</span><br></pre></td></tr></table></figure></li></ul><h4 id="方法2"><a href="#方法2" class="headerlink" title="方法2"></a>方法2</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">另外，match 的话 g 模式不支持输出匹配结果的，你只能使用 while + exec 才行。</span><br><span class="line"></span><br><span class="line">var str = &apos;&lt;div&gt;\</span><br><span class="line">    &lt;img src=&quot;http://www.baidu.com/pic/a.jpg&quot; alt=&quot;&quot; /&gt;\</span><br><span class="line">    &lt;p&gt;this is a pic&lt;/p&gt;\</span><br><span class="line">    &lt;img src=&quot;http://www.baidu.com/pic/b.jpg&quot; /&gt;\</span><br><span class="line">    &lt;p&gt;this is pic b&lt;/p&gt;\</span><br><span class="line">&lt;/div&gt;&apos;;</span><br><span class="line">var patt = /&lt;img[^&gt;]+src=[&apos;&quot;]([^&apos;&quot;]+)[&apos;&quot;]+/g;</span><br><span class="line">var result = [], temp;</span><br><span class="line"></span><br><span class="line">while( (temp= patt.exec(str)) != null ) &#123;</span><br><span class="line">    result.push(temp[1]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(result);</span><br></pre></td></tr></table></figure><h4 id="方法3"><a href="#方法3" class="headerlink" title="方法3"></a>方法3</h4><ul><li>实现很难<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">var str = &quot;this is test string </span><br><span class="line">&lt;img src=\&quot;http:yourweb.com/test.jpg\&quot;width=&apos;50&apos; &gt;123 and the end </span><br><span class="line">&lt;img src=\&quot;所有地址也能匹配.jpg\&quot; /&gt; </span><br><span class="line">&lt;img src=\&quot;/uploads/attached/image/20120426/20120426225658_92565.png\&quot; alt=\&quot;\&quot; /&gt;&quot;</span><br><span class="line">//匹配图片（g表示匹配所有结果i表示区分大小写）</span><br><span class="line">var imgReg = /&lt;img.*?(?:&gt;|\/&gt;)/gi;</span><br><span class="line">//匹配src属性 </span><br><span class="line">var srcReg = /src=[\&apos;\&quot;]?([^\&apos;\&quot;]*)[\&apos;\&quot;]?/i;</span><br><span class="line">var arr = str.match(imgReg);</span><br><span class="line">alert(&apos;所有已成功匹配图片的数组：&apos;+arr);</span><br><span class="line">for (var i = 0; i &lt; arr.length; i++) &#123;</span><br><span class="line">  var src = arr[i].match(srcReg);</span><br><span class="line">  //获取图片地址</span><br><span class="line">  if(src[1])&#123;</span><br><span class="line">    alert(&apos;已匹配的图片地址&apos;+(i+1)+&apos;：&apos;+src[1]);</span><br><span class="line">  &#125;</span><br><span class="line">  //当然你也可以替换src属性</span><br><span class="line"> if (src[0]) &#123;</span><br><span class="line">    var t = src[0].replace(/src/i, &quot;href&quot;);</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></li></ul><h3 id="js根据xpath获取网页元素"><a href="#js根据xpath获取网页元素" class="headerlink" title="js根据xpath获取网页元素"></a>js根据xpath获取网页元素</h3><h4 id="方法1-1"><a href="#方法1-1" class="headerlink" title="方法1"></a>方法1</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">//获取节点</span><br><span class="line">function _x(STR_XPATH) &#123;</span><br><span class="line">    var xresult = document.evaluate(STR_XPATH, document, null, XPathResult.ANY_TYPE, null);</span><br><span class="line">    var xnodes = [];</span><br><span class="line">    var xres;</span><br><span class="line"></span><br><span class="line">    while (xres == xresult.iterateNext()) &#123;</span><br><span class="line">        xnodes.push(xres);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return xnodes;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="方法2-1"><a href="#方法2-1" class="headerlink" title="方法2"></a>方法2</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">function _x3(STR_XPATH) &#123;</span><br><span class="line">    var oResult = document.evaluate(STR_XPATH, document, null, XPathResult.ANY_TYPE, null);</span><br><span class="line">    var aNodes = [];</span><br><span class="line">    if (oResult != null) &#123;</span><br><span class="line">        var oElement = oResult.iterateNext();</span><br><span class="line">        while (oElement) &#123;</span><br><span class="line">            aNodes.push(oElement);</span><br><span class="line">            oElement = oResult.iterateNext();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return aNodes;</span><br><span class="line">&#125;</span><br><span class="line">// 如果只查找单个元素，可以简写成这样</span><br><span class="line">//nodes=document.evaluate(&quot;//div[1]&quot;, document).iterateNext();</span><br></pre></td></tr></table></figure><h3 id="文献参考"><a href="#文献参考" class="headerlink" title="文献参考"></a>文献参考</h3><ul><li><a href="https://segmentfault.com/q/1010000004178052" target="_blank" rel="noopener">https://segmentfault.com/q/1010000004178052</a></li><li><a href="http://www.jb51.net/article/54526.htm" target="_blank" rel="noopener">http://www.jb51.net/article/54526.htm</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>拖延的后果是要付出更多的时间去解决未解决的问题，并且还有接受每天问题在侧的焦虑和苦恼。今天要说的，就是这样一件事。</p></blockquote><a id="more"></a><p>上年年底，决定要安装204的橱柜，思来想去，决定利用过年时间，请大舅哥跑一趟安装一个瓷砖柜体，在老家里面本想找一个做台面的带来，但是年末靠近，工期赶不过来。于是直奔我这里，从老家带来了粘贴好的柜体腿子，并且带了大舅哥的工具，来这里安装。先是在市场里面购买了胶，不锈钢盆，水龙头等所需之物。装了大约4天左右，终于安装好了，市场上也没有定做台面的了，于是他选择赶紧回家过年。而预留的活就是让我买16个螺丝，把碗篮装上，由于附近五金店里面没有，需要去市里面购买，由于稍远，计划路过的时候再买，但是，但是就是这个“路过”，一直从年前，拖延到今天7月20日。要不是这个柜门安装不得已，还不知道要拖到什么时候呢。再就是这个柜门和台面，定了大约有3个多月了，年后放假回来就定了，但是很寸，加工厂由于环保查的严，厂房搬迁，把活给往后推迟了，再后来打了两个电话，也没怎么卖力催，总感觉现在有一个用着呢，不着急，但是万万没有想到，就是这个不着急，一直拖到昨天，才把台面给安装上，固然厂家有一定的责任，但是我责任更多。</p><p>在具体说说今天是怎么“路过”市场去买螺丝的。昨天已经规划好今天要去了，只是时间上还没有规划好，早晨起床带jarey和jarbo。姐姐最近来帮我们，做好饭，吃完饭，已经是8：50左右了，然后带着jarzh去办公室，9点说好的加班整理材料，9点开完会，大约10左右，我自己回家开车去东兴，大约10：30左右，买了20个螺丝垫片和配套螺栓，之后就赶紧回家，路过农贸市场，买了一些菜，到家大约12：00左右，就这样，一上午过去了。倘若之前几次从那里路过，就不是这种情况了，规划很重要，自己不能拖。</p><p>最近jarzh在这里做作业也是，看到他到现在连自己的作业总共有多少，每天要做多少，几天做完这样的事情自己都安排不好，我真心理着急，管理时间是一门科学，真希望他能悟到。</p>]]></content>
     
     <summary type="html">
     
@@ -328,160 +544,7 @@
 &lt;!--![图]() --&gt;
 &lt;!--[]() --&gt;
 &lt;blockquote&gt;
-&lt;p&gt;太牛的方法了，震撼。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="网络日志" scheme="https://wqian.net/categories/%E7%BD%91%E7%BB%9C%E6%97%A5%E5%BF%97/"/>
-    
-    
-      <category term="js" scheme="https://wqian.net/tags/js/"/>
-    
-      <category term="正则" scheme="https://wqian.net/tags/%E6%AD%A3%E5%88%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>m咳嗽用药备注</title>
-    <link href="https://wqian.net/blog/2018/0522-cought-index.html"/>
-    <id>https://wqian.net/blog/2018/0522-cought-index.html</id>
-    <published>2018-05-22T00:42:27.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>从2018年3月份以来，将近三个月时间里，持续的咳嗽。4月份的时候去中心医院检查了一下肺部，拍了ct，诊断肺部没有什么特殊情况，应该是支气管发炎症状，医生给开了一些药，然后持续治疗，有一定好转，仅为自己健康几率，如有和我相同症状的朋友，切勿对照我的情况给自己随便开药，还是要去医院诊断之后再按照医生要求治疗。</p></blockquote><a id="more"></a><h3 id="重点强调"><a href="#重点强调" class="headerlink" title="重点强调"></a>重点强调</h3><ul><li>本记录仅为笔者自己身体健康记录，如有相同境遇，还请前往医院，尊医嘱治疗。切勿随意用药。</li></ul><h3 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h3><ul><li>干咳嗽</li><li>基本没有痰</li><li>无头痛，发热症状</li></ul><h3 id="第一次治疗"><a href="#第一次治疗" class="headerlink" title="第一次治疗"></a>第一次治疗</h3><ul><li>持续时间，2个月左右</li><li>拍肺部ct,无明显特殊症状</li><li>开药：强力枇杷露()，肺力咳胶囊</li></ul><h3 id="第一次治疗效果"><a href="#第一次治疗效果" class="headerlink" title="第一次治疗效果"></a>第一次治疗效果</h3><ul><li>治疗持续了有2个星期左右</li><li>好转之后断断续续停药</li><li>导致每天不定时间歇一点咳嗽</li><li>天冷有点加剧</li><li>所以进行第二次治疗</li></ul><h3 id="第二次用药"><a href="#第二次用药" class="headerlink" title="第二次用药"></a>第二次用药</h3><ul><li>强力枇杷露(胡庆余堂)，头孢克肟分散片(金鸿药业股份有限公司)</li></ul><h3 id="疗效及后需注意问题"><a href="#疗效及后需注意问题" class="headerlink" title="疗效及后需注意问题"></a>疗效及后需注意问题</h3><ul><li>又有好转，要坚持用药</li><li>坚持喝水，不喝水可能是早晨本问题持续的根源</li><li>再加上用嗓子比较厉害，注意保护</li><li>曾怀疑有一些咽炎的问题，目前看来，关联不明显。</li></ul><h3 id="药品说明链接"><a href="#药品说明链接" class="headerlink" title="药品说明链接"></a>药品说明链接</h3><ul><li><a href="https://baike.baidu.com/item/%E5%BC%BA%E5%8A%9B%E6%9E%87%E6%9D%B7%E9%9C%B2" target="_blank" rel="noopener">强力枇杷露</a></li><li><a href="https://baike.baidu.com/item/%E5%93%88%E5%B0%94%E6%BB%A8%E5%B8%82%E5%BA%B7%E9%9A%86%E8%8D%AF%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8/13783339" target="_blank" rel="noopener">哈尔滨市康隆药业有限责任公司</a></li><li><a href="https://baike.baidu.com/item/%E8%83%A1%E5%BA%86%E4%BD%99%E5%A0%82%E5%9B%BD%E8%8D%AF%E5%8F%B7" target="_blank" rel="noopener">胡庆余堂国药号</a></li><li><a href="https://baike.baidu.com/item/%E8%82%BA%E5%8A%9B%E5%92%B3%E8%83%B6%E5%9B%8A/6409940" target="_blank" rel="noopener">肺力咳胶囊</a></li><li><a href="https://baike.baidu.com/item/%E8%B4%B5%E5%B7%9E%E5%81%A5%E5%85%B4%E8%8D%AF%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/4588939" target="_blank" rel="noopener">贵州健兴药业有限公司</a></li><li><a href="https://baike.baidu.com/item/%E5%A4%B4%E5%AD%A2%E5%85%8B%E8%82%9F%E5%88%86%E6%95%A3%E7%89%87" target="_blank" rel="noopener">头孢克肟分散片</a></li><li><a href="https://baike.baidu.com/item/%E7%8F%A0%E6%B5%B7%E9%87%91%E9%B8%BF%E8%8D%AF%E4%B8%9A%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/7281439" target="_blank" rel="noopener">金鸿药业股份有限公司</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;从2018年3月份以来，将近三个月时间里，持续的咳嗽。4月份的时候去中心医院检查了一下肺部，拍了ct，诊断肺部没有什么特殊情况，应该是支气管发炎症状，医生给开了一些药，然后持续治疗，有一定好转，仅为自己健康几率，如有和我相同症状的朋友，切勿对照我的情况给自己随便开药，还是要去医院诊断之后再按照医生要求治疗。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="健康" scheme="https://wqian.net/categories/%E5%81%A5%E5%BA%B7/"/>
-    
-    
-      <category term="咳嗽" scheme="https://wqian.net/tags/%E5%92%B3%E5%97%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>限制想象力的因素</title>
-    <link href="https://wqian.net/blog/2018/0522-index.html"/>
-    <id>https://wqian.net/blog/2018/0522-index.html</id>
-    <published>2018-05-21T16:54:17.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>我们在做一件事情，或者在开发一个项目，或者在搞一项科研，或者在自high一段很高深的不可描述，怕就怕想象力被封掉。或者你的想象力是已经是别人踩在脚底的坑。<br><a id="more"></a><br>暂且就分析几个因素吧</p></blockquote><p>贫穷</p><p>主要是以知识贫乏为代表，没有任何知识或技术内涵为根本，那么就没有办法去完成你的构思，这个事实限制你想象力的不是没有想象力，而是变成了纯粹的想。而且不切实际，随之而带来的就是第二大因素。</p><p>无力</p><p>无力行动，无力深入，无力继续，无力学习，这些就可以隐藏很多你所无法开发的自身的潜能，限制了对自己的认识，无法去想象你自身的强大，随之而陷入无休止的沉沦。</p><p>狭隘</p><p>狭隘的视角，让你看不到别人的高度，当努力攀爬时你会发现，你终究会发现，你所企及的高度，可能别人已经从哪个高度延伸到了更进一步的境界。</p><p>懒惰</p><p>这是一种病，其实说没有时间是一种推诿懒惰的表现，有人说过，没时间做事，其实就意味着你根本没有把这件事当做一件事来做，显然，很多时候，是这样的。</p><p>拖延</p><p>根本原因来自于漠视，恐惧，无秩，凌乱。可能最根本的原因是没有把脑子内存去理清，做其实没有那么难。</p><p>背驰</p><p>我把知行不一叫做背驰，听了大宇茶馆的话说明朝，稍微了解了王阳明的执行合一，我所以为，难为的是合。合，方得大道。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;我们在做一件事情，或者在开发一个项目，或者在搞一项科研，或者在自high一段很高深的不可描述，怕就怕想象力被封掉。或者你的想象力是已经是别人踩在脚底的坑。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="daybreak" scheme="https://wqian.net/categories/daybreak/"/>
-    
-    
-      <category term="diary" scheme="https://wqian.net/tags/diary/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javascript跨域数据获取jsonp或iframe</title>
-    <link href="https://wqian.net/blog/2018/0521-index.html"/>
-    <id>https://wqian.net/blog/2018/0521-index.html</id>
-    <published>2018-05-21T08:47:24.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>javascript数据访问进行跨域数据获取，已知的方法及存在的局限性。</p></blockquote><a id="more"></a><h3 id="jsonp跨域"><a href="#jsonp跨域" class="headerlink" title="jsonp跨域"></a>jsonp跨域</h3><ul><li>需要在使用ajax的jsonp访问模式</li><li>获取形式为异步获取</li><li>需要在服务器端进行格式设置，只能是jsonp的数据格式</li><li><p>通信代码</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">//只能运用异步中,成功代码了。 </span><br><span class="line">  $.ajax(&#123;</span><br><span class="line">       async:false, </span><br><span class="line">       url:phpsrc,    //跨域到http://www.xiaoqiang2.com，另，http://xiaoqiang.com也算跨域  </span><br><span class="line">       type:&apos;GET&apos;,  //jsonp 类型下只能使用GET,不能用POST,使用post提交会造成有些浏览器获取不到返回   例如firebug  </span><br><span class="line">       dataType:&apos;jsonp&apos;, //指定为jsonp类型  </span><br><span class="line">       data:&#123;&quot;user&quot;:user,&quot;pwd&quot;:pwd,&quot;src&quot;:src,&quot;ver&quot;:ver&#125;,//数据参数  </span><br><span class="line">       jsonp:&apos;callback&apos;,//服务器端获取回调函数名的key，对应后台有$_GET[&apos;callback&apos;]=&apos;getName&apos;;callback是默认值  </span><br><span class="line">       jsonpCallback:&apos;JRgetMessage&apos;, //回调函数名  </span><br><span class="line">       success:function(result)&#123;  //成功执行处理，对应后台返回的getName(data)方法。  </span><br><span class="line">         ress=JSON.stringify(result);</span><br><span class="line">         alert(ress);</span><br><span class="line">         &#125;,  </span><br><span class="line">       error:function(msg)&#123;  </span><br><span class="line">        alert(&apos;ServerErr:&apos;+msg)  </span><br><span class="line">       &#125;  </span><br><span class="line">   &#125;);   </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>可以根据其返回code进行网页通断的检测</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">function UrlOK(url)&#123;</span><br><span class="line">   // url=&quot;http://www.google.com&quot;;</span><br><span class="line">    $.ajax(&#123;</span><br><span class="line">        type: &apos;get&apos;,</span><br><span class="line">        cache: false,</span><br><span class="line">        url: url,</span><br><span class="line">        dataType: &quot;jsonp&quot;, //跨域采用jsonp方式 </span><br><span class="line">        processData: false,</span><br><span class="line">        timeout:5000, //超时时间，毫秒</span><br><span class="line">        complete: function (data) &#123;</span><br><span class="line">            if (data.status==200) &#123;</span><br><span class="line">                alert(&apos;ok&apos;);</span><br><span class="line">              &#125; else &#123;</span><br><span class="line">                alert(&quot;无效链接&quot;);</span><br><span class="line">              &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><h3 id="利用iframe跨域"><a href="#利用iframe跨域" class="headerlink" title="利用iframe跨域"></a>利用iframe跨域</h3><ul><li>利用windows.name的方式来实现。</li><li>大致原理是在域A中页面A1中动态创建iframe</li><li>然后在A1中的iframe中加载域B中的页面B1</li><li>之后A1中的iframe中再加载A域中任意页面</li><li>继续在A1中读取windows.name。可得B域数据</li><li>关键是要求域B中要有相关代码实现windows.name赋值，也就是说明无法进行任意页面的读取，也只能是同时两个网站具有控制权的时候才可以。</li><li>代码网上自行搜索吧，以下是半成品<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">function domainData(iframe, url, fn)  </span><br><span class="line">&#123;  </span><br><span class="line">    var isFirst = true;  </span><br><span class="line">    //iframe.style.display = &apos;none&apos;;  </span><br><span class="line">    var loadfn = function()&#123;  </span><br><span class="line">        if(isFirst)&#123;  </span><br><span class="line">            //null.html 是同域下的中转代理页面。内容可为空。  </span><br><span class="line">            iframe.contentWindow.location = &apos;t_ifram2.html&apos;;  </span><br><span class="line">            isFirst = false;  </span><br><span class="line">        &#125; else &#123;  </span><br><span class="line">            fn(iframe.contentWindow.name);  </span><br><span class="line">            //使用完毕销毁iframe，保证安全，释放内存  </span><br><span class="line">            iframe.contentWindow.document.write(&apos;&apos;);  </span><br><span class="line">            iframe.contentWindow.close();  </span><br><span class="line">            document.body.removeChild(iframe);  </span><br><span class="line">            iframe.src = &apos;&apos;;  </span><br><span class="line">            iframe = null;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;;  </span><br><span class="line">    iframe.src = url;  </span><br><span class="line">    //alert(url);  </span><br><span class="line">    //给iframe设置onload事件  </span><br><span class="line">    if(iframe.attachEvent)&#123;  </span><br><span class="line">        iframe.attachEvent(&apos;onload&apos;, loadfn);  </span><br><span class="line">    &#125; else &#123;  </span><br><span class="line">        iframe.addEventListener(&apos;load&apos;, loadfn, false);  </span><br><span class="line">        //iframe.onload = loadfn;  </span><br><span class="line">    &#125;  </span><br><span class="line">      </span><br><span class="line">    document.body.appendChild(iframe);  </span><br><span class="line">&#125;  </span><br><span class="line">var ifm = document.getElementById(&quot;IFeditValue&quot;);  </span><br><span class="line">setInterval(function()&#123;  </span><br><span class="line">    var time = (new Date()).getTime();  </span><br><span class="line">    domainData(ifm, &apos;http://www.w3school.com.cn/jsref/met_select_remove.asp&apos;, function(data)&#123;  </span><br><span class="line">        alert(data);  </span><br><span class="line">    &#125;);  </span><br><span class="line">&#125;, 1000);  </span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></li></ul><h3 id="失败尝试"><a href="#失败尝试" class="headerlink" title="失败尝试"></a>失败尝试</h3><ul><li>利用提取iframe的dom读取源代码，失败，因为跨域不能读取iframe</li><li>希望向iframe的网址插入script，失败，因为暂没找到动态创建的方法</li></ul><h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><ul><li><a href="https://blog.csdn.net/freshlover/article/details/40827207" target="_blank" rel="noopener">https://blog.csdn.net/freshlover/article/details/40827207</a></li><li><a href="http://www.runoob.com/json/json-jsonp.html" target="_blank" rel="noopener">http://www.runoob.com/json/json-jsonp.html</a></li><li><a href="https://blog.csdn.net/u011897301/article/details/52679486" target="_blank" rel="noopener">https://blog.csdn.net/u011897301/article/details/52679486</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;javascript数据访问进行跨域数据获取，已知的方法及存在的局限性。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="daybreak" scheme="https://wqian.net/categories/daybreak/"/>
-    
-    
-      <category term="javascript" scheme="https://wqian.net/tags/javascript/"/>
-    
-      <category term="jsonp" scheme="https://wqian.net/tags/jsonp/"/>
-    
-      <category term="跨域" scheme="https://wqian.net/tags/%E8%B7%A8%E5%9F%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>魔法书签</title>
-    <link href="https://wqian.net/blog/2018/0517-mfsq-index.html"/>
-    <id>https://wqian.net/blog/2018/0517-mfsq-index.html</id>
-    <published>2018-05-17T12:55:55.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>有关魔法书签的说明和帮助。</p></blockquote><a id="more"></a><h3 id="魔法书签安装"><a href="#魔法书签安装" class="headerlink" title="魔法书签安装"></a>魔法书签安装</h3><ul><li>位置<a href="https://aqtech.gitee.io/appset/mfsq/pophtml.html" target="_blank" rel="noopener">https://aqtech.gitee.io/appset/mfsq/pophtml.html</a></li><li>魔法书签安装方式：拖动下面链接到书签栏。</li></ul><iframe src="https://aqtech.gitee.io/appset/mfsq/pophtml.html" style="width:600px;height: 40px;border:0px;"></iframe><ul><li>PS:书签栏如不能正常显示，请同时按下”ctrl+shift+b”进行显示<h3 id="功能列表"><a href="#功能列表" class="headerlink" title="功能列表"></a>功能列表</h3></li><li>获取网页地址</li><li>打开百度site</li></ul><h3 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h3><ul><li><a href="http://tools.jb51.net/code/jscompress" target="_blank" rel="noopener">http://tools.jb51.net/code/jscompress</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;有关魔法书签的说明和帮助。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="魔法书签" scheme="https://wqian.net/categories/%E9%AD%94%E6%B3%95%E4%B9%A6%E7%AD%BE/"/>
-    
-    
-      <category term="魔法书签" scheme="https://wqian.net/tags/%E9%AD%94%E6%B3%95%E4%B9%A6%E7%AD%BE/"/>
-    
-      <category term="mfsq" scheme="https://wqian.net/tags/mfsq/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>记录有关书签中的几个Javascript函数</title>
-    <link href="https://wqian.net/blog/2018/0517-javascript-function-index.html"/>
-    <id>https://wqian.net/blog/2018/0517-javascript-function-index.html</id>
-    <published>2018-05-17T06:52:00.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>制作魔法书签过程中废弃的几个函数。可能用到其他地方，暂且作为备份。</p></blockquote><a id="more"></a><h3 id="自建get-post函数"><a href="#自建get-post函数" class="headerlink" title="自建get,post函数"></a>自建get,post函数</h3><ul><li>特点不需要加载javascript.</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">//var Resget=doFormRequest(url,&quot;get&quot;,&quot;&#123;&apos;user&apos;:&apos;value2&apos;, &apos;pwd&apos;:&apos;value&apos;&#125;&quot;)</span><br><span class="line">//alert(Resget);</span><br><span class="line">// 自建get,post函数</span><br><span class="line">    /*</span><br><span class="line">    * @url: url link</span><br><span class="line">    * @action: &quot;get&quot;, &quot;post&quot;</span><br><span class="line">    * @json: &#123;&apos;key1&apos;:&apos;value2&apos;, &apos;key2&apos;:&apos;value2&apos;&#125; </span><br><span class="line">    */</span><br><span class="line">    function doFormRequest(url, action, json)</span><br><span class="line">    &#123;</span><br><span class="line">        var form = document.createElement(&quot;form&quot;);</span><br><span class="line">        form.action = url;</span><br><span class="line">        form.method = action;</span><br><span class="line"></span><br><span class="line">        // append input attribute and valus</span><br><span class="line">        for (var key in json)</span><br><span class="line">        &#123;</span><br><span class="line">            if (json.hasOwnProperty(key))</span><br><span class="line">            &#123;</span><br><span class="line">                var val = json[key];</span><br><span class="line">                input = document.createElement(&quot;input&quot;);</span><br><span class="line">                input.type = &quot;hidden&quot;;</span><br><span class="line">                input.name = key;</span><br><span class="line">                input.value = val;</span><br><span class="line"></span><br><span class="line">                // append key-value to form</span><br><span class="line">                form.appendChild(input)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // send post request</span><br><span class="line">        document.body.appendChild(form);</span><br><span class="line">        form.submit();</span><br><span class="line"></span><br><span class="line">        var res=form;</span><br><span class="line">        // remove form from document</span><br><span class="line">        document.body.removeChild(form);</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><h3 id="得到传递的参数"><a href="#得到传递的参数" class="headerlink" title="得到传递的参数"></a>得到传递的参数</h3><ul><li>只能得到user=pwd，形式的。局限性<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">//获取书签传递过来的参数，用户和密码</span><br><span class="line">//var UserPwd=GetUserPwd();</span><br><span class="line">//var user=UserPwd[0];</span><br><span class="line">//var pwd=UserPwd[1];</span><br><span class="line">//get user and pwd from the src.js?user=pwd</span><br><span class="line"></span><br><span class="line">function GetUserPwd()&#123;</span><br><span class="line">    var js = document.getElementsByTagName(&quot;script&quot;);  </span><br><span class="line">    for (var i = 0; i &lt; js.length; i++) &#123;  </span><br><span class="line">        if (js[i].src.indexOf(&quot;myt.js&quot;) &gt;= 0) &#123;  </span><br><span class="line">             var arraytemp = new Array();  </span><br><span class="line">             arraytemp = js[i].src.split(&apos;?&apos;);  </span><br><span class="line">             arraytemp = arraytemp[1].split(&apos;=&apos;);  </span><br><span class="line">            // alert(arraytemp[0] + &quot;=&quot; + arraytemp[1]);  </span><br><span class="line">             var user=arraytemp[0];</span><br><span class="line">             var pwd=arraytemp[1];</span><br><span class="line">             //alert(user + pwd);     </span><br><span class="line">             return [user,pwd];     </span><br><span class="line">             //return &#123;user:arraytemp[0] pwd:arraytemp[1]&#125;;</span><br><span class="line">             break;</span><br><span class="line">        &#125;  </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><h3 id="根据是否需要加载jquery"><a href="#根据是否需要加载jquery" class="headerlink" title="根据是否需要加载jquery"></a>根据是否需要加载jquery</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">  //var jqueryjs=&apos;https://cdn.bootcss.com/jquery/3.3.1/jquery.js&apos;;</span><br><span class="line">  //如果已经加载了jqury则不再重新加载</span><br><span class="line">  //NeedLoadJs(jqueryjs);</span><br><span class="line">  // Juge Load Jqury</span><br><span class="line"></span><br><span class="line">  function NeedLoadJs(url)&#123;</span><br><span class="line">      if(typeof(jQuery)==&quot;undefined&quot;)&#123;</span><br><span class="line">          alert(&quot;jQuery is not imported&quot;);</span><br><span class="line">     // document.write(&quot;&lt;script type=&apos;text/javascript&apos; src=&apos;https://cdn.bootcss.com/jquery/3.3.1/jquery.js&apos;&gt;&lt;/script&gt;&quot;);  </span><br><span class="line">     </span><br><span class="line">          //var newscript = document.createElement(&apos;script&apos;);  </span><br><span class="line">          //newscript.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;);  </span><br><span class="line">          //newscript.setAttribute(&apos;src&apos;,&apos;https://cdn.bootcss.com/jquery/3.3.1/jquery.js&apos;);  </span><br><span class="line">          //var head = document.getElementsByTagName(&apos;head&apos;)[0];  </span><br><span class="line">          //head.appendChild(newscript); </span><br><span class="line">           LoadJs(url);</span><br><span class="line"></span><br><span class="line">      &#125;else&#123;</span><br><span class="line">     //alert(&quot;jQuery is imported&quot;);</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line">//Load js</span><br><span class="line">      function LoadJs(url)&#123;</span><br><span class="line">          var newscript = document.createElement(&apos;script&apos;);  </span><br><span class="line">          newscript.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;);  </span><br><span class="line">          newscript.setAttribute(&apos;src&apos;,url);  </span><br><span class="line">          var head = document.getElementsByTagName(&apos;head&apos;)[0];  </span><br><span class="line">          head.appendChild(newscript);  </span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure><h3 id="javascript获取网址打开网址"><a href="#javascript获取网址打开网址" class="headerlink" title="javascript获取网址打开网址"></a>javascript获取网址打开网址</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//alert(window.location.href);</span><br><span class="line">//window.open(&quot;tencent://www.jb51.net&quot;);</span><br></pre></td></tr></table></figure><h3 id="javascript获取同域下iframe中网页源代码"><a href="#javascript获取同域下iframe中网页源代码" class="headerlink" title="javascript获取同域下iframe中网页源代码"></a>javascript获取同域下iframe中网页源代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">onerror=handleErr</span><br><span class="line"></span><br><span class="line">var txt=&quot;&quot;</span><br><span class="line"></span><br><span class="line">function handleErr(msg,url,l)</span><br><span class="line">&#123;</span><br><span class="line">txt=&quot;There was an error on this page.\n\n&quot;</span><br><span class="line">txt+=&quot;Error: &quot; + msg + &quot;\n&quot;</span><br><span class="line">txt+=&quot;URL: &quot; + url + &quot;\n&quot;</span><br><span class="line">txt+=&quot;Line: &quot; + l + &quot;\n\n&quot;</span><br><span class="line">txt+=&quot;Click OK to continue.\n\n&quot;</span><br><span class="line">alert(txt)</span><br><span class="line">return true</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"> function getIframeContent(frameId)&#123; </span><br><span class="line"> var frameObj = document.getElementById(frameId); </span><br><span class="line"></span><br><span class="line"> alert (&quot;x1&quot;);</span><br><span class="line"></span><br><span class="line"> var frameContent = frameObj.contentWindow.document.urlset.innerHTML; </span><br><span class="line"> alert(&quot;frame content : &quot;+frameContent); </span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure><h3 id="远程代码读取"><a href="#远程代码读取" class="headerlink" title="远程代码读取"></a>远程代码读取</h3><ul><li>需要在目标网站设置头部<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt; </span><br><span class="line">&lt;html&gt; </span><br><span class="line">&lt;head&gt; </span><br><span class="line">&lt;meta http-equiv=&quot;Content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt; </span><br><span class="line">&lt;title&gt;远程网页源代码读取&lt;/title&gt; </span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt; </span><br><span class="line">/* 页面字体样式 */ </span><br><span class="line">body, td, input, textarea &#123; </span><br><span class="line">font-family:Arial; </span><br><span class="line">font-size:12px; </span><br><span class="line">&#125; </span><br><span class="line">&lt;/style&gt; </span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt; </span><br><span class="line">//用于创建XMLHttpRequest对象 </span><br><span class="line">function createXmlHttp() &#123; </span><br><span class="line">//根据window.XMLHttpRequest对象是否存在使用不同的创建方式 </span><br><span class="line">if (window.XMLHttpRequest) &#123; </span><br><span class="line">xmlHttp = new XMLHttpRequest(); //FireFox、Opera等浏览器支持的创建方式 </span><br><span class="line">&#125; else &#123; </span><br><span class="line">xmlHttp = new ActiveXObject(&quot;Microsoft.XMLHTTP&quot;);//IE浏览器支持的创建方式 </span><br><span class="line">&#125; </span><br><span class="line">&#125; </span><br><span class="line">//直接通过XMLHttpRequest对象获取远程网页源代码 </span><br><span class="line">function getSource() &#123; </span><br><span class="line">var url = document.getElementById(&quot;url&quot;).value; //获取目标地址信息 </span><br><span class="line">//地址为空时提示用户输入 </span><br><span class="line">if (url == &quot;&quot;) &#123; </span><br><span class="line">alert(&quot;请输入网页地址。&quot;); </span><br><span class="line">return; </span><br><span class="line">&#125; </span><br><span class="line">document.getElementById(&quot;source&quot;).value = &quot;正在加载……&quot;; //提示正在加载 </span><br><span class="line">createXmlHttp(); //创建XMLHttpRequest对象 </span><br><span class="line">xmlHttp.onreadystatechange = writeSource; //设置回调函数 </span><br><span class="line">xmlHttp.open(&quot;GET&quot;, url, true); </span><br><span class="line">xmlHttp.send(null); </span><br><span class="line">&#125; </span><br><span class="line">//www.mp4ku.com将远程网页源代码写入页面文字区域 </span><br><span class="line">function writeSource() &#123; </span><br><span class="line">if (xmlHttp.readyState == 4) &#123; </span><br><span class="line">document.getElementById(&quot;source&quot;).value = xmlHttp.responseText; </span><br><span class="line">&#125; </span><br><span class="line">&#125; </span><br><span class="line">&lt;/script&gt; </span><br><span class="line">&lt;/head&gt; </span><br><span class="line">&lt;body&gt; </span><br><span class="line">&lt;h1&gt;远程网页源代码读取&lt;/h1&gt; </span><br><span class="line">&lt;div&gt; </span><br><span class="line">地址：&lt;input type=&quot;text&quot; id=&quot;url&quot;&gt; </span><br><span class="line">&lt;input type=&quot;button&quot; onclick=&quot;getSource()&quot; value=&quot;获取源码&quot;&gt; </span><br><span class="line">&lt;/div&gt; </span><br><span class="line">&lt;textarea rows=&quot;10&quot; cols=&quot;80&quot; id=&quot;source&quot;&gt;&lt;/textarea&gt; </span><br><span class="line">&lt;/body&gt; </span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></li></ul><h3 id="php获取源代码"><a href="#php获取源代码" class="headerlink" title="php获取源代码"></a>php获取源代码</h3><ul><li><p>成功</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ch = curl_init($url);</span><br><span class="line">curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);</span><br><span class="line">curl_setopt($ch,CURLOPT_TIMEOUT,5);</span><br><span class="line">curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);</span><br><span class="line">curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);</span><br><span class="line"></span><br><span class="line"> $html = curl_exec($ch);</span><br><span class="line"> if($html !== false)&#123;</span><br><span class="line">     echo $html;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li><li><p>对SSL证书挑剔(成功率低)</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">//$content = file_get_contents(&apos;https://wqian.net/baidusitemap.xml&apos;);</span><br><span class="line">$url = (&apos;https://wqian.net/baidusitemap.xml&apos;); </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">function getHTTPS($url) &#123;</span><br><span class="line">  $ch = curl_init();</span><br><span class="line">  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);</span><br><span class="line">  curl_setopt($ch, CURLOPT_HEADER, false);</span><br><span class="line">  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);</span><br><span class="line">  curl_setopt($ch, CURLOPT_SSLVERSION, 1); </span><br><span class="line">  curl_setopt($ch, CURLOPT_URL, $url);</span><br><span class="line">  curl_setopt($ch, CURLOPT_REFERER, $url);</span><br><span class="line">  curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);</span><br><span class="line"></span><br><span class="line">curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5); </span><br><span class="line">curl_setopt($ch, CURLOPT_POST, 0);  </span><br><span class="line">curl_setopt($ch, CURLOPT_TIMEOUT, 5); </span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  $result = curl_exec($ch);</span><br><span class="line">   </span><br><span class="line">   var_dump(curl_error($ch));  //查看报错信息 </span><br><span class="line"></span><br><span class="line">  curl_close($ch);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  return &quot;reslt&lt;br&gt;&quot;. $result;</span><br><span class="line">&#125;</span><br><span class="line">$data=getHTTPS(&quot;https://wqian.net/baidusitemap.xml&quot;);</span><br><span class="line"></span><br><span class="line">echo $data; </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//echo $content;</span><br><span class="line"></span><br><span class="line">//preg_match_all(&apos;/&lt;loc&gt;(.*?)&lt;\/loc&gt;/&apos;, $content, $out, PREG_PATTERN_ORDER);</span><br><span class="line">//var_dump($out);</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure></li></ul><h3 id="循环检测条件满足后停止"><a href="#循环检测条件满足后停止" class="headerlink" title="循环检测条件满足后停止"></a>循环检测条件满足后停止</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//定时检测加载完毕后调用</span><br><span class="line"> var InterId=setInterval(function()&#123;</span><br><span class="line">        // alert(&quot;每秒钟都会执行&quot;);</span><br><span class="line">        //按需停止</span><br><span class="line">        clearInterval(InterId);</span><br><span class="line">      </span><br><span class="line">  &#125;,20);</span><br></pre></td></tr></table></figure><h3 id="得到地址中的文件名称-ss-xetn-jxs-js可得到jxs"><a href="#得到地址中的文件名称-ss-xetn-jxs-js可得到jxs" class="headerlink" title="得到地址中的文件名称/ss/xetn/jxs.js可得到jxs"></a>得到地址中的文件名称/ss/xetn/jxs.js可得到jxs</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//得到地址中文件名称    </span><br><span class="line">    function getUrlFileName(url) &#123;</span><br><span class="line">        var str = url;</span><br><span class="line">        str = str.substring(str.lastIndexOf(&quot;/&quot;) + 1);</span><br><span class="line">        str = str.substring(0, str.lastIndexOf(&quot;.&quot;));</span><br><span class="line">        return str;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><h3 id="根据xpath获取dom元素"><a href="#根据xpath获取dom元素" class="headerlink" title="根据xpath获取dom元素"></a>根据xpath获取dom元素</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function _x(STR_XPATH) &#123;</span><br><span class="line">    var xresult = document.evaluate(STR_XPATH, document, null, XPathResult.ANY_TYPE, null);</span><br><span class="line">    var xnodes = [];</span><br><span class="line">    var xres;</span><br><span class="line">    while (xres = xresult.iterateNext()) &#123;</span><br><span class="line">        xnodes.push(xres);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return xnodes;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">var xs=_x(&apos;//*[@id=&quot;root&quot;]/div/div[2]/div[1]/div/div/div/div[1]/span&apos;);</span><br><span class="line">alert(xs[0].innerHTML);</span><br></pre></td></tr></table></figure><h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><ul><li><a href="http://www.cnblogs.com/fishtreeyu/archive/2011/02/27/1966178.html" target="_blank" rel="noopener">http://www.cnblogs.com/fishtreeyu/archive/2011/02/27/1966178.html</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;制作魔法书签过程中废弃的几个函数。可能用到其他地方，暂且作为备份。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="魔法书签" scheme="https://wqian.net/categories/%E9%AD%94%E6%B3%95%E4%B9%A6%E7%AD%BE/"/>
-    
-    
-      <category term="javascript" scheme="https://wqian.net/tags/javascript/"/>
-    
-      <category term="mfsq" scheme="https://wqian.net/tags/mfsq/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>迷失</title>
-    <link href="https://wqian.net/blog/2018/0516-index-lost.html"/>
-    <id>https://wqian.net/blog/2018/0516-index-lost.html</id>
-    <published>2018-05-16T13:29:38.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>似乎自己已经迷失。要找回自己。</p></blockquote><a id="more"></a><p>似乎自己已经迷失了方向<br>似乎已经忘记了自己的身份<br>有必要思考一下自己的使命<br>我来自哪里？<br>我要的什么？<br>我的目的是什么？<br>我还是不是自己？<br>提勉<br>知而不行，谓之空<br>行而不知，谓之莽<br>正所谓知行合一，方可天人合一</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;似乎自己已经迷失。要找回自己。&lt;/p&gt;
+&lt;p&gt;拖延的后果是要付出更多的时间去解决未解决的问题，并且还有接受每天问题在侧的焦虑和苦恼。今天要说的，就是这样一件事。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -494,13 +557,13 @@
   </entry>
   
   <entry>
-    <title>阿里云虚拟主机配置https访问及阿里云虚拟主机CDN设置</title>
-    <link href="https://wqian.net/blog/2018/0516-aliyun-https.html"/>
-    <id>https://wqian.net/blog/2018/0516-aliyun-https.html</id>
-    <published>2018-05-16T01:51:56.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
+    <title>穿衣服的故事</title>
+    <link href="https://wqian.net/blog/2018/0719-about-dress-index.html"/>
+    <id>https://wqian.net/blog/2018/0719-about-dress-index.html</id>
+    <published>2018-07-19T07:09:38.000Z</published>
+    <updated>2018-11-08T01:32:16.664Z</updated>
     
-    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>配置阿里云虚拟主机http访问，包括ssl证书申请。<em>阿里https申请证书是免费的，但是配置CDN是收费的，并且除了配置他的CDN方式进行https登录外，没有其他方法，如果想吃免费午餐的同学，请略过吧，作者也是进入了坑之后，才来补上这个说明的（PS:2018.5.22）</em>。</p></blockquote><a id="more"></a><h3 id="阿里云免费ssl证书申请"><a href="#阿里云免费ssl证书申请" class="headerlink" title="阿里云免费ssl证书申请"></a>阿里云免费ssl证书申请</h3><ul><li>登录阿里云后台管理&lt;&gt;</li><li>左侧菜单，管理控制台-安全（云盾）-CA证书服务</li><li>根据自己的域名申请，购买0元免费版本</li><li>补全信息</li><li>等待申请通过结束</li></ul><h3 id="配置CDN"><a href="#配置CDN" class="headerlink" title="配置CDN"></a>配置CDN</h3><ul><li>登录阿里云后台管理&lt;&gt;</li><li>左侧菜单，管理控制台-云计算基础服务-CDN</li><li>菜单域名管理-添加域名</li><li>图片小文件-ip-主机ip-80端口-http到https</li><li><em>这个是要收费的，按流量收费，阿里虚拟主机cdn是按照流量收费的</em></li></ul><h3 id="配置域名解析"><a href="#配置域名解析" class="headerlink" title="配置域名解析"></a>配置域名解析</h3><ul><li>CANME到指定位置</li></ul><h3 id="等待解析成功访问"><a href="#等待解析成功访问" class="headerlink" title="等待解析成功访问"></a>等待解析成功访问</h3><h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><p>-<a href="https://blog.csdn.net/chwshuang/article/details/52443274" target="_blank" rel="noopener">https://blog.csdn.net/chwshuang/article/details/52443274</a></p>]]></content>
+    <content type="html"><![CDATA[<!-- Hexo daybreak git vb.net 健康 博客设置 网络日志 软件列表 魔法书签 --><!--![图]() --><!--[]() --><blockquote><p>那是一件关于jarey穿衣服的故事。</p></blockquote><a id="more"></a><p>故事发生在一个清晨，那是有关jarey穿衣服的故事。早晨起床，我让jr自己穿上衣服，xf已经把衣服放到沙发上了，他坐在沙发上拿着自己的短裤看来看去，然后说：“妈妈这个短裤上有点脏”，我把原话转述给了xf，xf说“没事的，洗不掉了。”，小家伙拿着衣服看看，过了一会说：“我今天想穿带面包的衣服，这个带小螃蟹的衣服太难穿了”。</p><p>我真的想把这么多的事情延续下去，有个人说过，不是没有时间，而是你认为他不重要。若干年后，这些事情，真的值得珍藏和回忆，我所缺少的，尽可能的不要发生在我孩子身上。</p>]]></content>
     
     <summary type="html">
     
@@ -508,43 +571,15 @@
 &lt;!--![图]() --&gt;
 &lt;!--[]() --&gt;
 &lt;blockquote&gt;
-&lt;p&gt;配置阿里云虚拟主机http访问，包括ssl证书申请。&lt;em&gt;阿里https申请证书是免费的，但是配置CDN是收费的，并且除了配置他的CDN方式进行https登录外，没有其他方法，如果想吃免费午餐的同学，请略过吧，作者也是进入了坑之后，才来补上这个说明的（PS:2018.5.22）&lt;/em&gt;。&lt;/p&gt;
+&lt;p&gt;那是一件关于jarey穿衣服的故事。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
     
-      <category term="网络日志" scheme="https://wqian.net/categories/%E7%BD%91%E7%BB%9C%E6%97%A5%E5%BF%97/"/>
+      <category term="jarey" scheme="https://wqian.net/categories/jarey/"/>
     
     
-      <category term="阿里云虚拟主机" scheme="https://wqian.net/tags/%E9%98%BF%E9%87%8C%E4%BA%91%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA/"/>
-    
-      <category term="https" scheme="https://wqian.net/tags/https/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>利用javascript的jsonp推送静态站点的网址到php服务器进行百度网址推送</title>
-    <link href="https://wqian.net/blog/2018/0515-javascript-jsonp-php-baidu.html"/>
-    <id>https://wqian.net/blog/2018/0515-javascript-jsonp-php-baidu.html</id>
-    <published>2018-05-15T15:48:51.000Z</published>
-    <updated>2018-07-10T15:45:36.234Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>实现将静态网站的网址采集后推送到php服务器，进行百度站长网址推送。</p></blockquote><a id="more"></a><h3 id="功能导航文件"><a href="#功能导航文件" class="headerlink" title="功能导航文件"></a>功能导航文件</h3><ul><li>bdp.html<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;UTF-8&quot;/&gt;</span><br><span class="line">&lt;title&gt;duo&lt;/title&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    function Dobdp()&#123;</span><br><span class="line"></span><br><span class="line">        var getc=document.getElementById(&quot;getc&quot;).value;</span><br><span class="line">        var getn=document.getElementById(&quot;getn&quot;).value;</span><br><span class="line">        var tj=document.getElementById(&quot;tj&quot;).value;</span><br><span class="line">        //alert(getn);</span><br><span class="line">        window.open(&apos;https://wqian.net/jsgetxml2.html?c=&apos;+getc+&apos;&amp;n=&apos;+ getn+&apos;&amp;tj=&apos;+ tj +&apos;&apos;,&apos;iframe_a&apos;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">模式：&lt;input id=getc value=xct width=&quot;200&quot;&gt; 范围：&lt;input id=getn value=-1 width=&quot;200&quot;&gt; 是否提交：&lt;input id=tj value=0 width=&quot;200&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;&lt;button onclick=&quot;Dobdp()&quot;&gt;点击即可进行查看&lt;/button&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;iframe src=&quot;https://wqian.net&quot; name=&quot;iframe_a&quot; width=100% height=&quot;500&quot;&gt;&lt;/iframe&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></li></ul><h3 id="静态网站内部文件"><a href="#静态网站内部文件" class="headerlink" title="静态网站内部文件"></a>静态网站内部文件</h3><ul><li>jsgetxmls代码<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: false</span><br><span class="line">---</span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;UTF-8&quot;/&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.bootcss.com/jquery/1.11.1/jquery.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">function getdate(url)&#123;</span><br><span class="line">   htmlobj=$.ajax(&#123;url:url,async:false&#125;);</span><br><span class="line">   return htmlobj.responseText;</span><br><span class="line">&#125;</span><br><span class="line">// 自建get,post函数</span><br><span class="line">    /*</span><br><span class="line">    * @url: url link</span><br><span class="line">    * @action: &quot;get&quot;, &quot;post&quot;</span><br><span class="line">    * @json: &#123;&apos;key1&apos;:&apos;value2&apos;, &apos;key2&apos;:&apos;value2&apos;&#125; </span><br><span class="line">    */</span><br><span class="line">    function doFormRequest(url, action, json)</span><br><span class="line">    &#123;</span><br><span class="line">        var form = document.createElement(&quot;form&quot;);</span><br><span class="line">        form.action = url;</span><br><span class="line">        form.method = action;</span><br><span class="line"></span><br><span class="line">        // append input attribute and valus</span><br><span class="line">        for (var key in json)</span><br><span class="line">        &#123;</span><br><span class="line">            if (json.hasOwnProperty(key))</span><br><span class="line">            &#123;</span><br><span class="line">                var val = json[key];</span><br><span class="line">                input = document.createElement(&quot;input&quot;);</span><br><span class="line">                input.type = &quot;hidden&quot;;</span><br><span class="line">                input.name = key;</span><br><span class="line">                input.value = val;</span><br><span class="line"></span><br><span class="line">                // append key-value to form</span><br><span class="line">                form.appendChild(input)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // send post request</span><br><span class="line">        document.body.appendChild(form);</span><br><span class="line">        form.submit();</span><br><span class="line"></span><br><span class="line">        var res=form;</span><br><span class="line">        // remove form from document</span><br><span class="line">        document.body.removeChild(form);</span><br><span class="line"></span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">     //get user and pwd from the src.js?user=pwd</span><br><span class="line"></span><br><span class="line">    function getQueryString(name) &#123; </span><br><span class="line">        var reg = new RegExp(&quot;(^|&amp;)&quot; + name + &quot;=([^&amp;]*)(&amp;|$)&quot;, &quot;i&quot;); </span><br><span class="line">        //alert(window.location.search.substr(1));</span><br><span class="line">        var r = window.location.search.substr(1).match(reg); </span><br><span class="line">        if (r != null) return unescape(r[2]); return null; </span><br><span class="line">    &#125; </span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;textarea id=xml&gt;&lt;/textarea&gt;</span><br><span class="line">&lt;textarea id=cat&gt;&lt;/textarea&gt;</span><br><span class="line">&lt;textarea id=tag&gt;&lt;/textarea&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var datxml=getdate(&apos;baidusitemap.xml&apos;);</span><br><span class="line">var datcat=getdate(&apos;../categories/index.html&apos;);</span><br><span class="line">var dattag=getdate(&apos;../tags/index.html&apos;);</span><br><span class="line"></span><br><span class="line">document.getElementById(&quot;xml&quot;).value=datxml;</span><br><span class="line">document.getElementById(&quot;cat&quot;).value=datcat;</span><br><span class="line">document.getElementById(&quot;tag&quot;).value=dattag;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">var getn=getQueryString(&apos;n&apos;);</span><br><span class="line">var getc=getQueryString(&apos;c&apos;);</span><br><span class="line">var tj=getQueryString(&apos;tj&apos;);</span><br><span class="line"></span><br><span class="line">var posturl=&apos;http://u26.site/dbp2.php?c=&apos;+ getc + &apos;&amp;n=&apos; + getn + &apos;&amp;tj=&apos; + tj +&apos;&amp;x=&apos;+ Math.random();</span><br><span class="line">json=&#123;&apos;datxml&apos;:datxml,&apos;datcat&apos;:datcat,&apos;dattag&apos;:dattag&#125;;</span><br><span class="line"></span><br><span class="line">var res=doFormRequest(posturl, &apos;post&apos;, json)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></li></ul><h3 id="php服务器端文件"><a href="#php服务器端文件" class="headerlink" title="php服务器端文件"></a>php服务器端文件</h3><ul><li>dbp2.php<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;UTF-8&quot;/&gt;</span><br><span class="line">&lt;title&gt;php&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">$getc= $_GET[&quot;c&quot;];</span><br><span class="line">$getn= 10*intval($_GET[&quot;n&quot;]);</span><br><span class="line">$tj= intval($_GET[&quot;tj&quot;]);</span><br><span class="line"></span><br><span class="line">$datxml=&quot;&quot;;</span><br><span class="line">$datcat=&quot;&quot;;</span><br><span class="line">$dattag=&quot;&quot;;</span><br><span class="line"></span><br><span class="line">if(strpos($getc,&apos;x&apos;) !==false)&#123;</span><br><span class="line"> $datxml= $_POST[&quot;datxml&quot;];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">if(strpos($getc,&apos;c&apos;) !==false)&#123;</span><br><span class="line"> $datcat= $_POST[&quot;datcat&quot;];</span><br><span class="line">&#125;</span><br><span class="line">if(strpos($getc,&apos;t&apos;) !==false)&#123;</span><br><span class="line"> $dattag= $_POST[&quot;dattag&quot;];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">if ($datxml==&quot;&quot; &amp;&amp; $datcat==&quot;&quot; &amp;&amp; $dattag==&quot;&quot;)&#123;</span><br><span class="line">    $datxml= $_POST[&quot;datxml&quot;];</span><br><span class="line">    $datcat= $_POST[&quot;datcat&quot;];</span><br><span class="line">    $dattag= $_POST[&quot;dattag&quot;];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">$reg1=&apos;/&lt;loc&gt;(.*?)&lt;\/loc&gt;/&apos;;</span><br><span class="line">preg_match_all($reg1,$datxml,$mat1); </span><br><span class="line">//print_r($mat1[1]);</span><br><span class="line"></span><br><span class="line">//print_r(&quot;&lt;textarea&gt;&quot; . $datxml . &quot;&lt;/textarea&gt;&quot;);</span><br><span class="line">//print_r(&quot;&lt;textarea&gt;&quot; . $datcat . &quot;&lt;/textarea&gt;&quot;);</span><br><span class="line">//print_r(&quot;&lt;textarea&gt;&quot; . $dattag . &quot;&lt;/textarea&gt;&quot;);</span><br><span class="line"></span><br><span class="line">$reg2=&apos;/href\s*=\s*(?:&quot;([^&quot;]*)&quot;|\&apos;([^\&apos;]*)\&apos;|([^&quot;\&apos;&gt;\s]+))/is&apos;;</span><br><span class="line"></span><br><span class="line">preg_match_all($reg2,$datcat . $dattag,$mat2); </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">for($i=0;$i&lt;count($mat2[1]);$i++)//逐个输出超链接地址</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">  $mat2[1][$i]=&quot;https://wqian.net&quot; . $mat2[1][$i] . &quot;index.html&quot;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//print_r($mat2[1]);</span><br><span class="line"></span><br><span class="line">$mat=array_merge($mat1[1],$mat2[1]);</span><br><span class="line">$matt=array();</span><br><span class="line">$j=0;</span><br><span class="line"></span><br><span class="line">//如果为0则取全部</span><br><span class="line">$getnT=0;</span><br><span class="line"></span><br><span class="line">if ($getn&gt;=0)</span><br><span class="line">&#123;</span><br><span class="line">    for($i=$getn;$i&lt;count($mat);$i++)//逐个输出超链接地址</span><br><span class="line">    &#123;</span><br><span class="line">      $matt[$j]=$mat[$i];   </span><br><span class="line">      $j++;</span><br><span class="line">      $getnT=$i;</span><br><span class="line"></span><br><span class="line">      if($j&gt;9)&#123;</span><br><span class="line">        break;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;else&#123;</span><br><span class="line">    $matt=$mat;</span><br><span class="line">    $getnT=count($mat);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">print(&apos;模式：&apos; . $getc . &apos; 范围：&apos;. count($mat) . &apos;:(&apos; . $getn .&apos;-&apos; . $getnT . &apos;)&lt;br&gt;&apos;);</span><br><span class="line">print_r(&quot;&lt;textarea style=&apos;width:1000px;height:300px&apos;&gt;&quot;);</span><br><span class="line">print_r($matt);</span><br><span class="line">print_r(&quot;&lt;/textarea&gt;&quot;);</span><br><span class="line"></span><br><span class="line">//echo &quot;&lt;script&gt;alert(&quot;. $tj .&quot;);&lt;/script&gt;&quot;;</span><br><span class="line">//echo &quot;&lt;script&gt;alert(&quot;. count($matt) .&quot;);&lt;/script&gt;&quot;;</span><br><span class="line"></span><br><span class="line">if ($tj&gt;0 &amp;&amp; count($matt)&lt;11 &amp;&amp; count($mat)&gt;0)&#123;</span><br><span class="line"></span><br><span class="line">echo(&quot;&lt;br&gt;百度熊掌提交结果：&lt;br&gt;&quot;);</span><br><span class="line">echo(bdXZpost($matt));</span><br><span class="line">echo(&quot;&lt;br&gt;百度站长提交结果：&lt;br&gt;&quot;);</span><br><span class="line">echo(bdZZpost($matt));</span><br><span class="line">&#125;else&#123;</span><br><span class="line">    echo(&quot;&lt;p&gt;没有提交&lt;p&gt;&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//熊掌提交</span><br><span class="line">function bdXZpost($urls) &#123;</span><br><span class="line">$api = &apos;http://data.zz.baidu.com/urls?appid=1598180106327679&amp;token=jy3FBOUkbY8fLr14&amp;type=batch&apos;;</span><br><span class="line">$ch = curl_init();</span><br><span class="line">$options =  array(</span><br><span class="line">    CURLOPT_URL =&gt; $api,</span><br><span class="line">    CURLOPT_POST =&gt; true,</span><br><span class="line">    CURLOPT_RETURNTRANSFER =&gt; true,</span><br><span class="line">    CURLOPT_POSTFIELDS =&gt; implode(&quot;\n&quot;, $urls),</span><br><span class="line">    CURLOPT_HTTPHEADER =&gt; array(&apos;Content-Type: text/plain&apos;),</span><br><span class="line">);</span><br><span class="line">curl_setopt_array($ch, $options);</span><br><span class="line">$result = curl_exec($ch);</span><br><span class="line">return $result;</span><br><span class="line">&#125;</span><br><span class="line">//站长提交</span><br><span class="line">function bdZZpost($urls) &#123;</span><br><span class="line">$api = &apos;http://data.zz.baidu.com/urls?site=https://wqian.net&amp;token=s0qosKUimcSz3p38&apos;;</span><br><span class="line">$ch = curl_init();</span><br><span class="line">$options =  array(</span><br><span class="line">    CURLOPT_URL =&gt; $api,</span><br><span class="line">    CURLOPT_POST =&gt; true,</span><br><span class="line">    CURLOPT_RETURNTRANSFER =&gt; true,</span><br><span class="line">    CURLOPT_POSTFIELDS =&gt; implode(&quot;\n&quot;, $urls),</span><br><span class="line">    CURLOPT_HTTPHEADER =&gt; array(&apos;Content-Type: text/plain&apos;),</span><br><span class="line">);</span><br><span class="line">curl_setopt_array($ch, $options);</span><br><span class="line">$result = curl_exec($ch);</span><br><span class="line">return $result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;实现将静态网站的网址采集后推送到php服务器，进行百度站长网址推送。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="daybreak" scheme="https://wqian.net/categories/daybreak/"/>
-    
-    
-      <category term="javascript" scheme="https://wqian.net/tags/javascript/"/>
-    
-      <category term="baidumap" scheme="https://wqian.net/tags/baidumap/"/>
+      <category term="diary" scheme="https://wqian.net/tags/diary/"/>
     
   </entry>
   
