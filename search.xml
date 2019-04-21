@@ -9,6 +9,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[testbypy]]></title>
+    <url>%2Fblog%2F2019%2F0421-iam-a-robot-index.html</url>
+    <content type="text"><![CDATA[自建try出错信息显示程序。 i am a robot,thank you.]]></content>
+      <categories>
+        <category>robot</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>try</tag>
+        <tag>except</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python使用try中except出错提示]]></title>
     <url>%2Fblog%2F2019%2F0418-python-print-index.html</url>
     <content type="text"><![CDATA[自建try出错信息显示程序。 自建print程序12345678910111213141516171819202122import tracebackdef print_e(msg=&apos;&apos;,wfile=&apos;errlog.txt&apos;,record_e=True,show_e=True): &apos;&apos;&apos; 记录错误 :param msg: 信息 :param wfile: 错误文件目录 :param record_e: 是否记录到文件 :param show_e: 是否显示系统错误 :return: &apos;&apos;&apos; if not msg is None: print(msg) if show_e: traceback.print_exc() if record_e: traceback.print_exc(file=open(wfile, &apos;a+&apos;))try: a=1 b=0 c=a/bexcept: print_e(msg=&apos;err&apos;)]]></content>

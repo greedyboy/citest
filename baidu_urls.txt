@@ -1,4 +1,5 @@
 https://wqian.net/blog/2019/0421-hello-world.html
+https://wqian.net/blog/2019/0421-iam-a-robot-index.html
 https://wqian.net/blog/2019/0418-python-print-index.html
 https://wqian.net/blog/2019/0417-index.html
 https://wqian.net/blog/2019/0417-python-li-index.html
@@ -7,4 +8,3 @@ https://wqian.net/blog/2019/0413-python-gitee-index.html
 https://wqian.net/blog/2019/0412-python-list-com-index.html
 https://wqian.net/blog/2019/0412-python-selenium-google-index.html
 https://wqian.net/blog/2019/0410-index.html
-https://wqian.net/blog/2019/0409-update-next-index.html
